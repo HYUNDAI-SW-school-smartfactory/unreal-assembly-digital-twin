@@ -73,3 +73,11 @@ Plugins/**/Intermediate/*
 
 # Cache files for the editor to use
 DerivedDataCache/*
+
+
+GenesisDigitalTwin/Binaries/
+GenesisDigitalTwin/DerivedDataCache/
+GenesisDigitalTwin/Intermediate/
+GenesisDigitalTwin/Saved/
+GenesisDigitalTwin/.vs/
+*.sln
