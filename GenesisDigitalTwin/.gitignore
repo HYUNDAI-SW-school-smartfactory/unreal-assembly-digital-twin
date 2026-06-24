@@ -1,0 +1,13 @@
+# Unreal Editor generated files
+Binaries/
+DerivedDataCache/
+Intermediate/
+Saved/
+.vs/
+
+# Generated plugin build outputs
+Plugins/**/Binaries/
+Plugins/**/Intermediate/
+
+# Local source archive; the extracted Content assets are versioned instead.
+Content/Genesis.zip
