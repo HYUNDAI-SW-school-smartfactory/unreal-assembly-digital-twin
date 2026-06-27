@@ -1,0 +1,9 @@
+Map backup: /Game/Maps/MainMaps_BeforeFactoryDynamicSpawn
+Blueprint backups:
+  /Game/Blueprints/AGV/BP_AGV -> /Game/Blueprints/FactoryBackup/BP_AGV_Original
+  /Game/Blueprints/AGV/BP_BatteryLift -> /Game/Blueprints/FactoryBackup/BP_BatteryLift_Original
+  /Game/Blueprints/BP_TireAssemblyCell -> /Game/Blueprints/FactoryBackup/BP_TireAssemblyCell_Original
+  /Game/Blueprints/BP_TireAssemblyCell_L -> /Game/Blueprints/FactoryBackup/BP_TireAssemblyCell_L_Original
+  /Game/Blueprints/BP_MQTT_DisplayBoard -> /Game/Blueprints/FactoryBackup/BP_MQTT_DisplayBoard_Original
+  /Game/Blueprints/BP_FactoryDisplayBoard -> /Game/Blueprints/FactoryBackup/BP_FactoryDisplayBoard_Original
+Deleted actors from /Game/Maps/MainMaps:

@@ -1,0 +1,13 @@
+{
+  "count": 1,
+  "records": [
+    {
+      "label": "GenesisFactoryStatusBoard_2_4",
+      "name": "GenesisFactoryStatusBoard_UAID_345A608353CED9E802_1706203679",
+      "guid": "<Struct 'Guid' (0x000001BCF169DAC0) {}>",
+      "actor_package": "/Game/__ExternalActors__/Maps/MainMaps/8/IZ/89BN0CKNRB6MW5EHL1ES2M",
+      "native_class": "<Object '/Script/GenesisDigitalTwin.GenesisFactoryStatusBoard' (0x000001BCC96DF000) Class 'Class'>",
+      "bounds": "<Struct 'Box' (0x000001BCF169DB18) {min: {x: 11794.321442, y: 7004.726287, z: 441.032088}, max: {x: 11872.611732, y: 7435.273713, z: 950.000000}, is_valid: True}>"
+    }
+  ]
+}

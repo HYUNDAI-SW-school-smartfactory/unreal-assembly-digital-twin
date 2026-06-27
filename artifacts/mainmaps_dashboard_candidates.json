@@ -1,0 +1,1024 @@
+﻿[
+    {
+        "label":  "SM_AssemblyLineFloor141",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  17590.0,
+        "Y":  800.0,
+        "Z":  0.0
+    },
+    {
+        "label":  "SM_AssemblyLineFloor160",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  17590.0,
+        "Y":  800.0,
+        "Z":  980.0
+    },
+    {
+        "label":  "SM_AssemblyLineLampRamp2",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  730.0,
+        "Y":  910.0,
+        "Z":  20.0
+    },
+    {
+        "label":  "SM_AssemblyLineLampRamp",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  2400.0,
+        "Y":  910.0,
+        "Z":  20.0
+    },
+    {
+        "label":  "SM_AssemblyLineLampRamp3",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  3990.0,
+        "Y":  910.0,
+        "Z":  20.0
+    },
+    {
+        "label":  "SM_AssemblyLineLampRamp4",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  5600.0,
+        "Y":  920.0,
+        "Z":  20.0
+    },
+    {
+        "label":  "SM_AssemblyLineLampRamp5",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  7190.0,
+        "Y":  920.0,
+        "Z":  20.0
+    },
+    {
+        "label":  "SM_AssemblyLineLampRamp6",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  8800.0,
+        "Y":  920.0,
+        "Z":  20.0
+    },
+    {
+        "label":  "SM_AssemblyLineLampRamp7",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  10400.0,
+        "Y":  920.0,
+        "Z":  20.0
+    },
+    {
+        "label":  "SM_AssemblyLineLampRamp8",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  11980.0,
+        "Y":  920.0,
+        "Z":  20.0
+    },
+    {
+        "label":  "SM_AssemblyLineLampRamp9",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  13590.0,
+        "Y":  920.0,
+        "Z":  20.0
+    },
+    {
+        "label":  "SM_AssemblyLineLampRamp10",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  15200.0,
+        "Y":  920.0,
+        "Z":  20.0
+    },
+    {
+        "label":  "SM_AssemblyLineFloor161",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  16850.0,
+        "Y":  1600.0,
+        "Z":  980.0
+    },
+    {
+        "label":  "SM_AssemblyLineFloor207",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  16850.0,
+        "Y":  1600.0,
+        "Z":  690.0
+    },
+    {
+        "label":  "SM_AssemblyLineFloor162",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  16790.0,
+        "Y":  1620.0,
+        "Z":  1640.0
+    },
+    {
+        "label":  "SM_AssemblyLineFloor4",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  50.0,
+        "Y":  2010.0,
+        "Z":  20.0
+    },
+    {
+        "label":  "SM_AssemblyLineFloor5",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  600.0,
+        "Y":  2010.0,
+        "Z":  20.0
+    },
+    {
+        "label":  "SM_AssemblyLineFloor6",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  1160.0,
+        "Y":  2010.0,
+        "Z":  20.0
+    },
+    {
+        "label":  "SM_AssemblyLineFloor7",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  1720.0,
+        "Y":  2010.0,
+        "Z":  20.0
+    },
+    {
+        "label":  "SM_AssemblyLineFloor8",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  2280.0,
+        "Y":  2010.0,
+        "Z":  20.0
+    },
+    {
+        "label":  "SM_AssemblyLineFloor9",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  2840.0,
+        "Y":  2010.0,
+        "Z":  20.0
+    },
+    {
+        "label":  "SM_AssemblyLineFloor10",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  3390.0,
+        "Y":  2010.0,
+        "Z":  20.0
+    },
+    {
+        "label":  "SM_AssemblyLineFloor11",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  3950.0,
+        "Y":  2010.0,
+        "Z":  20.0
+    },
+    {
+        "label":  "SM_AssemblyLineFloor12",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  4500.0,
+        "Y":  2010.0,
+        "Z":  20.0
+    },
+    {
+        "label":  "SM_AssemblyLineFloor15",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  5050.0,
+        "Y":  2010.0,
+        "Z":  20.0
+    },
+    {
+        "label":  "SM_AssemblyLineFloor14",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  5610.0,
+        "Y":  2010.0,
+        "Z":  20.0
+    },
+    {
+        "label":  "SM_AssemblyLineFloor13",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  6160.0,
+        "Y":  2010.0,
+        "Z":  20.0
+    },
+    {
+        "label":  "SM_AssemblyLineFloor18",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  6720.0,
+        "Y":  2010.0,
+        "Z":  20.0
+    },
+    {
+        "label":  "SM_AssemblyLineFloor17",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  7280.0,
+        "Y":  2010.0,
+        "Z":  20.0
+    },
+    {
+        "label":  "SM_AssemblyLineFloor16",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  7830.0,
+        "Y":  2010.0,
+        "Z":  20.0
+    },
+    {
+        "label":  "SM_AssemblyLineFloor21",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  8390.0,
+        "Y":  2010.0,
+        "Z":  20.0
+    },
+    {
+        "label":  "SM_AssemblyLineFloor20",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  8950.0,
+        "Y":  2010.0,
+        "Z":  20.0
+    },
+    {
+        "label":  "SM_AssemblyLineFloor19",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  9490.0,
+        "Y":  2010.0,
+        "Z":  20.0
+    },
+    {
+        "label":  "SM_AssemblyLineFloor24",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  10050.0,
+        "Y":  2010.0,
+        "Z":  20.0
+    },
+    {
+        "label":  "SM_AssemblyLineFloor23",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  10610.0,
+        "Y":  2010.0,
+        "Z":  20.0
+    },
+    {
+        "label":  "SM_AssemblyLineFloor22",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  11160.0,
+        "Y":  2010.0,
+        "Z":  20.0
+    },
+    {
+        "label":  "SM_AssemblyLineFloor27",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  11720.0,
+        "Y":  2010.0,
+        "Z":  20.0
+    },
+    {
+        "label":  "SM_AssemblyLineFloor26",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  12280.0,
+        "Y":  2010.0,
+        "Z":  20.0
+    },
+    {
+        "label":  "SM_AssemblyLineFloor25",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  12830.0,
+        "Y":  2010.0,
+        "Z":  20.0
+    },
+    {
+        "label":  "SM_AssemblyLineFloor30",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  13400.0,
+        "Y":  2010.0,
+        "Z":  20.0
+    },
+    {
+        "label":  "SM_AssemblyLineFloor29",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  13960.0,
+        "Y":  2010.0,
+        "Z":  20.0
+    },
+    {
+        "label":  "SM_AssemblyLineFloor28",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  14510.0,
+        "Y":  2010.0,
+        "Z":  20.0
+    },
+    {
+        "label":  "SM_AssemblyLineFloor33",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  15070.0,
+        "Y":  2010.0,
+        "Z":  20.0
+    },
+    {
+        "label":  "SM_AssemblyLineFloor32",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  15630.0,
+        "Y":  2010.0,
+        "Z":  20.0
+    },
+    {
+        "label":  "SM_AssemblyLineFloor31",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  16180.0,
+        "Y":  2010.0,
+        "Z":  20.0
+    },
+    {
+        "label":  "SM_AssemblyLineFloor36",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  16730.0,
+        "Y":  2010.0,
+        "Z":  20.0
+    },
+    {
+        "label":  "SM_AssemblyLineFloor151",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  17590.0,
+        "Y":  2410.0,
+        "Z":  980.0
+    },
+    {
+        "label":  "SM_AssemblyLineFloor146",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  17590.0,
+        "Y":  2410.0,
+        "Z":  0.0
+    },
+    {
+        "label":  "SM_AssemblyLineFloor172",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  17590.0,
+        "Y":  5610.0,
+        "Z":  980.0
+    },
+    {
+        "label":  "SM_AssemblyLineFloor183",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  17590.0,
+        "Y":  5610.0,
+        "Z":  0.0
+    },
+    {
+        "label":  "SM_AssemblyLineLampRamp11",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  730.0,
+        "Y":  5690.0,
+        "Z":  20.0
+    },
+    {
+        "label":  "SM_AssemblyLineLampRamp12",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  2400.0,
+        "Y":  5690.0,
+        "Z":  20.0
+    },
+    {
+        "label":  "SM_AssemblyLineLampRamp13",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  3990.0,
+        "Y":  5690.0,
+        "Z":  20.0
+    },
+    {
+        "label":  "SM_AssemblyLineLampRamp14",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  5600.0,
+        "Y":  5700.0,
+        "Z":  20.0
+    },
+    {
+        "label":  "SM_AssemblyLineLampRamp15",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  7190.0,
+        "Y":  5700.0,
+        "Z":  20.0
+    },
+    {
+        "label":  "SM_AssemblyLineLampRamp16",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  8800.0,
+        "Y":  5700.0,
+        "Z":  20.0
+    },
+    {
+        "label":  "SM_AssemblyLineLampRamp17",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  10400.0,
+        "Y":  5700.0,
+        "Z":  20.0
+    },
+    {
+        "label":  "SM_AssemblyLineLampRamp18",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  11980.0,
+        "Y":  5700.0,
+        "Z":  20.0
+    },
+    {
+        "label":  "SM_AssemblyLineLampRamp19",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  13590.0,
+        "Y":  5700.0,
+        "Z":  20.0
+    },
+    {
+        "label":  "SM_AssemblyLineLampRamp20",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  15200.0,
+        "Y":  5700.0,
+        "Z":  20.0
+    },
+    {
+        "label":  "SM_AssemblyLineFloor208",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  16850.0,
+        "Y":  6400.0,
+        "Z":  690.0
+    },
+    {
+        "label":  "SM_AssemblyLineFloor209",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  15640.0,
+        "Y":  6410.0,
+        "Z":  690.0
+    },
+    {
+        "label":  "SM_AssemblyLineFloor171",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  16850.0,
+        "Y":  6410.0,
+        "Z":  980.0
+    },
+    {
+        "label":  "SM_AssemblyLineFloor184",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  16790.0,
+        "Y":  6430.0,
+        "Z":  1640.0
+    },
+    {
+        "label":  "SM_AssemblyLineFloor50",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  50.0,
+        "Y":  6790.0,
+        "Z":  20.0
+    },
+    {
+        "label":  "SM_AssemblyLineFloor51",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  600.0,
+        "Y":  6790.0,
+        "Z":  20.0
+    },
+    {
+        "label":  "SM_AssemblyLineFloor52",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  1160.0,
+        "Y":  6790.0,
+        "Z":  20.0
+    },
+    {
+        "label":  "SM_AssemblyLineFloor53",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  1720.0,
+        "Y":  6790.0,
+        "Z":  20.0
+    },
+    {
+        "label":  "SM_AssemblyLineFloor54",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  2280.0,
+        "Y":  6790.0,
+        "Z":  20.0
+    },
+    {
+        "label":  "SM_AssemblyLineFloor55",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  2840.0,
+        "Y":  6790.0,
+        "Z":  20.0
+    },
+    {
+        "label":  "SM_AssemblyLineFloor56",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  3390.0,
+        "Y":  6790.0,
+        "Z":  20.0
+    },
+    {
+        "label":  "SM_AssemblyLineFloor57",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  3950.0,
+        "Y":  6790.0,
+        "Z":  20.0
+    },
+    {
+        "label":  "SM_AssemblyLineFloor58",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  4500.0,
+        "Y":  6790.0,
+        "Z":  20.0
+    },
+    {
+        "label":  "SM_AssemblyLineFloor59",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  5050.0,
+        "Y":  6790.0,
+        "Z":  20.0
+    },
+    {
+        "label":  "SM_AssemblyLineFloor60",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  5610.0,
+        "Y":  6790.0,
+        "Z":  20.0
+    },
+    {
+        "label":  "SM_AssemblyLineFloor61",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  6160.0,
+        "Y":  6790.0,
+        "Z":  20.0
+    },
+    {
+        "label":  "SM_AssemblyLineFloor62",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  6720.0,
+        "Y":  6790.0,
+        "Z":  20.0
+    },
+    {
+        "label":  "SM_AssemblyLineFloor63",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  7280.0,
+        "Y":  6790.0,
+        "Z":  20.0
+    },
+    {
+        "label":  "SM_AssemblyLineFloor64",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  7830.0,
+        "Y":  6790.0,
+        "Z":  20.0
+    },
+    {
+        "label":  "SM_AssemblyLineFloor65",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  8390.0,
+        "Y":  6790.0,
+        "Z":  20.0
+    },
+    {
+        "label":  "SM_AssemblyLineFloor66",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  8950.0,
+        "Y":  6790.0,
+        "Z":  20.0
+    },
+    {
+        "label":  "SM_AssemblyLineFloor69",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  9490.0,
+        "Y":  6790.0,
+        "Z":  20.0
+    },
+    {
+        "label":  "SM_AssemblyLineFloor67",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  10050.0,
+        "Y":  6790.0,
+        "Z":  20.0
+    },
+    {
+        "label":  "SM_AssemblyLineFloor68",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  10610.0,
+        "Y":  6790.0,
+        "Z":  20.0
+    },
+    {
+        "label":  "SM_AssemblyLineFloor70",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  11160.0,
+        "Y":  6790.0,
+        "Z":  20.0
+    },
+    {
+        "label":  "SM_AssemblyLineFloor71",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  11720.0,
+        "Y":  6790.0,
+        "Z":  20.0
+    },
+    {
+        "label":  "SM_AssemblyLineFloor72",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  12280.0,
+        "Y":  6790.0,
+        "Z":  20.0
+    },
+    {
+        "label":  "SM_AssemblyLineFloor73",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  12830.0,
+        "Y":  6790.0,
+        "Z":  20.0
+    },
+    {
+        "label":  "SM_AssemblyLineFloor74",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  13400.0,
+        "Y":  6790.0,
+        "Z":  20.0
+    },
+    {
+        "label":  "SM_AssemblyLineFloor75",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  13960.0,
+        "Y":  6790.0,
+        "Z":  20.0
+    },
+    {
+        "label":  "SM_AssemblyLineFloor76",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  14510.0,
+        "Y":  6790.0,
+        "Z":  20.0
+    },
+    {
+        "label":  "SM_AssemblyLineFloor77",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  15070.0,
+        "Y":  6790.0,
+        "Z":  20.0
+    },
+    {
+        "label":  "SM_AssemblyLineFloor78",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  15630.0,
+        "Y":  6790.0,
+        "Z":  20.0
+    },
+    {
+        "label":  "SM_AssemblyLineFloor79",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  16180.0,
+        "Y":  6790.0,
+        "Z":  20.0
+    },
+    {
+        "label":  "SM_AssemblyLineFloor80",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  16730.0,
+        "Y":  6790.0,
+        "Z":  20.0
+    },
+    {
+        "label":  "BP_MQTT_DisplayBoard",
+        "class":  "/Game/Blueprints/BP_MQTT_DisplayBoard.BP_MQTT_DisplayBoard_C",
+        "X":  14870.0,
+        "Y":  7220.0,
+        "Z":  920.0
+    },
+    {
+        "label":  "SM_AssemblyLineFloor163",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  17590.0,
+        "Y":  7220.0,
+        "Z":  980.0
+    },
+    {
+        "label":  "SM_AssemblyLineFloor182",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  17590.0,
+        "Y":  7220.0,
+        "Z":  0.0
+    },
+    {
+        "label":  "SM_AssemblyLineFloor205",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  17590.0,
+        "Y":  10400.0,
+        "Z":  0.0
+    },
+    {
+        "label":  "SM_AssemblyLineFloor194",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  17590.0,
+        "Y":  10400.0,
+        "Z":  980.0
+    },
+    {
+        "label":  "SM_AssemblyLineLampRamp21",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  730.0,
+        "Y":  10500.0,
+        "Z":  20.0
+    },
+    {
+        "label":  "SM_AssemblyLineLampRamp22",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  2400.0,
+        "Y":  10500.0,
+        "Z":  20.0
+    },
+    {
+        "label":  "SM_AssemblyLineLampRamp23",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  3990.0,
+        "Y":  10500.0,
+        "Z":  20.0
+    },
+    {
+        "label":  "SM_AssemblyLineLampRamp24",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  5600.0,
+        "Y":  10510.0,
+        "Z":  20.0
+    },
+    {
+        "label":  "SM_AssemblyLineLampRamp25",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  7190.0,
+        "Y":  10510.0,
+        "Z":  20.0
+    },
+    {
+        "label":  "SM_AssemblyLineLampRamp26",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  8800.0,
+        "Y":  10510.0,
+        "Z":  20.0
+    },
+    {
+        "label":  "SM_AssemblyLineLampRamp27",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  10400.0,
+        "Y":  10510.0,
+        "Z":  20.0
+    },
+    {
+        "label":  "SM_AssemblyLineLampRamp28",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  11980.0,
+        "Y":  10510.0,
+        "Z":  20.0
+    },
+    {
+        "label":  "SM_AssemblyLineLampRamp29",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  13590.0,
+        "Y":  10510.0,
+        "Z":  20.0
+    },
+    {
+        "label":  "SM_AssemblyLineLampRamp30",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  15200.0,
+        "Y":  10510.0,
+        "Z":  20.0
+    },
+    {
+        "label":  "SM_AssemblyLineFloor210",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  16850.0,
+        "Y":  11200.0,
+        "Z":  690.0
+    },
+    {
+        "label":  "SM_AssemblyLineFloor193",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  16850.0,
+        "Y":  11200.0,
+        "Z":  980.0
+    },
+    {
+        "label":  "SM_AssemblyLineFloor206",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  16790.0,
+        "Y":  11220.0,
+        "Z":  1640.0
+    },
+    {
+        "label":  "SM_AssemblyLineFloor96",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  50.0,
+        "Y":  11590.0,
+        "Z":  20.0
+    },
+    {
+        "label":  "SM_AssemblyLineFloor97",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  600.0,
+        "Y":  11590.0,
+        "Z":  20.0
+    },
+    {
+        "label":  "SM_AssemblyLineFloor98",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  1160.0,
+        "Y":  11590.0,
+        "Z":  20.0
+    },
+    {
+        "label":  "SM_AssemblyLineFloor99",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  1720.0,
+        "Y":  11590.0,
+        "Z":  20.0
+    },
+    {
+        "label":  "SM_AssemblyLineFloor100",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  2280.0,
+        "Y":  11590.0,
+        "Z":  20.0
+    },
+    {
+        "label":  "SM_AssemblyLineFloor101",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  2840.0,
+        "Y":  11590.0,
+        "Z":  20.0
+    },
+    {
+        "label":  "SM_AssemblyLineFloor102",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  3390.0,
+        "Y":  11590.0,
+        "Z":  20.0
+    },
+    {
+        "label":  "SM_AssemblyLineFloor103",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  3950.0,
+        "Y":  11590.0,
+        "Z":  20.0
+    },
+    {
+        "label":  "SM_AssemblyLineFloor104",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  4500.0,
+        "Y":  11590.0,
+        "Z":  20.0
+    },
+    {
+        "label":  "SM_AssemblyLineFloor105",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  5050.0,
+        "Y":  11590.0,
+        "Z":  20.0
+    },
+    {
+        "label":  "SM_AssemblyLineFloor106",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  5610.0,
+        "Y":  11590.0,
+        "Z":  20.0
+    },
+    {
+        "label":  "SM_AssemblyLineFloor107",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  6160.0,
+        "Y":  11590.0,
+        "Z":  20.0
+    },
+    {
+        "label":  "SM_AssemblyLineFloor108",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  6720.0,
+        "Y":  11590.0,
+        "Z":  20.0
+    },
+    {
+        "label":  "SM_AssemblyLineFloor109",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  7280.0,
+        "Y":  11590.0,
+        "Z":  20.0
+    },
+    {
+        "label":  "SM_AssemblyLineFloor110",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  7830.0,
+        "Y":  11590.0,
+        "Z":  20.0
+    },
+    {
+        "label":  "SM_AssemblyLineFloor111",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  8390.0,
+        "Y":  11590.0,
+        "Z":  20.0
+    },
+    {
+        "label":  "SM_AssemblyLineFloor112",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  8950.0,
+        "Y":  11590.0,
+        "Z":  20.0
+    },
+    {
+        "label":  "SM_AssemblyLineFloor115",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  9490.0,
+        "Y":  11590.0,
+        "Z":  20.0
+    },
+    {
+        "label":  "SM_AssemblyLineFloor113",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  10050.0,
+        "Y":  11590.0,
+        "Z":  20.0
+    },
+    {
+        "label":  "SM_AssemblyLineFloor114",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  10610.0,
+        "Y":  11590.0,
+        "Z":  20.0
+    },
+    {
+        "label":  "SM_AssemblyLineFloor116",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  11160.0,
+        "Y":  11590.0,
+        "Z":  20.0
+    },
+    {
+        "label":  "SM_AssemblyLineFloor117",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  11720.0,
+        "Y":  11590.0,
+        "Z":  20.0
+    },
+    {
+        "label":  "SM_AssemblyLineFloor118",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  12280.0,
+        "Y":  11590.0,
+        "Z":  20.0
+    },
+    {
+        "label":  "SM_AssemblyLineFloor119",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  12830.0,
+        "Y":  11590.0,
+        "Z":  20.0
+    },
+    {
+        "label":  "SM_AssemblyLineFloor120",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  13400.0,
+        "Y":  11590.0,
+        "Z":  20.0
+    },
+    {
+        "label":  "SM_AssemblyLineFloor121",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  13960.0,
+        "Y":  11590.0,
+        "Z":  20.0
+    },
+    {
+        "label":  "SM_AssemblyLineFloor122",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  14510.0,
+        "Y":  11590.0,
+        "Z":  20.0
+    },
+    {
+        "label":  "SM_AssemblyLineFloor123",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  15070.0,
+        "Y":  11590.0,
+        "Z":  20.0
+    },
+    {
+        "label":  "SM_AssemblyLineFloor124",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  15630.0,
+        "Y":  11590.0,
+        "Z":  20.0
+    },
+    {
+        "label":  "SM_AssemblyLineFloor125",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  16180.0,
+        "Y":  11590.0,
+        "Z":  20.0
+    },
+    {
+        "label":  "SM_AssemblyLineFloor126",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  16730.0,
+        "Y":  11590.0,
+        "Z":  20.0
+    },
+    {
+        "label":  "SM_AssemblyLineFloor204",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  17590.0,
+        "Y":  12010.0,
+        "Z":  0.0
+    },
+    {
+        "label":  "SM_AssemblyLineFloor185",
+        "class":  "/Script/Engine.StaticMeshActor",
+        "X":  17590.0,
+        "Y":  12010.0,
+        "Z":  980.0
+    }
+]

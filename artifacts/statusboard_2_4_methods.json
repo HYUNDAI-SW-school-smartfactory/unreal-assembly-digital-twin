@@ -1,0 +1,54 @@
+{
+  "class": "/Script/GenesisDigitalTwin.GenesisFactoryStatusBoard",
+  "name": "GenesisFactoryStatusBoard_UAID_345A608353CE8CE802_1358886169",
+  "label": "GenesisFactoryStatusBoard_2_4",
+  "location": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "methods": [
+    "add_actor_local_transform",
+    "add_actor_world_transform",
+    "add_actor_world_transform_keep_scale",
+    "get_actor_location",
+    "get_actor_transform",
+    "get_editor_property",
+    "get_level_transform",
+    "is_editor_property_overridden",
+    "reset_editor_property",
+    "root_component",
+    "set_actor_location",
+    "set_actor_location_and_rotation",
+    "set_actor_relative_location",
+    "set_actor_relative_transform",
+    "set_actor_transform",
+    "set_editor_property"
+  ],
+  "components": [
+    {
+      "name": "Root",
+      "class": "/Script/Engine.SceneComponent",
+      "relative_location": "<Struct 'Vector' (0x000001B46F1D4680) {x: 0.000000, y: 0.000000, z: 0.000000}>",
+      "relative_rotation": "<Struct 'Rotator' (0x000001B46F1D4698) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "relative_scale3d": "<Struct 'Vector' (0x000001B46F1D46B0) {x: 1.000000, y: 1.000000, z: 1.000000}>",
+      "mobility": "<ComponentMobility.MOVABLE: 2>"
+    },
+    {
+      "name": "BoardMesh",
+      "class": "/Script/Engine.StaticMeshComponent",
+      "relative_location": "<Struct 'Vector' (0x000001B46F194980) {x: 0.000000, y: 0.000000, z: 0.000000}>",
+      "relative_rotation": "<Struct 'Rotator' (0x000001B46F194998) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "relative_scale3d": "<Struct 'Vector' (0x000001B46F1949B0) {x: 1.000000, y: 1.000000, z: 1.000000}>",
+      "mobility": "<ComponentMobility.MOVABLE: 2>"
+    },
+    {
+      "name": "MonitorWidget",
+      "class": "/Script/UMG.WidgetComponent",
+      "relative_location": "<Struct 'Vector' (0x000001B46F194180) {x: -51.000000, y: 0.000000, z: -174.000000}>",
+      "relative_rotation": "<Struct 'Rotator' (0x000001B46F194198) {pitch: 0.000000, yaw: -180.000000, roll: 165.000000}>",
+      "relative_scale3d": "<Struct 'Vector' (0x000001B46F1941B0) {x: 0.150000, y: 0.150000, z: 0.160000}>",
+      "mobility": "<ComponentMobility.MOVABLE: 2>"
+    }
+  ]
+}

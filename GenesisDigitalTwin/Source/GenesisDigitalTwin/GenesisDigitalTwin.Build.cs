@@ -11,6 +11,10 @@ public class GenesisDigitalTwin : ModuleRules
 			"Core",
 			"CoreUObject",
 			"Engine",
+			"InputCore",
+			"UMG",
+			"Slate",
+			"SlateCore",
 			"Json",
 			"JsonUtilities",
 			"FF_MQTT_Sync"

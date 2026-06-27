@@ -1,0 +1,17 @@
+{
+  "target": "/Game/Blueprints/BP_TireConveyor",
+  "loaded": true,
+  "graphs": [
+    {
+      "name": "EventGraph",
+      "class": "/Script/Engine.EdGraph",
+      "nodes": []
+    },
+    {
+      "name": "UserConstructionScript",
+      "class": "/Script/Engine.EdGraph",
+      "nodes": []
+    }
+  ],
+  "compile": "ok"
+}

@@ -1,0 +1,54 @@
+[
+  {
+    "source": "/Game/Blueprints/AGV/BP_AGV",
+    "backup": "/Game/Blueprints/FactoryBackup/BP_AGV_Original",
+    "backup_state": "exists",
+    "controlled": "/Game/Blueprints/FactoryControlled/BP_AGV_Controlled",
+    "controlled_state": "created",
+    "override_result": {
+      "receive_beginplay_graph": true,
+      "event_graph": true,
+      "compile": "ok",
+      "notes": []
+    }
+  },
+  {
+    "source": "/Game/Blueprints/AGV/BP_BatteryLift",
+    "backup": "/Game/Blueprints/FactoryBackup/BP_BatteryLift_Original",
+    "backup_state": "exists",
+    "controlled": "/Game/Blueprints/FactoryControlled/BP_BatteryLift_Controlled",
+    "controlled_state": "created",
+    "override_result": {
+      "receive_beginplay_graph": true,
+      "event_graph": true,
+      "compile": "ok",
+      "notes": []
+    }
+  },
+  {
+    "source": "/Game/Blueprints/BP_TireAssemblyCell",
+    "backup": "/Game/Blueprints/FactoryBackup/BP_TireAssemblyCell_Original",
+    "backup_state": "exists",
+    "controlled": "/Game/Blueprints/FactoryControlled/BP_TireAssemblyCell_Controlled",
+    "controlled_state": "created",
+    "override_result": {
+      "receive_beginplay_graph": true,
+      "event_graph": true,
+      "compile": "ok",
+      "notes": []
+    }
+  },
+  {
+    "source": "/Game/Blueprints/BP_TireAssemblyCell_L",
+    "backup": "/Game/Blueprints/FactoryBackup/BP_TireAssemblyCell_L_Original",
+    "backup_state": "exists",
+    "controlled": "/Game/Blueprints/FactoryControlled/BP_TireAssemblyCell_L_Controlled",
+    "controlled_state": "created",
+    "override_result": {
+      "receive_beginplay_graph": true,
+      "event_graph": true,
+      "compile": "ok",
+      "notes": []
+    }
+  }
+]

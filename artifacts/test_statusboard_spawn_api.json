@@ -1,0 +1,40 @@
+{
+  "found": true,
+  "attempts": [
+    {
+      "api": "EditorLevelLibraryKeyword",
+      "name": "GenesisFactoryStatusBoard_UAID_345A608353CED9E802_1344657679",
+      "label": "TEMP_StatusBoard_SpawnKeyword",
+      "location": [
+        11860.0,
+        7220.0,
+        950.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "api": "EditorActorSubsystem",
+      "name": "GenesisFactoryStatusBoard_UAID_345A608353CED9E802_1344657680",
+      "label": "TEMP_StatusBoard_ActorSubsystem",
+      "location": [
+        11860.0,
+        7220.0,
+        950.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    }
+  ],
+  "target_location": [
+    11860.0,
+    7220.0,
+    950.0
+  ]
+}

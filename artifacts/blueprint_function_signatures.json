@@ -1,0 +1,27 @@
+{
+  "create_blueprint_asset_with_parent": {
+    "repr": "<built-in method create_blueprint_asset_with_parent of type object at 0x000002008FCB26C8>",
+    "doc": "X.create_blueprint_asset_with_parent(asset_path, parent_class) -> Blueprint\r\nCreates a blueprint based on a specific parent, honoring registered custom blueprint types\r\n\r\nArgs:\r\n    asset_path (str): The full path that the asset should be created with\r\n    parent_class (type(Class)): The parent class that the blueprint should be based on\r\n\r\nReturns:\r\n    Blueprint:",
+    "signature_error": "no signature found for builtin <built-in method create_blueprint_asset_with_parent of type object at 0x000002008FCB26C8>"
+  },
+  "add_function_graph": {
+    "repr": "<built-in method add_function_graph of type object at 0x000002008FCB26C8>",
+    "doc": "X.add_function_graph(blueprint, func_name=\"NewFunction\") -> EdGraph\r\nAdds a function to the given blueprint\r\n\r\nArgs:\r\n    blueprint (Blueprint): The blueprint to add the function to\r\n    func_name (str): Name of the function to add\r\n\r\nReturns:\r\n    EdGraph: UEdGraph*",
+    "signature_error": "no signature found for builtin <built-in method add_function_graph of type object at 0x000002008FCB26C8>"
+  },
+  "find_event_graph": {
+    "repr": "<built-in method find_event_graph of type object at 0x000002008FCB26C8>",
+    "doc": "X.find_event_graph(blueprint) -> EdGraph\r\nFinds the event graph of the given blueprint. Null if it doesn't have one. This will only return\nthe primary event graph of the blueprint (the graph named \"EventGraph\").\r\n\r\nArgs:\r\n    blueprint (Blueprint): Blueprint to search for the event graph on\r\n\r\nReturns:\r\n    EdGraph: UEdGraph*             Event graph of the blueprint if it has one, null if it doesn't have one",
+    "signature_error": "no signature found for builtin <built-in method find_event_graph of type object at 0x000002008FCB26C8>"
+  },
+  "find_graph": {
+    "repr": "<built-in method find_graph of type object at 0x000002008FCB26C8>",
+    "doc": "X.find_graph(blueprint, graph_name) -> EdGraph\r\nFinds the graph with the given name on the blueprint. Null if it doesn't have one.\r\n\r\nArgs:\r\n    blueprint (Blueprint): Blueprint to search\r\n    graph_name (Name): The name of the graph to search for\r\n\r\nReturns:\r\n    EdGraph: UEdGraph*             Pointer to the graph with the given name, null if not found",
+    "signature_error": "no signature found for builtin <built-in method find_graph of type object at 0x000002008FCB26C8>"
+  },
+  "compile_blueprint": {
+    "repr": "<built-in method compile_blueprint of type object at 0x000002008FCB26C8>",
+    "doc": "X.compile_blueprint(blueprint) -> None\r\nCompiles the given blueprint.\r\n\r\nArgs:\r\n    blueprint (Blueprint): Blueprint to compile",
+    "signature_error": "no signature found for builtin <built-in method compile_blueprint of type object at 0x000002008FCB26C8>"
+  }
+}

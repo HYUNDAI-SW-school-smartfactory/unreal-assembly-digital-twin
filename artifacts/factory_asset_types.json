@@ -1,0 +1,62 @@
+[
+  {
+    "path": "/Game/Meshes/Robot/SK_RoboArm04",
+    "exists": true,
+    "class": "/Script/Engine.SkeletalMesh",
+    "object_path": "/Game/Meshes/Robot/SK_RoboArm04.SK_RoboArm04"
+  },
+  {
+    "path": "/Game/Meshes/RobotLarge/SK_TruckWelding_Anim",
+    "exists": true,
+    "class": "/Script/Engine.AnimSequence",
+    "object_path": "/Game/Meshes/RobotLarge/SK_TruckWelding_Anim.SK_TruckWelding_Anim"
+  },
+  {
+    "path": "/Game/Blueprints/AGV/BP_AGV",
+    "exists": true,
+    "class": "/Script/Engine.Blueprint",
+    "object_path": "/Game/Blueprints/AGV/BP_AGV.BP_AGV"
+  },
+  {
+    "path": "/Game/Blueprints/AGV/BP_BatteryLift",
+    "exists": true,
+    "class": "/Script/Engine.Blueprint",
+    "object_path": "/Game/Blueprints/AGV/BP_BatteryLift.BP_BatteryLift"
+  },
+  {
+    "path": "/Game/Blueprints/BP_TireAssemblyCell",
+    "exists": true,
+    "class": "/Script/Engine.Blueprint",
+    "object_path": "/Game/Blueprints/BP_TireAssemblyCell.BP_TireAssemblyCell"
+  },
+  {
+    "path": "/Game/Blueprints/BP_TireAssemblyCell_L",
+    "exists": true,
+    "class": "/Script/Engine.Blueprint",
+    "object_path": "/Game/Blueprints/BP_TireAssemblyCell_L.BP_TireAssemblyCell_L"
+  },
+  {
+    "path": "/Game/Blueprints/BP_HangerVehicle",
+    "exists": true,
+    "class": "/Script/Engine.Blueprint",
+    "object_path": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle"
+  },
+  {
+    "path": "/Game/Blueprints/BP_Car",
+    "exists": true,
+    "class": "/Script/Engine.Blueprint",
+    "object_path": "/Game/Blueprints/BP_Car.BP_Car"
+  },
+  {
+    "path": "/Game/Genesis_Model_New/Blueprints/BP_Car",
+    "exists": true,
+    "class": "/Script/Engine.Blueprint",
+    "object_path": "/Game/Genesis_Model_New/Blueprints/BP_Car.BP_Car"
+  },
+  {
+    "path": "/Game/Genesis_Model_New/Blueprints/BP_LineVehicle",
+    "exists": true,
+    "class": "/Script/Engine.Blueprint",
+    "object_path": "/Game/Genesis_Model_New/Blueprints/BP_LineVehicle.BP_LineVehicle"
+  }
+]

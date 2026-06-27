@@ -1,0 +1,196 @@
+{
+  "map": "/Game/Maps/MainMaps",
+  "actor_count": 8,
+  "actors": [
+    {
+      "label": "DirectionalLight",
+      "name": "DirectionalLight_UAID_A85E45CFE40401D200_1470382761",
+      "class": "/Script/Engine.DirectionalLight",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        112.36067199707438,
+        -16.285558834636156,
+        43.73194417391006
+      ],
+      "tags": [],
+      "components": [
+        {
+          "name": "LightComponent0",
+          "class": "/Script/Engine.DirectionalLightComponent"
+        },
+        {
+          "name": "ArrowComponent0",
+          "class": "/Script/Engine.ArrowComponent"
+        },
+        {
+          "name": "BillboardComponent_0",
+          "class": "/Script/Engine.BillboardComponent"
+        }
+      ]
+    },
+    {
+      "label": "ExponentialHeightFog",
+      "name": "ExponentialHeightFog_UAID_A85E45CFE40401D200_1470382763",
+      "class": "/Script/Engine.ExponentialHeightFog",
+      "location": [
+        -5600.0,
+        -50.0,
+        -6850.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tags": [],
+      "components": [
+        {
+          "name": "Sprite",
+          "class": "/Script/Engine.BillboardComponent"
+        },
+        {
+          "name": "HeightFogComponent0",
+          "class": "/Script/Engine.ExponentialHeightFogComponent"
+        }
+      ]
+    },
+    {
+      "label": "Landscape",
+      "name": "Landscape_UAID_A85E45CFE404FBD100_1221515703",
+      "class": "/Script/Landscape.Landscape",
+      "location": [
+        -100800.0,
+        -100800.0,
+        100.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tags": [],
+      "components": [
+        {
+          "name": "RootComponent0",
+          "class": "/Script/Engine.SceneComponent"
+        }
+      ]
+    },
+    {
+      "label": "SkyAtmosphere",
+      "name": "SkyAtmosphere_UAID_A85E45CFE40401D200_1470382762",
+      "class": "/Script/Engine.SkyAtmosphere",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tags": [],
+      "components": [
+        {
+          "name": "Sprite",
+          "class": "/Script/Engine.BillboardComponent"
+        },
+        {
+          "name": "SkyAtmosphereComponent",
+          "class": "/Script/Engine.SkyAtmosphereComponent"
+        },
+        {
+          "name": "ArrowComponent",
+          "class": "/Script/Engine.ArrowComponent"
+        }
+      ]
+    },
+    {
+      "label": "SM_SkySphere",
+      "name": "StaticMeshActor_UAID_A4AE111137DC54FB00_1240666663",
+      "class": "/Script/Engine.StaticMeshActor",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tags": [],
+      "components": [
+        {
+          "name": "StaticMeshComponent0",
+          "class": "/Script/Engine.StaticMeshComponent"
+        }
+      ]
+    },
+    {
+      "label": "VolumetricCloud",
+      "name": "VolumetricCloud_UAID_A85E45CFE40401D200_1470381760",
+      "class": "/Script/Engine.VolumetricCloud",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tags": [],
+      "components": [
+        {
+          "name": "Sprite",
+          "class": "/Script/Engine.BillboardComponent"
+        },
+        {
+          "name": "VolumetricCloudComponent",
+          "class": "/Script/Engine.VolumetricCloudComponent"
+        }
+      ]
+    },
+    {
+      "label": "WorldDataLayers-1",
+      "name": "WorldDataLayers",
+      "class": "/Script/Engine.WorldDataLayers",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tags": [],
+      "components": []
+    },
+    {
+      "label": "WorldPartitionMiniMap",
+      "name": "WorldPartitionMiniMap_UAID_3497F631D5890DD300_1296925927",
+      "class": "/Script/Engine.WorldPartitionMiniMap",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tags": [],
+      "components": []
+    }
+  ]
+}

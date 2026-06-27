@@ -1,0 +1,124 @@
+{
+  "found": true,
+  "attempts": [
+    {
+      "api": "set_actor_transform",
+      "ok": false,
+      "state": {
+        "actor_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "actor_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "actor_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "actor_transform": "<Struct 'Transform' (0x000001769F9C0690) {rotation: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}, translation: {x: 0.000000, y: 0.000000, z: 0.000000}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>"
+      }
+    },
+    {
+      "api": "set_actor_location_and_rotation",
+      "ok": false,
+      "state": {
+        "actor_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "actor_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "actor_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "actor_transform": "<Struct 'Transform' (0x000001769F9C0690) {rotation: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}, translation: {x: 0.000000, y: 0.000000, z: 0.000000}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>"
+      }
+    },
+    {
+      "api": "root_component_world",
+      "error": "'NoneType' object has no attribute 'modify'",
+      "state": {
+        "actor_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "actor_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "actor_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "actor_transform": "<Struct 'Transform' (0x000001769F9C0690) {rotation: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}, translation: {x: 0.000000, y: 0.000000, z: 0.000000}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>"
+      }
+    }
+  ],
+  "target": {
+    "location": [
+      11860.0,
+      7220.0,
+      950.0
+    ],
+    "rotation": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      2.0,
+      2.0
+    ]
+  },
+  "before": {
+    "actor_location": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "actor_rotation": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "actor_scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "actor_transform": "<Struct 'Transform' (0x000001769F9C0690) {rotation: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}, translation: {x: 0.000000, y: 0.000000, z: 0.000000}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>"
+  },
+  "after": {
+    "actor_location": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "actor_rotation": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "actor_scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "actor_transform": "<Struct 'Transform' (0x000001769F9C0690) {rotation: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}, translation: {x: 0.000000, y: 0.000000, z: 0.000000}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>"
+  }
+}
