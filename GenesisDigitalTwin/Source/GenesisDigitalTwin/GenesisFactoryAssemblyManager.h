@@ -82,6 +82,9 @@ struct FGenesisCarVisualMapping
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Car Visuals")
 	TArray<FName> WheelComponentNames;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Car Visuals")
+	TArray<FName> RotatingWheelComponentNames;
 };
 
 USTRUCT(BlueprintType)
@@ -377,6 +380,8 @@ private:
 
 	UPROPERTY()
 	TObjectPtr<APaho_Manager_Sync> MqttManager = nullptr;
+
+	bool bFactoryEndingPlay = false;
 
 	TMap<TWeakObjectPtr<AActor>, FTransform> EquipmentInitialTransforms;
 

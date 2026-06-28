@@ -81,6 +81,18 @@ void AGenesisFactoryStatusBoard::BeginPlay()
 	UpdateScreen(TEXT("WAITING FOR FACTORY DATA"), FLinearColor(0.05f, 1.0f, 0.15f));
 }
 
+void AGenesisFactoryStatusBoard::EndPlay(const EEndPlayReason::Type EndPlayReason)
+{
+	StatusWidget = nullptr;
+	if (MonitorWidget)
+	{
+		MonitorWidget->SetVisibility(false, true);
+		MonitorWidget->SetHiddenInGame(true);
+		MonitorWidget->SetWidget(nullptr);
+	}
+	Super::EndPlay(EndPlayReason);
+}
+
 void AGenesisFactoryStatusBoard::SetStationStatus(
 	int32 LineId,
 	const FString& StationName,

@@ -96,6 +96,9 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Tire Assembly Cell|Flow")
 	bool bVehicleWaitingForTires = false;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Tire Assembly Cell|Flow", meta = (ClampMin = "0.0"))
+	float VehicleMountStartDelay = 1.0f;
+
 	UFUNCTION(BlueprintCallable, Category = "Tire Assembly Cell")
 	bool SpawnNextTire();
 
@@ -125,4 +128,6 @@ private:
 	AActor* GetActorProperty(AActor* Target, FName PropertyName) const;
 	void SetActorProperty(AActor* Target, FName PropertyName, AActor* Value) const;
 	void SetSceneComponentProperty(AActor* Target, FName PropertyName, USceneComponent* Value) const;
+
+	double VehicleMountRequestTime = -1.0;
 };

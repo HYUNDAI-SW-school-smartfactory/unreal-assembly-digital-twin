@@ -218,6 +218,11 @@ void APaho_Manager_Sync::MQTT_Sync_Destroy()
 		return;
 	}
 
+	MQTTClient_setCallbacks(this->Client, nullptr, nullptr, nullptr, nullptr);
+	Delegate_Message_Arrived.Clear();
+	Delegate_Message_Delivered.Clear();
+	Delegate_Connection_Lost.Clear();
+
 	if (MQTTClient_isConnected(this->Client))
 	{
 		if (this->Connection_Options.MQTTVersion == MQTTVERSION_5)

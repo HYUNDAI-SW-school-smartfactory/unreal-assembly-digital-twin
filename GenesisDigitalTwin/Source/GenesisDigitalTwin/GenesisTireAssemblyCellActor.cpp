@@ -156,6 +156,8 @@ void AGenesisTireAssemblyCellActor::StartPickAndPlace()
 void AGenesisTireAssemblyCellActor::StartVehicleTireMount()
 {
 	bVehicleWaitingForTires = true;
+	bHasStartedRobotToCar = false;
+	VehicleMountRequestTime = GetWorld() ? GetWorld()->GetTimeSeconds() : 0.0;
 }
 
 void AGenesisTireAssemblyCellActor::StartMountTire()
@@ -179,6 +181,7 @@ void AGenesisTireAssemblyCellActor::ResetCell()
 	bHasStartedRobotToTable = false;
 	bHasStartedRobotToCar = false;
 	bVehicleWaitingForTires = false;
+	VehicleMountRequestTime = -1.0;
 	TireRef = nullptr;
 
 	CallNoArgFunction(ConveyorRef, TEXT("ResetConveyor"));
@@ -300,10 +303,18 @@ void AGenesisTireAssemblyCellActor::TickRobotDispatch()
 
 	const int32 StoredCount = CallIntFunction(TireTableBufferRef, TEXT("GetStoredCount"), 0);
 	const bool bRobotToCarBusy = GetBoolProperty(RobotToCarRef, TEXT("IsBusy"), false);
-	if (bVehicleWaitingForTires && StoredCount >= BufferCountToStartMount && !bRobotToCarBusy)
+	const double CurrentTime = GetWorld() ? GetWorld()->GetTimeSeconds() : 0.0;
+	const bool bMountRequestDelayElapsed = VehicleMountRequestTime < 0.0 ||
+		(CurrentTime - VehicleMountRequestTime) >= VehicleMountStartDelay;
+	if (bVehicleWaitingForTires &&
+		!bHasStartedRobotToCar &&
+		bMountRequestDelayElapsed &&
+		StoredCount >= BufferCountToStartMount &&
+		!bRobotToCarBusy)
 	{
 		StartMountTire();
 		bVehicleWaitingForTires = false;
+		VehicleMountRequestTime = -1.0;
 	}
 }
 

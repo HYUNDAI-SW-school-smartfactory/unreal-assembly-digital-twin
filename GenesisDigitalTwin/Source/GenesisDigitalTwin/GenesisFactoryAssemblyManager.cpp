@@ -476,6 +476,7 @@ void AGenesisFactoryAssemblyManager::OnConstruction(const FTransform& Transform)
 void AGenesisFactoryAssemblyManager::BeginPlay()
 {
 	Super::BeginPlay();
+	bFactoryEndingPlay = false;
 	if (GEngine)
 	{
 		GEngine->bEnableOnScreenDebugMessages = false;
@@ -487,16 +488,34 @@ void AGenesisFactoryAssemblyManager::BeginPlay()
 
 void AGenesisFactoryAssemblyManager::EndPlay(const EEndPlayReason::Type EndPlayReason)
 {
+	bFactoryEndingPlay = true;
+	SetActorTickEnabled(false);
+
 	if (IsValid(MqttManager))
 	{
 		MqttManager->Delegate_Message_Arrived.RemoveDynamic(this, &AGenesisFactoryAssemblyManager::HandleMqttMessage);
+		FJsonObjectWrapper OutCode;
+		OutCode.JsonObject = MakeShared<FJsonObject>();
+		if (!SubscribeTopic.IsEmpty())
+		{
+			MqttManager->MQTT_Sync_Unsubscribe(OutCode, SubscribeTopic);
+		}
+		MqttManager->MQTT_Sync_Destroy();
 	}
+	MqttManager = nullptr;
+	RuntimeLines.Empty();
+	EquipmentInitialTransforms.Empty();
 	Super::EndPlay(EndPlayReason);
 }
 
 void AGenesisFactoryAssemblyManager::Tick(float DeltaSeconds)
 {
 	Super::Tick(DeltaSeconds);
+
+	if (bFactoryEndingPlay)
+	{
+		return;
+	}
 
 	for (int32 LineIndex = 0; LineIndex < RuntimeLines.Num(); ++LineIndex)
 	{
@@ -539,7 +558,11 @@ void AGenesisFactoryAssemblyManager::FillDefaults()
 	{
 		CarVisuals.LightComponentNames = {
 			TEXT("Body_2"),
-			TEXT("Body_8")
+			TEXT("Body_8"),
+			TEXT("Body_5"),
+			TEXT("Body_20"),
+			TEXT("Body_13"),
+			TEXT("Body_21")
 		};
 	}
 	if (CarVisuals.WheelComponentNames.Num() == 0)
@@ -565,6 +588,19 @@ void AGenesisFactoryAssemblyManager::FillDefaults()
 			TEXT("StaticMesh51"),
 			TEXT("Body_WheelPart_1_RF"),
 			TEXT("Body_WheelPart_2_RF")
+		};
+	}
+	if (CarVisuals.RotatingWheelComponentNames.Num() == 0)
+	{
+		CarVisuals.RotatingWheelComponentNames = {
+			TEXT("Wheel_RB"),
+			TEXT("Tire_RB"),
+			TEXT("Wheel_RF"),
+			TEXT("Tire_RF"),
+			TEXT("Wheel_LB"),
+			TEXT("Tire_LB"),
+			TEXT("Wheel_LF"),
+			TEXT("Tire_LF")
 		};
 	}
 
@@ -1436,7 +1472,7 @@ void AGenesisFactoryAssemblyManager::RotateMappedWheels(AActor* Car, float Delta
 	}
 
 	TInlineComponentArray<USceneComponent*> Components(Car);
-	for (const FName Name : CarVisuals.WheelComponentNames)
+	for (const FName Name : CarVisuals.RotatingWheelComponentNames)
 	{
 		if (Name.IsNone())
 		{
@@ -2162,6 +2198,11 @@ bool AGenesisFactoryAssemblyManager::TrySetWidgetComponentText(UWidgetComponent*
 
 void AGenesisFactoryAssemblyManager::UpdateBoards(int32 LineIndex)
 {
+	if (bFactoryEndingPlay || !RuntimeLines.IsValidIndex(LineIndex) || !Lines.IsValidIndex(LineIndex))
+	{
+		return;
+	}
+
 	FGenesisAssemblyLineRuntime& Runtime = RuntimeLines[LineIndex];
 	for (int32 StationIndex = 0; StationIndex < Runtime.StationBoards.Num(); ++StationIndex)
 	{
@@ -2432,7 +2473,7 @@ void AGenesisFactoryAssemblyManager::BindMqtt()
 
 void AGenesisFactoryAssemblyManager::HandleMqttConnected(bool bSuccess, FJsonObjectWrapper Result)
 {
-	if (!bSuccess || !IsValid(MqttManager))
+	if (bFactoryEndingPlay || !bSuccess || !IsValid(MqttManager))
 	{
 		return;
 	}
@@ -2443,6 +2484,11 @@ void AGenesisFactoryAssemblyManager::HandleMqttConnected(bool bSuccess, FJsonObj
 
 void AGenesisFactoryAssemblyManager::HandleMqttMessage(FJsonObjectWrapper Message)
 {
+	if (bFactoryEndingPlay || !IsValid(this))
+	{
+		return;
+	}
+
 	if (!Message.JsonObject.IsValid())
 	{
 		UE_LOG(LogTemp, Warning, TEXT("GenesisFactory: MQTT delegate received an invalid message wrapper."));
@@ -2470,6 +2516,11 @@ void AGenesisFactoryAssemblyManager::HandleMqttMessage(FJsonObjectWrapper Messag
 
 void AGenesisFactoryAssemblyManager::ApplyMqttPayloadJson(const FString& Payload)
 {
+	if (bFactoryEndingPlay)
+	{
+		return;
+	}
+
 	TSharedPtr<FJsonObject> Root;
 	const TSharedRef<TJsonReader<>> Reader = TJsonReaderFactory<>::Create(Payload);
 	if (FJsonSerializer::Deserialize(Reader, Root) && Root.IsValid())
@@ -2480,6 +2531,11 @@ void AGenesisFactoryAssemblyManager::ApplyMqttPayloadJson(const FString& Payload
 
 void AGenesisFactoryAssemblyManager::ApplyPayloadObject(const TSharedPtr<FJsonObject>& Root)
 {
+	if (bFactoryEndingPlay)
+	{
+		return;
+	}
+
 	if (!Root.IsValid())
 	{
 		return;

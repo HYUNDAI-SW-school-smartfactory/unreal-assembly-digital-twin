@@ -55,31 +55,41 @@ bool APaho_Manager_Sync::SetSSLParams(FString In_Protocol, FPahoSslOptions In_Op
 
 void APaho_Manager_Sync::MessageDelivered(void* CallbackContext, MQTTClient_deliveryToken In_DeliveryToken)
 {
-	AsyncTask(ENamedThreads::GameThread, [CallbackContext, In_DeliveryToken]()
-	{
-		APaho_Manager_Sync* Owner = Cast<APaho_Manager_Sync>((APaho_Manager_Sync*)CallbackContext);
-		
-		if (!Owner)
-		{
-			return;
-		}
-
-		Owner->Delegate_Message_Delivered.Broadcast(In_DeliveryToken);
-	});
+	// Delivery notifications are not used by the digital twin flow. Avoid
+	// broadcasting a non-thread-safe Blueprint delegate from Paho callback
+	// threads during PIE teardown/restart.
+	(void)CallbackContext;
+	(void)In_DeliveryToken;
 }
 
 int APaho_Manager_Sync::MessageArrived(void* CallbackContext, char* TopicName, int TopicLenght, MQTTClient_message* Message)
 {
-	auto StringConverter = [](const char* In_Chars) -> FString
+	auto NullTerminatedStringConverter = [](const char* In_Chars) -> FString
 		{
+			if (!In_Chars)
+			{
+				return FString();
+			}
 			auto Converter = StringCast<UTF8CHAR>(In_Chars);
 			FString RetVal;
 			RetVal.AppendChars(Converter.Get(), Converter.Length());
 			return RetVal;
 		};
 
-	const FString TopicNameStr = StringConverter(TopicName);
-	const FString PayloadStr = StringConverter((const char*)Message->payload);
+	auto PayloadStringConverter = [](const void* Payload, int PayloadLength) -> FString
+		{
+			if (!Payload || PayloadLength <= 0)
+			{
+				return FString();
+			}
+
+			const ANSICHAR* PayloadChars = static_cast<const ANSICHAR*>(Payload);
+			FUTF8ToTCHAR Converter(PayloadChars, PayloadLength);
+			return FString(Converter.Length(), Converter.Get());
+		};
+
+	const FString TopicNameStr = NullTerminatedStringConverter(TopicName);
+	const FString PayloadStr = Message ? PayloadStringConverter(Message->payload, Message->payloadlen) : FString();
 
 	FJsonObjectWrapper MessageJson;
 	const bool bIsJsonOk = MessageJson.JsonObjectFromString(PayloadStr);
@@ -101,16 +111,18 @@ int APaho_Manager_Sync::MessageArrived(void* CallbackContext, char* TopicName, i
 	MQTTClient_freeMessage(&Message);
 	MQTTClient_free(TopicName);
 
-	AsyncTask(ENamedThreads::GameThread, [CallbackContext, Arrived]()
+	APaho_Manager_Sync* OwnerPtr = static_cast<APaho_Manager_Sync*>(CallbackContext);
+	AsyncTask(ENamedThreads::GameThread, [OwnerPtr, Arrived]()
 	{
-		APaho_Manager_Sync* Owner = Cast<APaho_Manager_Sync>((APaho_Manager_Sync*)CallbackContext);
-
-		if (!Owner)
+		if (!IsValid(OwnerPtr) ||
+			OwnerPtr->HasAnyFlags(RF_BeginDestroyed | RF_FinishDestroyed) ||
+			OwnerPtr->GetWorld() == nullptr ||
+			OwnerPtr->GetWorld()->bIsTearingDown)
 		{
 			return;
 		}
 
-		Owner->Delegate_Message_Arrived.Broadcast(Arrived);
+		OwnerPtr->Delegate_Message_Arrived.Broadcast(Arrived);
 	});
 
 	return 1;
@@ -118,19 +130,11 @@ int APaho_Manager_Sync::MessageArrived(void* CallbackContext, char* TopicName, i
 
 void APaho_Manager_Sync::ConnectionLost(void* CallbackContext, char* Cause)
 {
-	const FString CauseStr = StringCast<UTF8CHAR>(Cause).Get();
-
-	AsyncTask(ENamedThreads::GameThread, [CallbackContext, CauseStr]()
-	{
-		APaho_Manager_Sync* Owner = Cast<APaho_Manager_Sync>((APaho_Manager_Sync*)CallbackContext);
-
-		if (!Owner)
-		{
-			return;
-		}
-
-		Owner->Delegate_Connection_Lost.Broadcast(CauseStr);
-	});
+	// Paho may call this while the PIE world or APaho_Manager_Sync UObject is
+	// being torn down. The project does not consume this notification, and
+	// broadcasting the Blueprint delegate here can race with EndPlay cleanup.
+	(void)CallbackContext;
+	(void)Cause;
 }
 
 #pragma endregion Callbacks
