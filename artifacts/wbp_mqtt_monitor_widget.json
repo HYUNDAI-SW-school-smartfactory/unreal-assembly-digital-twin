@@ -1,0 +1,8 @@
+{
+  "asset": "/Game/Widgets/WBP_MQTT_Monitor",
+  "generated_class": "/Game/Widgets/WBP_MQTT_Monitor.WBP_MQTT_Monitor_C",
+  "widgets": [],
+  "notes": [
+    "widget_tree failed: UserWidget: Failed to find property 'widget_tree' for attribute 'widget_tree' on 'WBP_MQTT_Monitor_C'"
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "loaded_desc_count": 3,
+  "found": {
+    "2_3": true,
+    "2_4": true,
+    "2_5": true
+  },
+  "before": {
+    "2_3_location": [
+      8680.0,
+      7220.0,
+      950.0
+    ],
+    "2_3_rotation": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "2_3_scale": [
+      1.0,
+      2.0,
+      2.0
+    ],
+    "2_4_location": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "2_4_rotation": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "2_4_scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "2_5_location": [
+      15040.0,
+      7220.0,
+      950.0
+    ],
+    "2_5_rotation": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "2_5_scale": [
+      1.0,
+      2.0,
+      2.0
+    ]
+  },
+  "after": {
+    "set_actor_location_return": false,
+    "set_actor_rotation_return": false,
+    "2_4_location": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "2_4_rotation": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "2_4_scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "2_4_components": [
+      {
+        "name": "Root",
+        "class": "/Script/Engine.SceneComponent",
+        "location_error": "'SceneComponent' object has no attribute 'get_relative_location'",
+        "scale_error": "'SceneComponent' object has no attribute 'get_relative_scale3d'"
+      },
+      {
+        "name": "BoardMesh",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "location_error": "'StaticMeshComponent' object has no attribute 'get_relative_location'",
+        "scale_error": "'StaticMeshComponent' object has no attribute 'get_relative_scale3d'"
+      },
+      {
+        "name": "MonitorWidget",
+        "class": "/Script/UMG.WidgetComponent",
+        "location_error": "'WidgetComponent' object has no attribute 'get_relative_location'",
+        "scale_error": "'WidgetComponent' object has no attribute 'get_relative_scale3d'"
+      }
+    ]
+  }
+}

@@ -1,0 +1,160 @@
+{
+  "loaded_desc_count": 6,
+  "found_before": {
+    "GenesisFactoryStatusBoard_2_3": true,
+    "GenesisFactoryStatusBoard_2_4": 4,
+    "GenesisFactoryStatusBoard_2_5": true
+  },
+  "target": {
+    "location": [
+      11860.0,
+      7220.0,
+      950.0
+    ],
+    "rotation": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      2.0,
+      2.0
+    ],
+    "class": "/Script/GenesisDigitalTwin.GenesisFactoryStatusBoard"
+  },
+  "old_2_4": [
+    {
+      "name": "GenesisFactoryStatusBoard_UAID_345A608353CE8CE802_1358886169",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "GenesisFactoryStatusBoard_UAID_345A608353CED9E802_1158488679",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "GenesisFactoryStatusBoard_UAID_345A608353CED9E802_1568265679",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "GenesisFactoryStatusBoard_UAID_345A608353CED9E802_1439289679",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    }
+  ],
+  "new_2_4_spawned_before_label": {
+    "name": "GenesisFactoryStatusBoard_UAID_345A608353CED9E802_1706203679",
+    "location": [
+      11860.0,
+      7220.0,
+      950.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  "new_2_4_after_label": {
+    "name": "GenesisFactoryStatusBoard_UAID_345A608353CED9E802_1706203679",
+    "label": "GenesisFactoryStatusBoard_2_4",
+    "location": [
+      11860.0,
+      7220.0,
+      950.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  "new_2_4_after_scale": {
+    "name": "GenesisFactoryStatusBoard_UAID_345A608353CED9E802_1706203679",
+    "label": "GenesisFactoryStatusBoard_2_4",
+    "location": [
+      11860.0,
+      7220.0,
+      950.0
+    ],
+    "scale": [
+      1.0,
+      2.0,
+      2.0
+    ]
+  },
+  "new_2_4": {
+    "name": "GenesisFactoryStatusBoard_UAID_345A608353CED9E802_1706203679",
+    "label": "GenesisFactoryStatusBoard_2_4",
+    "location": [
+      11860.0,
+      7220.0,
+      950.0
+    ],
+    "rotation": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      2.0,
+      2.0
+    ]
+  }
+}

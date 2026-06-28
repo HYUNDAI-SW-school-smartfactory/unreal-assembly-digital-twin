@@ -1,0 +1,38 @@
+{
+  "/Game/Blueprints/AGV/BP_AGV": {
+    "class": "/Game/Blueprints/AGV/BP_AGV.BP_AGV_C",
+    "cdo": {
+      "name": "Default__BP_AGV_C",
+      "class": "/Game/Blueprints/AGV/BP_AGV.BP_AGV_C",
+      "props": {}
+    },
+    "components": []
+  },
+  "/Game/Blueprints/AGV/BP_BatteryLift": {
+    "class": "/Game/Blueprints/AGV/BP_BatteryLift.BP_BatteryLift_C",
+    "cdo": {
+      "name": "Default__BP_BatteryLift_C",
+      "class": "/Game/Blueprints/AGV/BP_BatteryLift.BP_BatteryLift_C",
+      "props": {}
+    },
+    "components": []
+  },
+  "/Game/Blueprints/BP_TireAssemblyCell": {
+    "class": "/Game/Blueprints/BP_TireAssemblyCell.BP_TireAssemblyCell_C",
+    "cdo": {
+      "name": "Default__BP_TireAssemblyCell_C",
+      "class": "/Game/Blueprints/BP_TireAssemblyCell.BP_TireAssemblyCell_C",
+      "props": {}
+    },
+    "components": []
+  },
+  "/Game/Blueprints/BP_TireAssemblyCell_L": {
+    "class": "/Game/Blueprints/BP_TireAssemblyCell_L.BP_TireAssemblyCell_L_C",
+    "cdo": {
+      "name": "Default__BP_TireAssemblyCell_L_C",
+      "class": "/Game/Blueprints/BP_TireAssemblyCell_L.BP_TireAssemblyCell_L_C",
+      "props": {}
+    },
+    "components": []
+  }
+}

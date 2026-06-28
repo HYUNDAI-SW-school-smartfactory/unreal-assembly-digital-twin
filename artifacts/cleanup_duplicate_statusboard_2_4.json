@@ -1,0 +1,47 @@
+{
+  "before_count": 5,
+  "records": [
+    {
+      "label": "GenesisFactoryStatusBoard_2_4",
+      "name": "GenesisFactoryStatusBoard_UAID_345A608353CE8CE802_1358886169",
+      "actor_package": "/Game/__ExternalActors__/Maps/MainMaps/1/2F/4NX56YALYAVKOKGDY8UD3W",
+      "bounds": "<Struct 'Box' (0x00000295692F96D8) {min: {x: -51.225000, y: -107.636856, z: -254.483956}, max: {x: 11872.611732, y: 7420.000000, z: 950.000000}, is_valid: True}>",
+      "keep": false
+    },
+    {
+      "label": "GenesisFactoryStatusBoard_2_4",
+      "name": "GenesisFactoryStatusBoard_UAID_345A608353CED9E802_1158488679",
+      "actor_package": "/Game/__ExternalActors__/Maps/MainMaps/4/CZ/91980IYS3T9KT8DBOZXSLA",
+      "bounds": "<Struct 'Box' (0x00000295692F8C58) {min: {x: -65.678558, y: -107.636860, z: -254.483956}, max: {x: 12.611732, y: 107.636860, z: 0.000000}, is_valid: True}>",
+      "keep": false
+    },
+    {
+      "label": "GenesisFactoryStatusBoard_2_4",
+      "name": "GenesisFactoryStatusBoard_UAID_345A608353CED9E802_1568265679",
+      "actor_package": "/Game/__ExternalActors__/Maps/MainMaps/5/GZ/MNRPZP1ZKYOUVFXK12MKE2",
+      "bounds": "<Struct 'Box' (0x00000295692F7E58) {min: {x: -65.678558, y: -107.636860, z: -254.483956}, max: {x: 12.611732, y: 107.636860, z: 0.000000}, is_valid: True}>",
+      "keep": false
+    },
+    {
+      "label": "GenesisFactoryStatusBoard_2_4",
+      "name": "GenesisFactoryStatusBoard_UAID_345A608353CED9E802_1706203679",
+      "actor_package": "/Game/__ExternalActors__/Maps/MainMaps/8/IZ/89BN0CKNRB6MW5EHL1ES2M",
+      "bounds": "<Struct 'Box' (0x00000295692F8E18) {min: {x: 11794.321442, y: 7004.726287, z: 441.032088}, max: {x: 11872.611732, y: 7435.273713, z: 950.000000}, is_valid: True}>",
+      "keep": true
+    },
+    {
+      "label": "GenesisFactoryStatusBoard_2_4",
+      "name": "GenesisFactoryStatusBoard_UAID_345A608353CED9E802_1439289679",
+      "actor_package": "/Game/__ExternalActors__/Maps/MainMaps/B/PA/3VXG0ZZXV4R26FK5DHZ37K",
+      "bounds": "<Struct 'Box' (0x00000295692F25F8) {min: {x: -65.678558, y: -107.636860, z: -254.483956}, max: {x: 12.611732, y: 107.636860, z: 0.000000}, is_valid: True}>",
+      "keep": false
+    }
+  ],
+  "deleted": [],
+  "failed": [
+    "/Game/__ExternalActors__/Maps/MainMaps/1/2F/4NX56YALYAVKOKGDY8UD3W",
+    "/Game/__ExternalActors__/Maps/MainMaps/4/CZ/91980IYS3T9KT8DBOZXSLA",
+    "/Game/__ExternalActors__/Maps/MainMaps/5/GZ/MNRPZP1ZKYOUVFXK12MKE2",
+    "/Game/__ExternalActors__/Maps/MainMaps/B/PA/3VXG0ZZXV4R26FK5DHZ37K"
+  ]
+}

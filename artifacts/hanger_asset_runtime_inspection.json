@@ -1,0 +1,6744 @@
+{
+  "line": {
+    "asset": "/Game/Blueprints/BP_HangerMovingAlongSpline",
+    "class": "/Game/Blueprints/BP_HangerMovingAlongSpline.BP_HangerMovingAlongSpline_C",
+    "components": [],
+    "subobjects": [
+      {
+        "display_name": "BP_HangerMovingAlongSpline",
+        "variable_name": "None",
+        "object": "/Game/Blueprints/BP_HangerMovingAlongSpline.Default__BP_HangerMovingAlongSpline_C",
+        "class": "/Game/Blueprints/BP_HangerMovingAlongSpline.BP_HangerMovingAlongSpline_C"
+      },
+      {
+        "display_name": "DefaultSceneRoot_GEN_VARIABLE",
+        "variable_name": "DefaultSceneRoot",
+        "object": "/Game/Blueprints/BP_HangerMovingAlongSpline.BP_HangerMovingAlongSpline_C:DefaultSceneRoot_GEN_VARIABLE",
+        "class": "/Script/Engine.SceneComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "display_name": "Spline_GEN_VARIABLE",
+        "variable_name": "Spline",
+        "object": "/Game/Blueprints/BP_HangerMovingAlongSpline.BP_HangerMovingAlongSpline_C:Spline_GEN_VARIABLE",
+        "class": "/Script/Engine.SplineComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "spline_length": 100.0,
+        "spline_points": [
+          {
+            "index": 0,
+            "location": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "index": 1,
+            "location": [
+              100.0,
+              0.0,
+              0.0
+            ]
+          }
+        ]
+      },
+      {
+        "display_name": "Spline_GEN_VARIABLE",
+        "variable_name": "Spline",
+        "object": "/Game/Blueprints/BP_HangerMovingAlongSpline.BP_HangerMovingAlongSpline_C:Spline_GEN_VARIABLE",
+        "class": "/Script/Engine.SplineComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "spline_length": 100.0,
+        "spline_points": [
+          {
+            "index": 0,
+            "location": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "index": 1,
+            "location": [
+              100.0,
+              0.0,
+              0.0
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "hanger": {
+    "asset": "/Game/Blueprints/BP_HangerVehicle",
+    "class": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C",
+    "components": [],
+    "subobjects": [
+      {
+        "display_name": "BP_HangerVehicle",
+        "variable_name": "None",
+        "object": "/Game/Blueprints/BP_HangerVehicle.Default__BP_HangerVehicle_C",
+        "class": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C"
+      },
+      {
+        "display_name": "G70_modified_fbx_MAZ_MX5_RADBUL_CALIPER_LR_LADX002_GEN_VARIABLE",
+        "variable_name": "G70_modified_fbx_MAZ_MX5_RADBUL_CALIPER_LR_LADX002",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:G70_modified_fbx_MAZ_MX5_RADBUL_CALIPER_LR_LADX002_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_MAZ_MX5_RADBUL_CALIPER_LR_LADX002.G70_modified_fbx_MAZ_MX5_RADBUL_CALIPER_LR_LADX002"
+      },
+      {
+        "display_name": "G70_modified_fbx_MAZ_MX5_RADBUL_CALIPER_LR_LADX002_GEN_VARIABLE",
+        "variable_name": "G70_modified_fbx_MAZ_MX5_RADBUL_CALIPER_LR_LADX002",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:G70_modified_fbx_MAZ_MX5_RADBUL_CALIPER_LR_LADX002_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_MAZ_MX5_RADBUL_CALIPER_LR_LADX002.G70_modified_fbx_MAZ_MX5_RADBUL_CALIPER_LR_LADX002"
+      },
+      {
+        "display_name": "G70_modified_fbx_MAZ_MX5_RADBUL_CALIPER_LF_LADX001_GEN_VARIABLE",
+        "variable_name": "G70_modified_fbx_MAZ_MX5_RADBUL_CALIPER_LF_LADX001",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:G70_modified_fbx_MAZ_MX5_RADBUL_CALIPER_LF_LADX001_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_MAZ_MX5_RADBUL_CALIPER_LF_LADX001.G70_modified_fbx_MAZ_MX5_RADBUL_CALIPER_LF_LADX001"
+      },
+      {
+        "display_name": "G70_modified_fbx_MAZ_MX5_RADBUL_CALIPER_LF_LADX001_GEN_VARIABLE",
+        "variable_name": "G70_modified_fbx_MAZ_MX5_RADBUL_CALIPER_LF_LADX001",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:G70_modified_fbx_MAZ_MX5_RADBUL_CALIPER_LF_LADX001_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_MAZ_MX5_RADBUL_CALIPER_LF_LADX001.G70_modified_fbx_MAZ_MX5_RADBUL_CALIPER_LF_LADX001"
+      },
+      {
+        "display_name": "G70_modified_fbx_interior_GEN_VARIABLE",
+        "variable_name": "G70_modified_fbx_interior",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:G70_modified_fbx_interior_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_interior.G70_modified_fbx_interior"
+      },
+      {
+        "display_name": "G70_modified_fbx_interior_GEN_VARIABLE",
+        "variable_name": "G70_modified_fbx_interior",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:G70_modified_fbx_interior_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_interior.G70_modified_fbx_interior"
+      },
+      {
+        "display_name": "G70_modified_fbx_glush_GEN_VARIABLE",
+        "variable_name": "G70_modified_fbx_glush",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:G70_modified_fbx_glush_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_glush.G70_modified_fbx_glush"
+      },
+      {
+        "display_name": "G70_modified_fbx_GAUGE_IQ3_DIGITS_GEN_VARIABLE",
+        "variable_name": "G70_modified_fbx_GAUGE_IQ3_DIGITS",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:G70_modified_fbx_GAUGE_IQ3_DIGITS_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_GAUGE_IQ3_DIGITS.G70_modified_fbx_GAUGE_IQ3_DIGITS"
+      },
+      {
+        "display_name": "G70_modified_fbx_glush_GEN_VARIABLE",
+        "variable_name": "G70_modified_fbx_glush",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:G70_modified_fbx_glush_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_glush.G70_modified_fbx_glush"
+      },
+      {
+        "display_name": "G70_modified_fbx_GAUGE_IQ3_DIGITS_GEN_VARIABLE",
+        "variable_name": "G70_modified_fbx_GAUGE_IQ3_DIGITS",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:G70_modified_fbx_GAUGE_IQ3_DIGITS_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_GAUGE_IQ3_DIGITS.G70_modified_fbx_GAUGE_IQ3_DIGITS"
+      },
+      {
+        "display_name": "G70_modified_fbx_GAUGE_IQ3_BODY_002_GEN_VARIABLE",
+        "variable_name": "G70_modified_fbx_GAUGE_IQ3_BODY_002",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:G70_modified_fbx_GAUGE_IQ3_BODY_002_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_GAUGE_IQ3_BODY_002.G70_modified_fbx_GAUGE_IQ3_BODY_002"
+      },
+      {
+        "display_name": "G70_modified_fbx_GAUGE_IQ3_BODY_002_GEN_VARIABLE",
+        "variable_name": "G70_modified_fbx_GAUGE_IQ3_BODY_002",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:G70_modified_fbx_GAUGE_IQ3_BODY_002_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_GAUGE_IQ3_BODY_002.G70_modified_fbx_GAUGE_IQ3_BODY_002"
+      },
+      {
+        "display_name": "G70_modified_fbx_GAUGE_IQ3_BACKSCREEN_GEN_VARIABLE",
+        "variable_name": "G70_modified_fbx_GAUGE_IQ3_BACKSCREEN",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:G70_modified_fbx_GAUGE_IQ3_BACKSCREEN_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_GAUGE_IQ3_BACKSCREEN.G70_modified_fbx_GAUGE_IQ3_BACKSCREEN"
+      },
+      {
+        "display_name": "G70_modified_fbx_GAUGE_IQ3_BACKSCREEN_GEN_VARIABLE",
+        "variable_name": "G70_modified_fbx_GAUGE_IQ3_BACKSCREEN",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:G70_modified_fbx_GAUGE_IQ3_BACKSCREEN_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_GAUGE_IQ3_BACKSCREEN.G70_modified_fbx_GAUGE_IQ3_BACKSCREEN"
+      },
+      {
+        "display_name": "G70_modified_fbx_frames_02_GEN_VARIABLE",
+        "variable_name": "G70_modified_fbx_frames_02",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:G70_modified_fbx_frames_02_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_frames_02.G70_modified_fbx_frames_02"
+      },
+      {
+        "display_name": "G70_modified_fbx_frames_02_GEN_VARIABLE",
+        "variable_name": "G70_modified_fbx_frames_02",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:G70_modified_fbx_frames_02_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_frames_02.G70_modified_fbx_frames_02"
+      },
+      {
+        "display_name": "G70_modified_fbx_MAZ_MX5_RADBUL_CALIPER_RF_LADX001_GEN_VARIABLE",
+        "variable_name": "G70_modified_fbx_MAZ_MX5_RADBUL_CALIPER_RF_LADX001",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:G70_modified_fbx_MAZ_MX5_RADBUL_CALIPER_RF_LADX001_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_MAZ_MX5_RADBUL_CALIPER_RF_LADX001.G70_modified_fbx_MAZ_MX5_RADBUL_CALIPER_RF_LADX001"
+      },
+      {
+        "display_name": "G70_modified_fbx_Object004_GEN_VARIABLE",
+        "variable_name": "G70_modified_fbx_Object004",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:G70_modified_fbx_Object004_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_Object004.G70_modified_fbx_Object004"
+      },
+      {
+        "display_name": "G70_modified_fbx_pered_GEN_VARIABLE",
+        "variable_name": "G70_modified_fbx_pered",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:G70_modified_fbx_pered_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_pered.G70_modified_fbx_pered"
+      },
+      {
+        "display_name": "G70_modified_fbx_Object006_GEN_VARIABLE",
+        "variable_name": "G70_modified_fbx_Object006",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:G70_modified_fbx_Object006_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_Object006.G70_modified_fbx_Object006"
+      },
+      {
+        "display_name": "G70_modified_fbx_Object006_GEN_VARIABLE",
+        "variable_name": "G70_modified_fbx_Object006",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:G70_modified_fbx_Object006_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_Object006.G70_modified_fbx_Object006"
+      },
+      {
+        "display_name": "G70_modified_fbx_Object005_GEN_VARIABLE",
+        "variable_name": "G70_modified_fbx_Object005",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:G70_modified_fbx_Object005_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_Object005.G70_modified_fbx_Object005"
+      },
+      {
+        "display_name": "G70_modified_fbx_Object005_GEN_VARIABLE",
+        "variable_name": "G70_modified_fbx_Object005",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:G70_modified_fbx_Object005_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_Object005.G70_modified_fbx_Object005"
+      },
+      {
+        "display_name": "G70_modified_fbx_Object004_GEN_VARIABLE",
+        "variable_name": "G70_modified_fbx_Object004",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:G70_modified_fbx_Object004_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_Object004.G70_modified_fbx_Object004"
+      },
+      {
+        "display_name": "G70_modified_fbx_Object003_GEN_VARIABLE",
+        "variable_name": "G70_modified_fbx_Object003",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:G70_modified_fbx_Object003_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_Object003.G70_modified_fbx_Object003"
+      },
+      {
+        "display_name": "G70_modified_fbx_MAZ_MX5_RADBUL_CALIPER_RF_LADX001_GEN_VARIABLE",
+        "variable_name": "G70_modified_fbx_MAZ_MX5_RADBUL_CALIPER_RF_LADX001",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:G70_modified_fbx_MAZ_MX5_RADBUL_CALIPER_RF_LADX001_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_MAZ_MX5_RADBUL_CALIPER_RF_LADX001.G70_modified_fbx_MAZ_MX5_RADBUL_CALIPER_RF_LADX001"
+      },
+      {
+        "display_name": "G70_modified_fbx_Object003_GEN_VARIABLE",
+        "variable_name": "G70_modified_fbx_Object003",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:G70_modified_fbx_Object003_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_Object003.G70_modified_fbx_Object003"
+      },
+      {
+        "display_name": "G70_modified_fbx_Object002_GEN_VARIABLE",
+        "variable_name": "G70_modified_fbx_Object002",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:G70_modified_fbx_Object002_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_Object002.G70_modified_fbx_Object002"
+      },
+      {
+        "display_name": "G70_modified_fbx_Object002_GEN_VARIABLE",
+        "variable_name": "G70_modified_fbx_Object002",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:G70_modified_fbx_Object002_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_Object002.G70_modified_fbx_Object002"
+      },
+      {
+        "display_name": "G70_modified_fbx_Object001_GEN_VARIABLE",
+        "variable_name": "G70_modified_fbx_Object001",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:G70_modified_fbx_Object001_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_Object001.G70_modified_fbx_Object001"
+      },
+      {
+        "display_name": "G70_modified_fbx_Object001_GEN_VARIABLE",
+        "variable_name": "G70_modified_fbx_Object001",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:G70_modified_fbx_Object001_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_Object001.G70_modified_fbx_Object001"
+      },
+      {
+        "display_name": "G70_modified_fbx_MAZ_MX5_RADBUL_CALIPER_RR_LADX002_GEN_VARIABLE",
+        "variable_name": "G70_modified_fbx_MAZ_MX5_RADBUL_CALIPER_RR_LADX002",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:G70_modified_fbx_MAZ_MX5_RADBUL_CALIPER_RR_LADX002_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_MAZ_MX5_RADBUL_CALIPER_RR_LADX002.G70_modified_fbx_MAZ_MX5_RADBUL_CALIPER_RR_LADX002"
+      },
+      {
+        "display_name": "G70_modified_fbx_MAZ_MX5_RADBUL_CALIPER_RR_LADX002_GEN_VARIABLE",
+        "variable_name": "G70_modified_fbx_MAZ_MX5_RADBUL_CALIPER_RR_LADX002",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:G70_modified_fbx_MAZ_MX5_RADBUL_CALIPER_RR_LADX002_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_MAZ_MX5_RADBUL_CALIPER_RR_LADX002.G70_modified_fbx_MAZ_MX5_RADBUL_CALIPER_RR_LADX002"
+      },
+      {
+        "display_name": "G70_modified_fbx_door_rr_ok_GEN_VARIABLE",
+        "variable_name": "G70_modified_fbx_door_rr_ok",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:G70_modified_fbx_door_rr_ok_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_door_rr_ok.G70_modified_fbx_door_rr_ok"
+      },
+      {
+        "display_name": "G70_modified_fbx_bump_front_ok_GEN_VARIABLE",
+        "variable_name": "G70_modified_fbx_bump_front_ok",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:G70_modified_fbx_bump_front_ok_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_bump_front_ok.G70_modified_fbx_bump_front_ok"
+      },
+      {
+        "display_name": "G70_modified_fbx_dah4_GEN_VARIABLE",
+        "variable_name": "G70_modified_fbx_dah4",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:G70_modified_fbx_dah4_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_dah4.G70_modified_fbx_dah4"
+      },
+      {
+        "display_name": "G70_modified_fbx_chassis_GEN_VARIABLE",
+        "variable_name": "G70_modified_fbx_chassis",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:G70_modified_fbx_chassis_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_chassis.G70_modified_fbx_chassis"
+      },
+      {
+        "display_name": "G70_modified_fbx_chassis_GEN_VARIABLE",
+        "variable_name": "G70_modified_fbx_chassis",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:G70_modified_fbx_chassis_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_chassis.G70_modified_fbx_chassis"
+      },
+      {
+        "display_name": "G70_modified_fbx_bump_rear_ok_GEN_VARIABLE",
+        "variable_name": "G70_modified_fbx_bump_rear_ok",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:G70_modified_fbx_bump_rear_ok_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_bump_rear_ok.G70_modified_fbx_bump_rear_ok"
+      },
+      {
+        "display_name": "G70_modified_fbx_bump_rear_ok_GEN_VARIABLE",
+        "variable_name": "G70_modified_fbx_bump_rear_ok",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:G70_modified_fbx_bump_rear_ok_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_bump_rear_ok.G70_modified_fbx_bump_rear_ok"
+      },
+      {
+        "display_name": "G70_modified_fbx_bump_front_ok_GEN_VARIABLE",
+        "variable_name": "G70_modified_fbx_bump_front_ok",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:G70_modified_fbx_bump_front_ok_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_bump_front_ok.G70_modified_fbx_bump_front_ok"
+      },
+      {
+        "display_name": "G70_modified_fbx_boot_ok_GEN_VARIABLE",
+        "variable_name": "G70_modified_fbx_boot_ok",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:G70_modified_fbx_boot_ok_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_boot_ok.G70_modified_fbx_boot_ok"
+      },
+      {
+        "display_name": "G70_modified_fbx_dah4_GEN_VARIABLE",
+        "variable_name": "G70_modified_fbx_dah4",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:G70_modified_fbx_dah4_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_dah4.G70_modified_fbx_dah4"
+      },
+      {
+        "display_name": "G70_modified_fbx_boot_ok_GEN_VARIABLE",
+        "variable_name": "G70_modified_fbx_boot_ok",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:G70_modified_fbx_boot_ok_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_boot_ok.G70_modified_fbx_boot_ok"
+      },
+      {
+        "display_name": "G70_modified_fbx_bonnet_ok_GEN_VARIABLE",
+        "variable_name": "G70_modified_fbx_bonnet_ok",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:G70_modified_fbx_bonnet_ok_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_bonnet_ok.G70_modified_fbx_bonnet_ok"
+      },
+      {
+        "display_name": "G70_modified_fbx_bonnet_ok_GEN_VARIABLE",
+        "variable_name": "G70_modified_fbx_bonnet_ok",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:G70_modified_fbx_bonnet_ok_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_bonnet_ok.G70_modified_fbx_bonnet_ok"
+      },
+      {
+        "display_name": "Car_GEN_VARIABLE",
+        "variable_name": "Car",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:Car_GEN_VARIABLE",
+        "class": "/Script/Engine.SceneComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          -710.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "display_name": "All_GEN_VARIABLE",
+        "variable_name": "All",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:All_GEN_VARIABLE",
+        "class": "/Script/Engine.SceneComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          -713.849165
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "display_name": "SplineFollower_GEN_VARIABLE",
+        "variable_name": "SplineFollower",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:SplineFollower_GEN_VARIABLE",
+        "class": "/Script/Engine.SceneComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "display_name": "SplineFollower_GEN_VARIABLE",
+        "variable_name": "SplineFollower",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:SplineFollower_GEN_VARIABLE",
+        "class": "/Script/Engine.SceneComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "display_name": "G70_modified_fbx_dash2_GEN_VARIABLE",
+        "variable_name": "G70_modified_fbx_dash2",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:G70_modified_fbx_dash2_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_dash2.G70_modified_fbx_dash2"
+      },
+      {
+        "display_name": "G70_modified_fbx_dno_GEN_VARIABLE",
+        "variable_name": "G70_modified_fbx_dno",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:G70_modified_fbx_dno_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_dno.G70_modified_fbx_dno"
+      },
+      {
+        "display_name": "G70_modified_fbx_door_rf_ok_GEN_VARIABLE",
+        "variable_name": "G70_modified_fbx_door_rf_ok",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:G70_modified_fbx_door_rf_ok_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_door_rf_ok.G70_modified_fbx_door_rf_ok"
+      },
+      {
+        "display_name": "G70_modified_fbx_door_rf_ok_GEN_VARIABLE",
+        "variable_name": "G70_modified_fbx_door_rf_ok",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:G70_modified_fbx_door_rf_ok_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_door_rf_ok.G70_modified_fbx_door_rf_ok"
+      },
+      {
+        "display_name": "G70_modified_fbx_door_lr_ok_GEN_VARIABLE",
+        "variable_name": "G70_modified_fbx_door_lr_ok",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:G70_modified_fbx_door_lr_ok_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_door_lr_ok.G70_modified_fbx_door_lr_ok"
+      },
+      {
+        "display_name": "G70_modified_fbx_door_lr_ok_GEN_VARIABLE",
+        "variable_name": "G70_modified_fbx_door_lr_ok",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:G70_modified_fbx_door_lr_ok_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_door_lr_ok.G70_modified_fbx_door_lr_ok"
+      },
+      {
+        "display_name": "G70_modified_fbx_door_lf_ok_GEN_VARIABLE",
+        "variable_name": "G70_modified_fbx_door_lf_ok",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:G70_modified_fbx_door_lf_ok_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_door_lf_ok.G70_modified_fbx_door_lf_ok"
+      },
+      {
+        "display_name": "G70_modified_fbx_door_lf_ok_GEN_VARIABLE",
+        "variable_name": "G70_modified_fbx_door_lf_ok",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:G70_modified_fbx_door_lf_ok_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_door_lf_ok.G70_modified_fbx_door_lf_ok"
+      },
+      {
+        "display_name": "G70_modified_fbx_dno_GEN_VARIABLE",
+        "variable_name": "G70_modified_fbx_dno",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:G70_modified_fbx_dno_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_dno.G70_modified_fbx_dno"
+      },
+      {
+        "display_name": "G70_modified_fbx_door_rr_ok_GEN_VARIABLE",
+        "variable_name": "G70_modified_fbx_door_rr_ok",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:G70_modified_fbx_door_rr_ok_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_door_rr_ok.G70_modified_fbx_door_rr_ok"
+      },
+      {
+        "display_name": "G70_modified_fbx_dashventinner_GEN_VARIABLE",
+        "variable_name": "G70_modified_fbx_dashventinner",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:G70_modified_fbx_dashventinner_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_dashventinner.G70_modified_fbx_dashventinner"
+      },
+      {
+        "display_name": "G70_modified_fbx_dashventinner_GEN_VARIABLE",
+        "variable_name": "G70_modified_fbx_dashventinner",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:G70_modified_fbx_dashventinner_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_dashventinner.G70_modified_fbx_dashventinner"
+      },
+      {
+        "display_name": "G70_modified_fbx_dashinner_GEN_VARIABLE",
+        "variable_name": "G70_modified_fbx_dashinner",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:G70_modified_fbx_dashinner_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_dashinner.G70_modified_fbx_dashinner"
+      },
+      {
+        "display_name": "G70_modified_fbx_dashinner_GEN_VARIABLE",
+        "variable_name": "G70_modified_fbx_dashinner",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:G70_modified_fbx_dashinner_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_dashinner.G70_modified_fbx_dashinner"
+      },
+      {
+        "display_name": "G70_modified_fbx_dashboard_GEN_VARIABLE",
+        "variable_name": "G70_modified_fbx_dashboard",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:G70_modified_fbx_dashboard_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_dashboard.G70_modified_fbx_dashboard"
+      },
+      {
+        "display_name": "G70_modified_fbx_dashboard_GEN_VARIABLE",
+        "variable_name": "G70_modified_fbx_dashboard",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:G70_modified_fbx_dashboard_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_dashboard.G70_modified_fbx_dashboard"
+      },
+      {
+        "display_name": "G70_modified_fbx_dash2_GEN_VARIABLE",
+        "variable_name": "G70_modified_fbx_dash2",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:G70_modified_fbx_dash2_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_dash2.G70_modified_fbx_dash2"
+      },
+      {
+        "display_name": "G70_modified_fbx_pered_GEN_VARIABLE",
+        "variable_name": "G70_modified_fbx_pered",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:G70_modified_fbx_pered_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_pered.G70_modified_fbx_pered"
+      },
+      {
+        "display_name": "G70_modified_fbx_SETS_R_SUB5_GEN_VARIABLE",
+        "variable_name": "G70_modified_fbx_SETS_R_SUB5",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:G70_modified_fbx_SETS_R_SUB5_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_SETS_R_SUB5.G70_modified_fbx_SETS_R_SUB5"
+      },
+      {
+        "display_name": "G70_modified_fbx_SETS_R_SUB008_GEN_VARIABLE",
+        "variable_name": "G70_modified_fbx_SETS_R_SUB008",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:G70_modified_fbx_SETS_R_SUB008_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_SETS_R_SUB008.G70_modified_fbx_SETS_R_SUB008"
+      },
+      {
+        "display_name": "G70_modified_fbx_SETS_R_SUB008_GEN_VARIABLE",
+        "variable_name": "G70_modified_fbx_SETS_R_SUB008",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:G70_modified_fbx_SETS_R_SUB008_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_SETS_R_SUB008.G70_modified_fbx_SETS_R_SUB008"
+      },
+      {
+        "display_name": "G70_modified_fbx_SETS_R_SUB007_GEN_VARIABLE",
+        "variable_name": "G70_modified_fbx_SETS_R_SUB007",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:G70_modified_fbx_SETS_R_SUB007_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_SETS_R_SUB007.G70_modified_fbx_SETS_R_SUB007"
+      },
+      {
+        "display_name": "G70_modified_fbx_SETS_R_SUB007_GEN_VARIABLE",
+        "variable_name": "G70_modified_fbx_SETS_R_SUB007",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:G70_modified_fbx_SETS_R_SUB007_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_SETS_R_SUB007.G70_modified_fbx_SETS_R_SUB007"
+      },
+      {
+        "display_name": "G70_modified_fbx_SETS_R_SUB006_GEN_VARIABLE",
+        "variable_name": "G70_modified_fbx_SETS_R_SUB006",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:G70_modified_fbx_SETS_R_SUB006_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_SETS_R_SUB006.G70_modified_fbx_SETS_R_SUB006"
+      },
+      {
+        "display_name": "G70_modified_fbx_SETS_R_SUB006_GEN_VARIABLE",
+        "variable_name": "G70_modified_fbx_SETS_R_SUB006",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:G70_modified_fbx_SETS_R_SUB006_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_SETS_R_SUB006.G70_modified_fbx_SETS_R_SUB006"
+      },
+      {
+        "display_name": "G70_modified_fbx_SETS_R_SUB5_GEN_VARIABLE",
+        "variable_name": "G70_modified_fbx_SETS_R_SUB5",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:G70_modified_fbx_SETS_R_SUB5_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_SETS_R_SUB5.G70_modified_fbx_SETS_R_SUB5"
+      },
+      {
+        "display_name": "G70_modified_fbx_SETS_R_SUB009_GEN_VARIABLE",
+        "variable_name": "G70_modified_fbx_SETS_R_SUB009",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:G70_modified_fbx_SETS_R_SUB009_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_SETS_R_SUB009.G70_modified_fbx_SETS_R_SUB009"
+      },
+      {
+        "display_name": "G70_modified_fbx_SETS_R_SUB4_GEN_VARIABLE",
+        "variable_name": "G70_modified_fbx_SETS_R_SUB4",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:G70_modified_fbx_SETS_R_SUB4_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_SETS_R_SUB4.G70_modified_fbx_SETS_R_SUB4"
+      },
+      {
+        "display_name": "G70_modified_fbx_SETS_R_SUB4_GEN_VARIABLE",
+        "variable_name": "G70_modified_fbx_SETS_R_SUB4",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:G70_modified_fbx_SETS_R_SUB4_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_SETS_R_SUB4.G70_modified_fbx_SETS_R_SUB4"
+      },
+      {
+        "display_name": "G70_modified_fbx_SETS_R_SUB1_GEN_VARIABLE",
+        "variable_name": "G70_modified_fbx_SETS_R_SUB1",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:G70_modified_fbx_SETS_R_SUB1_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_SETS_R_SUB1.G70_modified_fbx_SETS_R_SUB1"
+      },
+      {
+        "display_name": "G70_modified_fbx_SETS_R_SUB1_GEN_VARIABLE",
+        "variable_name": "G70_modified_fbx_SETS_R_SUB1",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:G70_modified_fbx_SETS_R_SUB1_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_SETS_R_SUB1.G70_modified_fbx_SETS_R_SUB1"
+      },
+      {
+        "display_name": "G70_modified_fbx_SETS_R_SUB0_GEN_VARIABLE",
+        "variable_name": "G70_modified_fbx_SETS_R_SUB0",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:G70_modified_fbx_SETS_R_SUB0_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_SETS_R_SUB0.G70_modified_fbx_SETS_R_SUB0"
+      },
+      {
+        "display_name": "G70_modified_fbx_SETS_R_SUB0_GEN_VARIABLE",
+        "variable_name": "G70_modified_fbx_SETS_R_SUB0",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:G70_modified_fbx_SETS_R_SUB0_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_SETS_R_SUB0.G70_modified_fbx_SETS_R_SUB0"
+      },
+      {
+        "display_name": "G70_modified_fbx_SETS_L_SUB009_GEN_VARIABLE",
+        "variable_name": "G70_modified_fbx_SETS_L_SUB009",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:G70_modified_fbx_SETS_L_SUB009_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_SETS_L_SUB009.G70_modified_fbx_SETS_L_SUB009"
+      },
+      {
+        "display_name": "G70_modified_fbx_SETS_R_SUB009_GEN_VARIABLE",
+        "variable_name": "G70_modified_fbx_SETS_R_SUB009",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:G70_modified_fbx_SETS_R_SUB009_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_SETS_R_SUB009.G70_modified_fbx_SETS_R_SUB009"
+      },
+      {
+        "display_name": "G70_modified_fbx_zad_fars_GEN_VARIABLE",
+        "variable_name": "G70_modified_fbx_zad_fars",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:G70_modified_fbx_zad_fars_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_zad_fars.G70_modified_fbx_zad_fars"
+      },
+      {
+        "display_name": "DefaultSceneRoot_GEN_VARIABLE",
+        "variable_name": "DefaultSceneRoot",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:DefaultSceneRoot_GEN_VARIABLE",
+        "class": "/Script/Engine.SceneComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "display_name": "All_GEN_VARIABLE",
+        "variable_name": "All",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:All_GEN_VARIABLE",
+        "class": "/Script/Engine.SceneComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          -713.849165
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "display_name": "ClutchMesh_GEN_VARIABLE",
+        "variable_name": "ClutchMesh",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:ClutchMesh_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          -780.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Meshes/SM_Clutch02.SM_Clutch02"
+      },
+      {
+        "display_name": "ClutchMesh_GEN_VARIABLE",
+        "variable_name": "ClutchMesh",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:ClutchMesh_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          -780.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Meshes/SM_Clutch02.SM_Clutch02"
+      },
+      {
+        "display_name": "Car_GEN_VARIABLE",
+        "variable_name": "Car",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:Car_GEN_VARIABLE",
+        "class": "/Script/Engine.SceneComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          -710.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "display_name": "G70_modified_fbx_zad_fars_GEN_VARIABLE",
+        "variable_name": "G70_modified_fbx_zad_fars",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:G70_modified_fbx_zad_fars_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_zad_fars.G70_modified_fbx_zad_fars"
+      },
+      {
+        "display_name": "G70_modified_fbx_zad_GEN_VARIABLE",
+        "variable_name": "G70_modified_fbx_zad",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:G70_modified_fbx_zad_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_zad.G70_modified_fbx_zad"
+      },
+      {
+        "display_name": "G70_modified_fbx_SETS_L_SUB009_GEN_VARIABLE",
+        "variable_name": "G70_modified_fbx_SETS_L_SUB009",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:G70_modified_fbx_SETS_L_SUB009_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_SETS_L_SUB009.G70_modified_fbx_SETS_L_SUB009"
+      },
+      {
+        "display_name": "G70_modified_fbx_zad_GEN_VARIABLE",
+        "variable_name": "G70_modified_fbx_zad",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:G70_modified_fbx_zad_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_zad.G70_modified_fbx_zad"
+      },
+      {
+        "display_name": "G70_modified_fbx_windscreen_ok_GEN_VARIABLE",
+        "variable_name": "G70_modified_fbx_windscreen_ok",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:G70_modified_fbx_windscreen_ok_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_windscreen_ok.G70_modified_fbx_windscreen_ok"
+      },
+      {
+        "display_name": "G70_modified_fbx_windscreen_ok_GEN_VARIABLE",
+        "variable_name": "G70_modified_fbx_windscreen_ok",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:G70_modified_fbx_windscreen_ok_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_windscreen_ok.G70_modified_fbx_windscreen_ok"
+      },
+      {
+        "display_name": "G70_modified_fbx_svet_GEN_VARIABLE",
+        "variable_name": "G70_modified_fbx_svet",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:G70_modified_fbx_svet_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_svet.G70_modified_fbx_svet"
+      },
+      {
+        "display_name": "G70_modified_fbx_svet_GEN_VARIABLE",
+        "variable_name": "G70_modified_fbx_svet",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:G70_modified_fbx_svet_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_svet.G70_modified_fbx_svet"
+      },
+      {
+        "display_name": "G70_modified_fbx_sv_GEN_VARIABLE",
+        "variable_name": "G70_modified_fbx_sv",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:G70_modified_fbx_sv_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_sv.G70_modified_fbx_sv"
+      },
+      {
+        "display_name": "G70_modified_fbx_sv_GEN_VARIABLE",
+        "variable_name": "G70_modified_fbx_sv",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:G70_modified_fbx_sv_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_sv.G70_modified_fbx_sv"
+      },
+      {
+        "display_name": "G70_modified_fbx_SETS_L_SUB008_GEN_VARIABLE",
+        "variable_name": "G70_modified_fbx_SETS_L_SUB008",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:G70_modified_fbx_SETS_L_SUB008_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_SETS_L_SUB008.G70_modified_fbx_SETS_L_SUB008"
+      },
+      {
+        "display_name": "G70_modified_fbx_rotorLF_hub003_GEN_VARIABLE",
+        "variable_name": "G70_modified_fbx_rotorLF_hub003",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:G70_modified_fbx_rotorLF_hub003_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_rotorLF_hub003.G70_modified_fbx_rotorLF_hub003"
+      },
+      {
+        "display_name": "G70_modified_fbx_rotorLR_brake003_GEN_VARIABLE",
+        "variable_name": "G70_modified_fbx_rotorLR_brake003",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:G70_modified_fbx_rotorLR_brake003_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_rotorLR_brake003.G70_modified_fbx_rotorLR_brake003"
+      },
+      {
+        "display_name": "G70_modified_fbx_rotorLR_brake003_GEN_VARIABLE",
+        "variable_name": "G70_modified_fbx_rotorLR_brake003",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:G70_modified_fbx_rotorLR_brake003_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_rotorLR_brake003.G70_modified_fbx_rotorLR_brake003"
+      },
+      {
+        "display_name": "G70_modified_fbx_rotorLR_brake002_GEN_VARIABLE",
+        "variable_name": "G70_modified_fbx_rotorLR_brake002",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:G70_modified_fbx_rotorLR_brake002_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_rotorLR_brake002.G70_modified_fbx_rotorLR_brake002"
+      },
+      {
+        "display_name": "G70_modified_fbx_rotorLR_brake002_GEN_VARIABLE",
+        "variable_name": "G70_modified_fbx_rotorLR_brake002",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:G70_modified_fbx_rotorLR_brake002_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_rotorLR_brake002.G70_modified_fbx_rotorLR_brake002"
+      },
+      {
+        "display_name": "G70_modified_fbx_rotorLF_hub004_GEN_VARIABLE",
+        "variable_name": "G70_modified_fbx_rotorLF_hub004",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:G70_modified_fbx_rotorLF_hub004_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_rotorLF_hub004.G70_modified_fbx_rotorLF_hub004"
+      },
+      {
+        "display_name": "G70_modified_fbx_rotorLF_hub004_GEN_VARIABLE",
+        "variable_name": "G70_modified_fbx_rotorLF_hub004",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:G70_modified_fbx_rotorLF_hub004_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_rotorLF_hub004.G70_modified_fbx_rotorLF_hub004"
+      },
+      {
+        "display_name": "G70_modified_fbx_rotorLF_hub003_GEN_VARIABLE",
+        "variable_name": "G70_modified_fbx_rotorLF_hub003",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:G70_modified_fbx_rotorLF_hub003_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_rotorLF_hub003.G70_modified_fbx_rotorLF_hub003"
+      },
+      {
+        "display_name": "G70_modified_fbx_rotorLR_hub002_GEN_VARIABLE",
+        "variable_name": "G70_modified_fbx_rotorLR_hub002",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:G70_modified_fbx_rotorLR_hub002_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_rotorLR_hub002.G70_modified_fbx_rotorLR_hub002"
+      },
+      {
+        "display_name": "G70_modified_fbx_rotorLF_brake004_GEN_VARIABLE",
+        "variable_name": "G70_modified_fbx_rotorLF_brake004",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:G70_modified_fbx_rotorLF_brake004_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_rotorLF_brake004.G70_modified_fbx_rotorLF_brake004"
+      },
+      {
+        "display_name": "G70_modified_fbx_rotorLF_brake004_GEN_VARIABLE",
+        "variable_name": "G70_modified_fbx_rotorLF_brake004",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:G70_modified_fbx_rotorLF_brake004_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_rotorLF_brake004.G70_modified_fbx_rotorLF_brake004"
+      },
+      {
+        "display_name": "G70_modified_fbx_rotorLF_brake003_GEN_VARIABLE",
+        "variable_name": "G70_modified_fbx_rotorLF_brake003",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:G70_modified_fbx_rotorLF_brake003_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_rotorLF_brake003.G70_modified_fbx_rotorLF_brake003"
+      },
+      {
+        "display_name": "G70_modified_fbx_rotorLF_brake003_GEN_VARIABLE",
+        "variable_name": "G70_modified_fbx_rotorLF_brake003",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:G70_modified_fbx_rotorLF_brake003_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_rotorLF_brake003.G70_modified_fbx_rotorLF_brake003"
+      },
+      {
+        "display_name": "G70_modified_fbx_resh_GEN_VARIABLE",
+        "variable_name": "G70_modified_fbx_resh",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:G70_modified_fbx_resh_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_resh.G70_modified_fbx_resh"
+      },
+      {
+        "display_name": "G70_modified_fbx_resh_GEN_VARIABLE",
+        "variable_name": "G70_modified_fbx_resh",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:G70_modified_fbx_resh_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_resh.G70_modified_fbx_resh"
+      },
+      {
+        "display_name": "G70_modified_fbx_pered_fars_GEN_VARIABLE",
+        "variable_name": "G70_modified_fbx_pered_fars",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:G70_modified_fbx_pered_fars_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_pered_fars.G70_modified_fbx_pered_fars"
+      },
+      {
+        "display_name": "G70_modified_fbx_rotorLR_hub002_GEN_VARIABLE",
+        "variable_name": "G70_modified_fbx_rotorLR_hub002",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:G70_modified_fbx_rotorLR_hub002_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_rotorLR_hub002.G70_modified_fbx_rotorLR_hub002"
+      },
+      {
+        "display_name": "G70_modified_fbx_SETS_L_SUB5_GEN_VARIABLE",
+        "variable_name": "G70_modified_fbx_SETS_L_SUB5",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:G70_modified_fbx_SETS_L_SUB5_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_SETS_L_SUB5.G70_modified_fbx_SETS_L_SUB5"
+      },
+      {
+        "display_name": "G70_modified_fbx_SETS_L_SUB008_GEN_VARIABLE",
+        "variable_name": "G70_modified_fbx_SETS_L_SUB008",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:G70_modified_fbx_SETS_L_SUB008_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_SETS_L_SUB008.G70_modified_fbx_SETS_L_SUB008"
+      },
+      {
+        "display_name": "G70_modified_fbx_SETS_L_SUB007_GEN_VARIABLE",
+        "variable_name": "G70_modified_fbx_SETS_L_SUB007",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:G70_modified_fbx_SETS_L_SUB007_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_SETS_L_SUB007.G70_modified_fbx_SETS_L_SUB007"
+      },
+      {
+        "display_name": "G70_modified_fbx_SETS_L_SUB007_GEN_VARIABLE",
+        "variable_name": "G70_modified_fbx_SETS_L_SUB007",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:G70_modified_fbx_SETS_L_SUB007_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_SETS_L_SUB007.G70_modified_fbx_SETS_L_SUB007"
+      },
+      {
+        "display_name": "G70_modified_fbx_SETS_L_SUB006_GEN_VARIABLE",
+        "variable_name": "G70_modified_fbx_SETS_L_SUB006",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:G70_modified_fbx_SETS_L_SUB006_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_SETS_L_SUB006.G70_modified_fbx_SETS_L_SUB006"
+      },
+      {
+        "display_name": "G70_modified_fbx_SETS_L_SUB006_GEN_VARIABLE",
+        "variable_name": "G70_modified_fbx_SETS_L_SUB006",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:G70_modified_fbx_SETS_L_SUB006_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_SETS_L_SUB006.G70_modified_fbx_SETS_L_SUB006"
+      },
+      {
+        "display_name": "G70_modified_fbx_SETS_L_SUB5_GEN_VARIABLE",
+        "variable_name": "G70_modified_fbx_SETS_L_SUB5",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:G70_modified_fbx_SETS_L_SUB5_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_SETS_L_SUB5.G70_modified_fbx_SETS_L_SUB5"
+      },
+      {
+        "display_name": "G70_modified_fbx_SETS_L_SUB4_GEN_VARIABLE",
+        "variable_name": "G70_modified_fbx_SETS_L_SUB4",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:G70_modified_fbx_SETS_L_SUB4_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_SETS_L_SUB4.G70_modified_fbx_SETS_L_SUB4"
+      },
+      {
+        "display_name": "G70_modified_fbx_pered_fars_GEN_VARIABLE",
+        "variable_name": "G70_modified_fbx_pered_fars",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:G70_modified_fbx_pered_fars_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_pered_fars.G70_modified_fbx_pered_fars"
+      },
+      {
+        "display_name": "G70_modified_fbx_SETS_L_SUB4_GEN_VARIABLE",
+        "variable_name": "G70_modified_fbx_SETS_L_SUB4",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:G70_modified_fbx_SETS_L_SUB4_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_SETS_L_SUB4.G70_modified_fbx_SETS_L_SUB4"
+      },
+      {
+        "display_name": "G70_modified_fbx_SETS_L_SUB1_GEN_VARIABLE",
+        "variable_name": "G70_modified_fbx_SETS_L_SUB1",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:G70_modified_fbx_SETS_L_SUB1_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_SETS_L_SUB1.G70_modified_fbx_SETS_L_SUB1"
+      },
+      {
+        "display_name": "G70_modified_fbx_SETS_L_SUB1_GEN_VARIABLE",
+        "variable_name": "G70_modified_fbx_SETS_L_SUB1",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:G70_modified_fbx_SETS_L_SUB1_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_SETS_L_SUB1.G70_modified_fbx_SETS_L_SUB1"
+      },
+      {
+        "display_name": "G70_modified_fbx_SETS_L_SUB0_GEN_VARIABLE",
+        "variable_name": "G70_modified_fbx_SETS_L_SUB0",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:G70_modified_fbx_SETS_L_SUB0_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_SETS_L_SUB0.G70_modified_fbx_SETS_L_SUB0"
+      },
+      {
+        "display_name": "G70_modified_fbx_SETS_L_SUB0_GEN_VARIABLE",
+        "variable_name": "G70_modified_fbx_SETS_L_SUB0",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:G70_modified_fbx_SETS_L_SUB0_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_SETS_L_SUB0.G70_modified_fbx_SETS_L_SUB0"
+      },
+      {
+        "display_name": "G70_modified_fbx_rotorLR_hub003_GEN_VARIABLE",
+        "variable_name": "G70_modified_fbx_rotorLR_hub003",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:G70_modified_fbx_rotorLR_hub003_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_rotorLR_hub003.G70_modified_fbx_rotorLR_hub003"
+      },
+      {
+        "display_name": "G70_modified_fbx_rotorLR_hub003_GEN_VARIABLE",
+        "variable_name": "G70_modified_fbx_rotorLR_hub003",
+        "object": "/Game/Blueprints/BP_HangerVehicle.BP_HangerVehicle_C:G70_modified_fbx_rotorLR_hub003_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_rotorLR_hub003.G70_modified_fbx_rotorLR_hub003"
+      }
+    ]
+  },
+  "car": {
+    "asset": "/Game/Blueprints/BP_Car",
+    "class": "/Game/Blueprints/BP_Car.BP_Car_C",
+    "components": [],
+    "subobjects": [
+      {
+        "display_name": "BP_Car",
+        "variable_name": "None",
+        "object": "/Game/Blueprints/BP_Car.Default__BP_Car_C",
+        "class": "/Game/Blueprints/BP_Car.BP_Car_C"
+      },
+      {
+        "display_name": "Body_21_GEN_VARIABLE",
+        "variable_name": "Body_21",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:Body_21_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_svet.G70_modified_fbx_svet"
+      },
+      {
+        "display_name": "Body_21_GEN_VARIABLE",
+        "variable_name": "Body_21",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:Body_21_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_svet.G70_modified_fbx_svet"
+      },
+      {
+        "display_name": "Tire_LF_GEN_VARIABLE",
+        "variable_name": "Tire_LF",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:Tire_LF_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          150.41522577160714,
+          -79.92516708374022,
+          -33.27332973480229
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_TYRE_LF001.G70_modified_fbx_TYRE_LF001"
+      },
+      {
+        "display_name": "Wheel_RF_GEN_VARIABLE",
+        "variable_name": "Wheel_RF",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:Wheel_RF_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          150.447784,
+          79.88003500000002,
+          -33.264951
+        ],
+        "relative_rotation": [
+          -0.0,
+          0.0,
+          180.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_RIM_LF_004.G70_modified_fbx_RIM_LF_004"
+      },
+      {
+        "display_name": "Tire_LF_GEN_VARIABLE",
+        "variable_name": "Tire_LF",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:Tire_LF_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          150.41522577160714,
+          -79.92516708374022,
+          -33.27332973480229
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_TYRE_LF001.G70_modified_fbx_TYRE_LF001"
+      },
+      {
+        "display_name": "Wheel_RF_GEN_VARIABLE",
+        "variable_name": "Wheel_RF",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:Wheel_RF_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          150.447784,
+          79.88003500000002,
+          -33.264951
+        ],
+        "relative_rotation": [
+          -0.0,
+          0.0,
+          180.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_RIM_LF_004.G70_modified_fbx_RIM_LF_004"
+      },
+      {
+        "display_name": "Tire_RF_GEN_VARIABLE",
+        "variable_name": "Tire_RF",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:Tire_RF_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          150.415226,
+          79.92516699999999,
+          -33.27333
+        ],
+        "relative_rotation": [
+          -0.0,
+          0.0,
+          180.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_TYRE_LF001.G70_modified_fbx_TYRE_LF001"
+      },
+      {
+        "display_name": "Tire_RF_GEN_VARIABLE",
+        "variable_name": "Tire_RF",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:Tire_RF_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          150.415226,
+          79.92516699999999,
+          -33.27333
+        ],
+        "relative_rotation": [
+          -0.0,
+          0.0,
+          180.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_TYRE_LF001.G70_modified_fbx_TYRE_LF001"
+      },
+      {
+        "display_name": "StaticMesh52_GEN_VARIABLE",
+        "variable_name": "StaticMesh52",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:StaticMesh52_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_MAZ_MX5_RADBUL_CALIPER_RR_LADX002.G70_modified_fbx_MAZ_MX5_RADBUL_CALIPER_RR_LADX002"
+      },
+      {
+        "display_name": "StaticMesh52_GEN_VARIABLE",
+        "variable_name": "StaticMesh52",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:StaticMesh52_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_MAZ_MX5_RADBUL_CALIPER_RR_LADX002.G70_modified_fbx_MAZ_MX5_RADBUL_CALIPER_RR_LADX002"
+      },
+      {
+        "display_name": "StaticMesh51_GEN_VARIABLE",
+        "variable_name": "StaticMesh51",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:StaticMesh51_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_MAZ_MX5_RADBUL_CALIPER_RF_LADX001.G70_modified_fbx_MAZ_MX5_RADBUL_CALIPER_RF_LADX001"
+      },
+      {
+        "display_name": "StaticMesh51_GEN_VARIABLE",
+        "variable_name": "StaticMesh51",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:StaticMesh51_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_MAZ_MX5_RADBUL_CALIPER_RF_LADX001.G70_modified_fbx_MAZ_MX5_RADBUL_CALIPER_RF_LADX001"
+      },
+      {
+        "display_name": "StaticMesh50_GEN_VARIABLE",
+        "variable_name": "StaticMesh50",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:StaticMesh50_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_MAZ_MX5_RADBUL_CALIPER_LR_LADX002.G70_modified_fbx_MAZ_MX5_RADBUL_CALIPER_LR_LADX002"
+      },
+      {
+        "display_name": "StaticMesh50_GEN_VARIABLE",
+        "variable_name": "StaticMesh50",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:StaticMesh50_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_MAZ_MX5_RADBUL_CALIPER_LR_LADX002.G70_modified_fbx_MAZ_MX5_RADBUL_CALIPER_LR_LADX002"
+      },
+      {
+        "display_name": "StaticMesh49_GEN_VARIABLE",
+        "variable_name": "StaticMesh49",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:StaticMesh49_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_MAZ_MX5_RADBUL_CALIPER_LF_LADX001.G70_modified_fbx_MAZ_MX5_RADBUL_CALIPER_LF_LADX001"
+      },
+      {
+        "display_name": "StaticMesh49_GEN_VARIABLE",
+        "variable_name": "StaticMesh49",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:StaticMesh49_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_MAZ_MX5_RADBUL_CALIPER_LF_LADX001.G70_modified_fbx_MAZ_MX5_RADBUL_CALIPER_LF_LADX001"
+      },
+      {
+        "display_name": "StaticMesh48_GEN_VARIABLE",
+        "variable_name": "StaticMesh48",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:StaticMesh48_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_interior.G70_modified_fbx_interior"
+      },
+      {
+        "display_name": "Wheel_LB_GEN_VARIABLE",
+        "variable_name": "Wheel_LB",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:Wheel_LB_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          -124.484213,
+          -79.88003499999658,
+          -33.264952123253735
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_RIM_LF_004.G70_modified_fbx_RIM_LF_004"
+      },
+      {
+        "display_name": "Wheel_LB_GEN_VARIABLE",
+        "variable_name": "Wheel_LB",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:Wheel_LB_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          -124.484213,
+          -79.88003499999658,
+          -33.264952123253735
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_RIM_LF_004.G70_modified_fbx_RIM_LF_004"
+      },
+      {
+        "display_name": "Body_WheelPart_2_LF_GEN_VARIABLE",
+        "variable_name": "Body_WheelPart_2_LF",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:Body_WheelPart_2_LF_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_rotorLF_hub003.G70_modified_fbx_rotorLF_hub003"
+      },
+      {
+        "display_name": "Body_WheelPart_2_RF_GEN_VARIABLE",
+        "variable_name": "Body_WheelPart_2_RF",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:Body_WheelPart_2_RF_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_rotorLF_hub004.G70_modified_fbx_rotorLF_hub004"
+      },
+      {
+        "display_name": "Body_WheelPart_2_RF_GEN_VARIABLE",
+        "variable_name": "Body_WheelPart_2_RF",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:Body_WheelPart_2_RF_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_rotorLF_hub004.G70_modified_fbx_rotorLF_hub004"
+      },
+      {
+        "display_name": "Body_2_GEN_VARIABLE",
+        "variable_name": "Body_2",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:Body_2_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_zad.G70_modified_fbx_zad"
+      },
+      {
+        "display_name": "Body_2_GEN_VARIABLE",
+        "variable_name": "Body_2",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:Body_2_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_zad.G70_modified_fbx_zad"
+      },
+      {
+        "display_name": "Body_1_GEN_VARIABLE",
+        "variable_name": "Body_1",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:Body_1_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_windscreen_ok.G70_modified_fbx_windscreen_ok"
+      },
+      {
+        "display_name": "Body_1_GEN_VARIABLE",
+        "variable_name": "Body_1",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:Body_1_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_windscreen_ok.G70_modified_fbx_windscreen_ok"
+      },
+      {
+        "display_name": "Body_WheelPart_2_LF_GEN_VARIABLE",
+        "variable_name": "Body_WheelPart_2_LF",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:Body_WheelPart_2_LF_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_rotorLF_hub003.G70_modified_fbx_rotorLF_hub003"
+      },
+      {
+        "display_name": "Body_WheelPart_1_RF_GEN_VARIABLE",
+        "variable_name": "Body_WheelPart_1_RF",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:Body_WheelPart_1_RF_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_rotorLF_brake004.G70_modified_fbx_rotorLF_brake004"
+      },
+      {
+        "display_name": "Tire_LB_GEN_VARIABLE",
+        "variable_name": "Tire_LB",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:Tire_LB_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          -124.516771,
+          -79.92516699999658,
+          -33.27333112325373
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_TYRE_LF001.G70_modified_fbx_TYRE_LF001"
+      },
+      {
+        "display_name": "Body_WheelPart_1_RF_GEN_VARIABLE",
+        "variable_name": "Body_WheelPart_1_RF",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:Body_WheelPart_1_RF_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_rotorLF_brake004.G70_modified_fbx_rotorLF_brake004"
+      },
+      {
+        "display_name": "Interior_Dashboard_Glass_GEN_VARIABLE",
+        "variable_name": "Interior_Dashboard_Glass",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:Interior_Dashboard_Glass_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_GAUGE_IQ3_DIGITS.G70_modified_fbx_GAUGE_IQ3_DIGITS"
+      },
+      {
+        "display_name": "Interior_Dashboard_Glass_GEN_VARIABLE",
+        "variable_name": "Interior_Dashboard_Glass",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:Interior_Dashboard_Glass_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_GAUGE_IQ3_DIGITS.G70_modified_fbx_GAUGE_IQ3_DIGITS"
+      },
+      {
+        "display_name": "BodyScene_GEN_VARIABLE",
+        "variable_name": "BodyScene",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:BodyScene_GEN_VARIABLE",
+        "class": "/Script/Engine.SceneComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "display_name": "Wheel_RB_GEN_VARIABLE",
+        "variable_name": "Wheel_RB",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:Wheel_RB_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          -124.484213,
+          79.88003500000008,
+          -33.26495140408827
+        ],
+        "relative_rotation": [
+          -0.0,
+          0.0,
+          180.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_RIM_LF_004.G70_modified_fbx_RIM_LF_004"
+      },
+      {
+        "display_name": "Wheel_RB_GEN_VARIABLE",
+        "variable_name": "Wheel_RB",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:Wheel_RB_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          -124.484213,
+          79.88003500000008,
+          -33.26495140408827
+        ],
+        "relative_rotation": [
+          -0.0,
+          0.0,
+          180.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_RIM_LF_004.G70_modified_fbx_RIM_LF_004"
+      },
+      {
+        "display_name": "Tire_LB_GEN_VARIABLE",
+        "variable_name": "Tire_LB",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:Tire_LB_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          -124.516771,
+          -79.92516699999658,
+          -33.27333112325373
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_TYRE_LF001.G70_modified_fbx_TYRE_LF001"
+      },
+      {
+        "display_name": "StaticMesh48_GEN_VARIABLE",
+        "variable_name": "StaticMesh48",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:StaticMesh48_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_interior.G70_modified_fbx_interior"
+      },
+      {
+        "display_name": "Wheel_LF_GEN_VARIABLE",
+        "variable_name": "Wheel_LF",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:Wheel_LF_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          150.44778442382884,
+          -79.88003540039061,
+          -33.26495079641427
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_RIM_LF_004.G70_modified_fbx_RIM_LF_004"
+      },
+      {
+        "display_name": "StaticMesh37_GEN_VARIABLE",
+        "variable_name": "StaticMesh37",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:StaticMesh37_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_SETS_L_SUB4.G70_modified_fbx_SETS_L_SUB4"
+      },
+      {
+        "display_name": "StaticMesh37_GEN_VARIABLE",
+        "variable_name": "StaticMesh37",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:StaticMesh37_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_SETS_L_SUB4.G70_modified_fbx_SETS_L_SUB4"
+      },
+      {
+        "display_name": "StaticMesh36_GEN_VARIABLE",
+        "variable_name": "StaticMesh36",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:StaticMesh36_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_SETS_L_SUB1.G70_modified_fbx_SETS_L_SUB1"
+      },
+      {
+        "display_name": "StaticMesh36_GEN_VARIABLE",
+        "variable_name": "StaticMesh36",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:StaticMesh36_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_SETS_L_SUB1.G70_modified_fbx_SETS_L_SUB1"
+      },
+      {
+        "display_name": "Seat_RB_1_GEN_VARIABLE",
+        "variable_name": "Seat_RB_1",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:Seat_RB_1_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_SETS_L_SUB006.G70_modified_fbx_SETS_L_SUB006"
+      },
+      {
+        "display_name": "Seat_RB_1_GEN_VARIABLE",
+        "variable_name": "Seat_RB_1",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:Seat_RB_1_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_SETS_L_SUB006.G70_modified_fbx_SETS_L_SUB006"
+      },
+      {
+        "display_name": "Wheel_LF_GEN_VARIABLE",
+        "variable_name": "Wheel_LF",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:Wheel_LF_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          150.44778442382884,
+          -79.88003540039061,
+          -33.26495079641427
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_RIM_LF_004.G70_modified_fbx_RIM_LF_004"
+      },
+      {
+        "display_name": "Door_RB_GEN_VARIABLE",
+        "variable_name": "Door_RB",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:Door_RB_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_door_rr_ok.G70_modified_fbx_door_rr_ok"
+      },
+      {
+        "display_name": "StaticMesh38_GEN_VARIABLE",
+        "variable_name": "StaticMesh38",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:StaticMesh38_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_SETS_L_SUB5.G70_modified_fbx_SETS_L_SUB5"
+      },
+      {
+        "display_name": "Door_RB_GEN_VARIABLE",
+        "variable_name": "Door_RB",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:Door_RB_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_door_rr_ok.G70_modified_fbx_door_rr_ok"
+      },
+      {
+        "display_name": "Door_RF_GEN_VARIABLE",
+        "variable_name": "Door_RF",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:Door_RF_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_door_rf_ok.G70_modified_fbx_door_rf_ok"
+      },
+      {
+        "display_name": "Door_RF_GEN_VARIABLE",
+        "variable_name": "Door_RF",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:Door_RF_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_door_rf_ok.G70_modified_fbx_door_rf_ok"
+      },
+      {
+        "display_name": "Door_LB_GEN_VARIABLE",
+        "variable_name": "Door_LB",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:Door_LB_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_door_lr_ok.G70_modified_fbx_door_lr_ok"
+      },
+      {
+        "display_name": "Door_LB_GEN_VARIABLE",
+        "variable_name": "Door_LB",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:Door_LB_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_door_lr_ok.G70_modified_fbx_door_lr_ok"
+      },
+      {
+        "display_name": "Door_LF_GEN_VARIABLE",
+        "variable_name": "Door_LF",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:Door_LF_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_door_lf_ok.G70_modified_fbx_door_lf_ok"
+      },
+      {
+        "display_name": "Door_LF_GEN_VARIABLE",
+        "variable_name": "Door_LF",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:Door_LF_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_door_lf_ok.G70_modified_fbx_door_lf_ok"
+      },
+      {
+        "display_name": "StaticMesh38_GEN_VARIABLE",
+        "variable_name": "StaticMesh38",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:StaticMesh38_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_SETS_L_SUB5.G70_modified_fbx_SETS_L_SUB5"
+      },
+      {
+        "display_name": "StaticMesh47_GEN_VARIABLE",
+        "variable_name": "StaticMesh47",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:StaticMesh47_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_SETS_R_SUB5.G70_modified_fbx_SETS_R_SUB5"
+      },
+      {
+        "display_name": "StaticMesh43_GEN_VARIABLE",
+        "variable_name": "StaticMesh43",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:StaticMesh43_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_SETS_R_SUB0.G70_modified_fbx_SETS_R_SUB0"
+      },
+      {
+        "display_name": "StaticMesh47_GEN_VARIABLE",
+        "variable_name": "StaticMesh47",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:StaticMesh47_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_SETS_R_SUB5.G70_modified_fbx_SETS_R_SUB5"
+      },
+      {
+        "display_name": "StaticMesh46_GEN_VARIABLE",
+        "variable_name": "StaticMesh46",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:StaticMesh46_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_SETS_R_SUB4.G70_modified_fbx_SETS_R_SUB4"
+      },
+      {
+        "display_name": "StaticMesh46_GEN_VARIABLE",
+        "variable_name": "StaticMesh46",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:StaticMesh46_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_SETS_R_SUB4.G70_modified_fbx_SETS_R_SUB4"
+      },
+      {
+        "display_name": "StaticMesh45_GEN_VARIABLE",
+        "variable_name": "StaticMesh45",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:StaticMesh45_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_SETS_L_SUB0.G70_modified_fbx_SETS_L_SUB0"
+      },
+      {
+        "display_name": "StaticMesh45_GEN_VARIABLE",
+        "variable_name": "StaticMesh45",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:StaticMesh45_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_SETS_L_SUB0.G70_modified_fbx_SETS_L_SUB0"
+      },
+      {
+        "display_name": "StaticMesh44_GEN_VARIABLE",
+        "variable_name": "StaticMesh44",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:StaticMesh44_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_SETS_R_SUB1.G70_modified_fbx_SETS_R_SUB1"
+      },
+      {
+        "display_name": "StaticMesh44_GEN_VARIABLE",
+        "variable_name": "StaticMesh44",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:StaticMesh44_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_SETS_R_SUB1.G70_modified_fbx_SETS_R_SUB1"
+      },
+      {
+        "display_name": "StaticMesh43_GEN_VARIABLE",
+        "variable_name": "StaticMesh43",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:StaticMesh43_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_SETS_R_SUB0.G70_modified_fbx_SETS_R_SUB0"
+      },
+      {
+        "display_name": "StaticMesh39_GEN_VARIABLE",
+        "variable_name": "StaticMesh39",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:StaticMesh39_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_SETS_L_SUB007.G70_modified_fbx_SETS_L_SUB007"
+      },
+      {
+        "display_name": "StaticMesh42_GEN_VARIABLE",
+        "variable_name": "StaticMesh42",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:StaticMesh42_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_SETS_L_SUB009.G70_modified_fbx_SETS_L_SUB009"
+      },
+      {
+        "display_name": "StaticMesh42_GEN_VARIABLE",
+        "variable_name": "StaticMesh42",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:StaticMesh42_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_SETS_L_SUB009.G70_modified_fbx_SETS_L_SUB009"
+      },
+      {
+        "display_name": "StaticMesh41_GEN_VARIABLE",
+        "variable_name": "StaticMesh41",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:StaticMesh41_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_SETS_L_SUB008.G70_modified_fbx_SETS_L_SUB008"
+      },
+      {
+        "display_name": "StaticMesh41_GEN_VARIABLE",
+        "variable_name": "StaticMesh41",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:StaticMesh41_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_SETS_L_SUB008.G70_modified_fbx_SETS_L_SUB008"
+      },
+      {
+        "display_name": "StaticMesh40_GEN_VARIABLE",
+        "variable_name": "StaticMesh40",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:StaticMesh40_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_glush.G70_modified_fbx_glush"
+      },
+      {
+        "display_name": "StaticMesh40_GEN_VARIABLE",
+        "variable_name": "StaticMesh40",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:StaticMesh40_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_glush.G70_modified_fbx_glush"
+      },
+      {
+        "display_name": "StaticMesh39_GEN_VARIABLE",
+        "variable_name": "StaticMesh39",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:StaticMesh39_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_SETS_L_SUB007.G70_modified_fbx_SETS_L_SUB007"
+      },
+      {
+        "display_name": "Body_WheelPart_2_RB_GEN_VARIABLE",
+        "variable_name": "Body_WheelPart_2_RB",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:Body_WheelPart_2_RB_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_rotorLR_hub003.G70_modified_fbx_rotorLR_hub003"
+      },
+      {
+        "display_name": "Body_17_GEN_VARIABLE",
+        "variable_name": "Body_17",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:Body_17_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_Object006.G70_modified_fbx_Object006"
+      },
+      {
+        "display_name": "Body_20_GEN_VARIABLE",
+        "variable_name": "Body_20",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:Body_20_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_sv.G70_modified_fbx_sv"
+      },
+      {
+        "display_name": "Body_16_GEN_VARIABLE",
+        "variable_name": "Body_16",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:Body_16_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_Object003.G70_modified_fbx_Object003"
+      },
+      {
+        "display_name": "Body_16_GEN_VARIABLE",
+        "variable_name": "Body_16",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:Body_16_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_Object003.G70_modified_fbx_Object003"
+      },
+      {
+        "display_name": "Body_15_GEN_VARIABLE",
+        "variable_name": "Body_15",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:Body_15_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_Object004.G70_modified_fbx_Object004"
+      },
+      {
+        "display_name": "Body_15_GEN_VARIABLE",
+        "variable_name": "Body_15",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:Body_15_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_Object004.G70_modified_fbx_Object004"
+      },
+      {
+        "display_name": "Body_14_GEN_VARIABLE",
+        "variable_name": "Body_14",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:Body_14_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_Object005.G70_modified_fbx_Object005"
+      },
+      {
+        "display_name": "Body_14_GEN_VARIABLE",
+        "variable_name": "Body_14",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:Body_14_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_Object005.G70_modified_fbx_Object005"
+      },
+      {
+        "display_name": "Body_17_GEN_VARIABLE",
+        "variable_name": "Body_17",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:Body_17_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_Object006.G70_modified_fbx_Object006"
+      },
+      {
+        "display_name": "Body_20_GEN_VARIABLE",
+        "variable_name": "Body_20",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:Body_20_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_sv.G70_modified_fbx_sv"
+      },
+      {
+        "display_name": "Interior_5_GEN_VARIABLE",
+        "variable_name": "Interior_5",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:Interior_5_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_dashboard.G70_modified_fbx_dashboard"
+      },
+      {
+        "display_name": "Interior_5_GEN_VARIABLE",
+        "variable_name": "Interior_5",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:Interior_5_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_dashboard.G70_modified_fbx_dashboard"
+      },
+      {
+        "display_name": "Interior_4_GEN_VARIABLE",
+        "variable_name": "Interior_4",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:Interior_4_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_dashinner.G70_modified_fbx_dashinner"
+      },
+      {
+        "display_name": "Interior_4_GEN_VARIABLE",
+        "variable_name": "Interior_4",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:Interior_4_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_dashinner.G70_modified_fbx_dashinner"
+      },
+      {
+        "display_name": "Interior_3_GEN_VARIABLE",
+        "variable_name": "Interior_3",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:Interior_3_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_dashventinner.G70_modified_fbx_dashventinner"
+      },
+      {
+        "display_name": "Interior_3_GEN_VARIABLE",
+        "variable_name": "Interior_3",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:Interior_3_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_dashventinner.G70_modified_fbx_dashventinner"
+      },
+      {
+        "display_name": "Body_13_GEN_VARIABLE",
+        "variable_name": "Body_13",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:Body_13_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_zad_fars.G70_modified_fbx_zad_fars"
+      },
+      {
+        "display_name": "Body_18_GEN_VARIABLE",
+        "variable_name": "Body_18",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:Body_18_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_Object002.G70_modified_fbx_Object002"
+      },
+      {
+        "display_name": "Body_13_GEN_VARIABLE",
+        "variable_name": "Body_13",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:Body_13_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_zad_fars.G70_modified_fbx_zad_fars"
+      },
+      {
+        "display_name": "Seat_LB_1_GEN_VARIABLE",
+        "variable_name": "Seat_LB_1",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:Seat_LB_1_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_SETS_R_SUB009.G70_modified_fbx_SETS_R_SUB009"
+      },
+      {
+        "display_name": "RootScene_GEN_VARIABLE",
+        "variable_name": "RootScene",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:RootScene_GEN_VARIABLE",
+        "class": "/Script/Engine.SceneComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "display_name": "Tire_RB_GEN_VARIABLE",
+        "variable_name": "Tire_RB",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:Tire_RB_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          -124.516771,
+          79.925167,
+          -33.27333112325373
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          180.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_TYRE_LF001.G70_modified_fbx_TYRE_LF001"
+      },
+      {
+        "display_name": "Tire_RB_GEN_VARIABLE",
+        "variable_name": "Tire_RB",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:Tire_RB_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          -124.516771,
+          79.925167,
+          -33.27333112325373
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          180.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_TYRE_LF001.G70_modified_fbx_TYRE_LF001"
+      },
+      {
+        "display_name": "LeftBackSeatScene_GEN_VARIABLE",
+        "variable_name": "LeftBackSeatScene",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:LeftBackSeatScene_GEN_VARIABLE",
+        "class": "/Script/Engine.SceneComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "display_name": "Seat_LB_4_GEN_VARIABLE",
+        "variable_name": "Seat_LB_4",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:Seat_LB_4_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_SETS_R_SUB006.G70_modified_fbx_SETS_R_SUB006"
+      },
+      {
+        "display_name": "Seat_LB_4_GEN_VARIABLE",
+        "variable_name": "Seat_LB_4",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:Seat_LB_4_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_SETS_R_SUB006.G70_modified_fbx_SETS_R_SUB006"
+      },
+      {
+        "display_name": "Seat_LB_1_GEN_VARIABLE",
+        "variable_name": "Seat_LB_1",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:Seat_LB_1_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_SETS_R_SUB009.G70_modified_fbx_SETS_R_SUB009"
+      },
+      {
+        "display_name": "Seat_LB_3_GEN_VARIABLE",
+        "variable_name": "Seat_LB_3",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:Seat_LB_3_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_SETS_R_SUB007.G70_modified_fbx_SETS_R_SUB007"
+      },
+      {
+        "display_name": "Body_18_GEN_VARIABLE",
+        "variable_name": "Body_18",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:Body_18_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_Object002.G70_modified_fbx_Object002"
+      },
+      {
+        "display_name": "Seat_LB_3_GEN_VARIABLE",
+        "variable_name": "Seat_LB_3",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:Seat_LB_3_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_SETS_R_SUB007.G70_modified_fbx_SETS_R_SUB007"
+      },
+      {
+        "display_name": "Seat_LB_2_GEN_VARIABLE",
+        "variable_name": "Seat_LB_2",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:Seat_LB_2_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_SETS_R_SUB008.G70_modified_fbx_SETS_R_SUB008"
+      },
+      {
+        "display_name": "Seat_LB_2_GEN_VARIABLE",
+        "variable_name": "Seat_LB_2",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:Seat_LB_2_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_SETS_R_SUB008.G70_modified_fbx_SETS_R_SUB008"
+      },
+      {
+        "display_name": "LeftBackSeatScene_GEN_VARIABLE",
+        "variable_name": "LeftBackSeatScene",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:LeftBackSeatScene_GEN_VARIABLE",
+        "class": "/Script/Engine.SceneComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "display_name": "BodyScene_GEN_VARIABLE",
+        "variable_name": "BodyScene",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:BodyScene_GEN_VARIABLE",
+        "class": "/Script/Engine.SceneComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "display_name": "Body_19_GEN_VARIABLE",
+        "variable_name": "Body_19",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:Body_19_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_Object001.G70_modified_fbx_Object001"
+      },
+      {
+        "display_name": "Body_19_GEN_VARIABLE",
+        "variable_name": "Body_19",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:Body_19_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_Object001.G70_modified_fbx_Object001"
+      },
+      {
+        "display_name": "Body_12_GEN_VARIABLE",
+        "variable_name": "Body_12",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:Body_12_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_resh.G70_modified_fbx_resh"
+      },
+      {
+        "display_name": "Body_4_GEN_VARIABLE",
+        "variable_name": "Body_4",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:Body_4_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_chassis.G70_modified_fbx_chassis"
+      },
+      {
+        "display_name": "Body_7_GEN_VARIABLE",
+        "variable_name": "Body_7",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:Body_7_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_bump_front_ok.G70_modified_fbx_bump_front_ok"
+      },
+      {
+        "display_name": "Body_7_GEN_VARIABLE",
+        "variable_name": "Body_7",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:Body_7_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_bump_front_ok.G70_modified_fbx_bump_front_ok"
+      },
+      {
+        "display_name": "Body_6_GEN_VARIABLE",
+        "variable_name": "Body_6",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:Body_6_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_bump_rear_ok.G70_modified_fbx_bump_rear_ok"
+      },
+      {
+        "display_name": "Body_6_GEN_VARIABLE",
+        "variable_name": "Body_6",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:Body_6_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_bump_rear_ok.G70_modified_fbx_bump_rear_ok"
+      },
+      {
+        "display_name": "Body_5_GEN_VARIABLE",
+        "variable_name": "Body_5",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:Body_5_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_pered_fars.G70_modified_fbx_pered_fars"
+      },
+      {
+        "display_name": "Body_5_GEN_VARIABLE",
+        "variable_name": "Body_5",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:Body_5_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_pered_fars.G70_modified_fbx_pered_fars"
+      },
+      {
+        "display_name": "Body_4_GEN_VARIABLE",
+        "variable_name": "Body_4",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:Body_4_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_chassis.G70_modified_fbx_chassis"
+      },
+      {
+        "display_name": "Body_3_GEN_VARIABLE",
+        "variable_name": "Body_3",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:Body_3_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_frames_02.G70_modified_fbx_frames_02"
+      },
+      {
+        "display_name": "Body_8_GEN_VARIABLE",
+        "variable_name": "Body_8",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:Body_8_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_pered.G70_modified_fbx_pered"
+      },
+      {
+        "display_name": "Body_3_GEN_VARIABLE",
+        "variable_name": "Body_3",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:Body_3_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_frames_02.G70_modified_fbx_frames_02"
+      },
+      {
+        "display_name": "Body_WheelPart_1_LB_GEN_VARIABLE",
+        "variable_name": "Body_WheelPart_1_LB",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:Body_WheelPart_1_LB_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_rotorLR_brake002.G70_modified_fbx_rotorLR_brake002"
+      },
+      {
+        "display_name": "Body_WheelPart_1_LB_GEN_VARIABLE",
+        "variable_name": "Body_WheelPart_1_LB",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:Body_WheelPart_1_LB_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_rotorLR_brake002.G70_modified_fbx_rotorLR_brake002"
+      },
+      {
+        "display_name": "Body_WheelPart_1_RB_GEN_VARIABLE",
+        "variable_name": "Body_WheelPart_1_RB",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:Body_WheelPart_1_RB_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_rotorLR_brake003.G70_modified_fbx_rotorLR_brake003"
+      },
+      {
+        "display_name": "Body_WheelPart_1_RB_GEN_VARIABLE",
+        "variable_name": "Body_WheelPart_1_RB",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:Body_WheelPart_1_RB_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_rotorLR_brake003.G70_modified_fbx_rotorLR_brake003"
+      },
+      {
+        "display_name": "Body_WheelPart_2_LB_GEN_VARIABLE",
+        "variable_name": "Body_WheelPart_2_LB",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:Body_WheelPart_2_LB_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_rotorLR_hub002.G70_modified_fbx_rotorLR_hub002"
+      },
+      {
+        "display_name": "Body_WheelPart_2_LB_GEN_VARIABLE",
+        "variable_name": "Body_WheelPart_2_LB",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:Body_WheelPart_2_LB_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_rotorLR_hub002.G70_modified_fbx_rotorLR_hub002"
+      },
+      {
+        "display_name": "Body_8_GEN_VARIABLE",
+        "variable_name": "Body_8",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:Body_8_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_pered.G70_modified_fbx_pered"
+      },
+      {
+        "display_name": "Body_WheelPart_2_RB_GEN_VARIABLE",
+        "variable_name": "Body_WheelPart_2_RB",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:Body_WheelPart_2_RB_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_rotorLR_hub003.G70_modified_fbx_rotorLR_hub003"
+      },
+      {
+        "display_name": "Interior_DashboardScreen_GEN_VARIABLE",
+        "variable_name": "Interior_DashboardScreen",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:Interior_DashboardScreen_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_GAUGE_IQ3_BACKSCREEN.G70_modified_fbx_GAUGE_IQ3_BACKSCREEN"
+      },
+      {
+        "display_name": "Body_12_GEN_VARIABLE",
+        "variable_name": "Body_12",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:Body_12_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_resh.G70_modified_fbx_resh"
+      },
+      {
+        "display_name": "Body_11_GEN_VARIABLE",
+        "variable_name": "Body_11",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:Body_11_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_dno.G70_modified_fbx_dno"
+      },
+      {
+        "display_name": "Body_11_GEN_VARIABLE",
+        "variable_name": "Body_11",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:Body_11_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_dno.G70_modified_fbx_dno"
+      },
+      {
+        "display_name": "Interior_2_GEN_VARIABLE",
+        "variable_name": "Interior_2",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:Interior_2_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_dash2.G70_modified_fbx_dash2"
+      },
+      {
+        "display_name": "Interior_2_GEN_VARIABLE",
+        "variable_name": "Interior_2",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:Interior_2_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_dash2.G70_modified_fbx_dash2"
+      },
+      {
+        "display_name": "Interior_1_GEN_VARIABLE",
+        "variable_name": "Interior_1",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:Interior_1_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_dah4.G70_modified_fbx_dah4"
+      },
+      {
+        "display_name": "Interior_1_GEN_VARIABLE",
+        "variable_name": "Interior_1",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:Interior_1_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_dah4.G70_modified_fbx_dah4"
+      },
+      {
+        "display_name": "Interior_DashboardScreen_GEN_VARIABLE",
+        "variable_name": "Interior_DashboardScreen",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:Interior_DashboardScreen_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_GAUGE_IQ3_BACKSCREEN.G70_modified_fbx_GAUGE_IQ3_BACKSCREEN"
+      },
+      {
+        "display_name": "Body_9_GEN_VARIABLE",
+        "variable_name": "Body_9",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:Body_9_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_boot_ok.G70_modified_fbx_boot_ok"
+      },
+      {
+        "display_name": "Interior_Dashboard_GEN_VARIABLE",
+        "variable_name": "Interior_Dashboard",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:Interior_Dashboard_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_GAUGE_IQ3_BODY_002.G70_modified_fbx_GAUGE_IQ3_BODY_002"
+      },
+      {
+        "display_name": "Interior_Dashboard_GEN_VARIABLE",
+        "variable_name": "Interior_Dashboard",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:Interior_Dashboard_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_GAUGE_IQ3_BODY_002.G70_modified_fbx_GAUGE_IQ3_BODY_002"
+      },
+      {
+        "display_name": "Body_WheelPart_1_LF_GEN_VARIABLE",
+        "variable_name": "Body_WheelPart_1_LF",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:Body_WheelPart_1_LF_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_rotorLF_brake003.G70_modified_fbx_rotorLF_brake003"
+      },
+      {
+        "display_name": "Body_WheelPart_1_LF_GEN_VARIABLE",
+        "variable_name": "Body_WheelPart_1_LF",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:Body_WheelPart_1_LF_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_rotorLF_brake003.G70_modified_fbx_rotorLF_brake003"
+      },
+      {
+        "display_name": "Body_10_GEN_VARIABLE",
+        "variable_name": "Body_10",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:Body_10_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_bonnet_ok.G70_modified_fbx_bonnet_ok"
+      },
+      {
+        "display_name": "Body_10_GEN_VARIABLE",
+        "variable_name": "Body_10",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:Body_10_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_bonnet_ok.G70_modified_fbx_bonnet_ok"
+      },
+      {
+        "display_name": "Body_9_GEN_VARIABLE",
+        "variable_name": "Body_9",
+        "object": "/Game/Blueprints/BP_Car.BP_Car_C:Body_9_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Genesis/G70_modified_fbx_boot_ok.G70_modified_fbx_boot_ok"
+      }
+    ]
+  },
+  "dashboard": {
+    "asset": "/Game/Blueprints/BP_MQTT_DisplayBoard",
+    "class": "/Game/Blueprints/BP_MQTT_DisplayBoard.BP_MQTT_DisplayBoard_C",
+    "components": [],
+    "subobjects": [
+      {
+        "display_name": "BP_MQTT_DisplayBoard",
+        "variable_name": "None",
+        "object": "/Game/Blueprints/BP_MQTT_DisplayBoard.Default__BP_MQTT_DisplayBoard_C",
+        "class": "/Game/Blueprints/BP_MQTT_DisplayBoard.BP_MQTT_DisplayBoard_C"
+      },
+      {
+        "display_name": "DefaultSceneRoot_GEN_VARIABLE",
+        "variable_name": "DefaultSceneRoot",
+        "object": "/Game/Blueprints/BP_MQTT_DisplayBoard.BP_MQTT_DisplayBoard_C:DefaultSceneRoot_GEN_VARIABLE",
+        "class": "/Script/Engine.SceneComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "display_name": "MonitorWidget_GEN_VARIABLE",
+        "variable_name": "MonitorWidget",
+        "object": "/Game/Blueprints/BP_MQTT_DisplayBoard.BP_MQTT_DisplayBoard_C:MonitorWidget_GEN_VARIABLE",
+        "class": "/Script/UMG.WidgetComponent",
+        "visible": true,
+        "relative_location": [
+          -51.0,
+          -4.206734988274914e-15,
+          -174.0
+        ],
+        "relative_rotation": [
+          0.0,
+          -15.0,
+          180.0
+        ],
+        "relative_scale": [
+          0.15,
+          0.15,
+          0.1599999964237213
+        ]
+      },
+      {
+        "display_name": "MonitorWidget_GEN_VARIABLE",
+        "variable_name": "MonitorWidget",
+        "object": "/Game/Blueprints/BP_MQTT_DisplayBoard.BP_MQTT_DisplayBoard_C:MonitorWidget_GEN_VARIABLE",
+        "class": "/Script/UMG.WidgetComponent",
+        "visible": true,
+        "relative_location": [
+          -51.0,
+          -4.206734988274914e-15,
+          -174.0
+        ],
+        "relative_rotation": [
+          0.0,
+          -15.0,
+          180.0
+        ],
+        "relative_scale": [
+          0.15,
+          0.15,
+          0.1599999964237213
+        ]
+      },
+      {
+        "display_name": "MonitorMesh_GEN_VARIABLE",
+        "variable_name": "MonitorMesh",
+        "object": "/Game/Blueprints/BP_MQTT_DisplayBoard.BP_MQTT_DisplayBoard_C:MonitorMesh_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Meshes/SM_DisplayBoard03.SM_DisplayBoard03"
+      },
+      {
+        "display_name": "MonitorMesh_GEN_VARIABLE",
+        "variable_name": "MonitorMesh",
+        "object": "/Game/Blueprints/BP_MQTT_DisplayBoard.BP_MQTT_DisplayBoard_C:MonitorMesh_GEN_VARIABLE",
+        "class": "/Script/Engine.StaticMeshComponent",
+        "visible": true,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Meshes/SM_DisplayBoard03.SM_DisplayBoard03"
+      }
+    ]
+  }
+}
