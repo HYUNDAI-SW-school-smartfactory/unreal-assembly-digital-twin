@@ -68,6 +68,17 @@ namespace
 		return INDEX_NONE;
 	}
 
+	bool VisualComponentMatchesName(const USceneComponent* Component, const FName TargetName)
+	{
+		if (!IsValid(Component) || TargetName.IsNone())
+		{
+			return false;
+		}
+
+		const FString Target = TargetName.ToString();
+		return Component->GetFName() == TargetName || Component->GetName().Equals(Target, ESearchCase::IgnoreCase);
+	}
+
 	FString GetRuntimeActorLabel(const AActor* Actor)
 	{
 		if (!Actor)
@@ -81,22 +92,124 @@ namespace
 #endif
 	}
 
-	int32 LineIdToInt(const TSharedPtr<FJsonObject>& LineObject)
+	int32 ExtractLineNumberFromString(const FString& RawLineId)
 	{
-		int32 NumericLineId = 0;
-		if (LineObject.IsValid() && LineObject->TryGetNumberField(TEXT("line_id"), NumericLineId))
+		const FString Trimmed = RawLineId.TrimStartAndEnd();
+		if (Trimmed.IsEmpty())
 		{
-			return NumericLineId;
+			return 0;
 		}
 
-		FString LineIdString;
-		if (LineObject.IsValid() && LineObject->TryGetStringField(TEXT("line_id"), LineIdString))
+		bool bAllDigits = true;
+		for (const TCHAR Character : Trimmed)
 		{
-			const FString Upper = LineIdString.ToUpper();
-			if (Upper.Contains(TEXT("03")) || Upper.EndsWith(TEXT("_3")) || Upper.EndsWith(TEXT("3"))) return 3;
-			if (Upper.Contains(TEXT("02")) || Upper.EndsWith(TEXT("_2")) || Upper.EndsWith(TEXT("2"))) return 2;
-			if (Upper.Contains(TEXT("01")) || Upper.EndsWith(TEXT("_1")) || Upper.EndsWith(TEXT("1"))) return 1;
+			if (!FChar::IsDigit(Character))
+			{
+				bAllDigits = false;
+				break;
+			}
 		}
+		if (bAllDigits)
+		{
+			return FCString::Atoi(*Trimmed);
+		}
+
+		const FString Upper = Trimmed.ToUpper();
+		FString TrailingDigits;
+		for (int32 Index = Upper.Len() - 1; Index >= 0; --Index)
+		{
+			const TCHAR Character = Upper[Index];
+			if (FChar::IsDigit(Character))
+			{
+				TrailingDigits.InsertAt(0, Character);
+			}
+			else if (!TrailingDigits.IsEmpty())
+			{
+				break;
+			}
+		}
+
+		if (!TrailingDigits.IsEmpty())
+		{
+			return FCString::Atoi(*TrailingDigits);
+		}
+
+		return 0;
+	}
+
+	bool TryGetJsonFieldAsString(const TSharedPtr<FJsonObject>& Object, const TCHAR* FieldName, FString& OutValue)
+	{
+		if (!Object.IsValid())
+		{
+			return false;
+		}
+
+		FString StringValue;
+		if (Object->TryGetStringField(FieldName, StringValue))
+		{
+			OutValue = StringValue;
+			return true;
+		}
+
+		double NumberValue = 0.0;
+		if (Object->TryGetNumberField(FieldName, NumberValue))
+		{
+			OutValue = FString::FromInt(FMath::RoundToInt(NumberValue));
+			return true;
+		}
+
+		return false;
+	}
+
+	int32 LineIdToInt(const TSharedPtr<FJsonObject>& LineObject)
+	{
+		if (!LineObject.IsValid())
+		{
+			return 0;
+		}
+
+		static const TCHAR* CandidateFields[] =
+		{
+			TEXT("line_id"),
+			TEXT("lineId"),
+			TEXT("line"),
+			TEXT("line_no"),
+			TEXT("lineNo"),
+			TEXT("line_number"),
+			TEXT("lineNumber"),
+			TEXT("id")
+		};
+
+		for (const TCHAR* FieldName : CandidateFields)
+		{
+			FString RawValue;
+			if (TryGetJsonFieldAsString(LineObject, FieldName, RawValue))
+			{
+				const int32 ParsedLineId = ExtractLineNumberFromString(RawValue);
+				if (ParsedLineId > 0)
+				{
+					return ParsedLineId;
+				}
+			}
+		}
+
+		const TSharedPtr<FJsonObject>* NestedLineObject = nullptr;
+		if (LineObject->TryGetObjectField(TEXT("line"), NestedLineObject) && NestedLineObject && NestedLineObject->IsValid())
+		{
+			for (const TCHAR* FieldName : CandidateFields)
+			{
+				FString RawValue;
+				if (TryGetJsonFieldAsString(*NestedLineObject, FieldName, RawValue))
+				{
+					const int32 ParsedLineId = ExtractLineNumberFromString(RawValue);
+					if (ParsedLineId > 0)
+					{
+						return ParsedLineId;
+					}
+				}
+			}
+		}
+
 		return 0;
 	}
 
@@ -148,6 +261,11 @@ namespace
 			}
 		}
 		return false;
+	}
+
+	bool IsTelemetryIdle(const FGenesisStationTelemetry& Telemetry)
+	{
+		return !Telemetry.bRunning || Telemetry.CycleTime >= 998.5f;
 	}
 
 	bool RuntimeNameContainsToken(const AActor* Actor, const FString& Token)
@@ -406,6 +524,48 @@ void AGenesisFactoryAssemblyManager::FillDefaults()
 	if (StationX.Num() != ProcessStationCount)
 	{
 		StationX = {1620.0f, 4800.0f, 8020.0f, 11420.0f, 14640.0f};
+	}
+
+	if (CarVisuals.DoorComponentNames.Num() == 0)
+	{
+		CarVisuals.DoorComponentNames = {
+			TEXT("Door_RF"),
+			TEXT("Door_RB"),
+			TEXT("Door_LF"),
+			TEXT("Door_LB")
+		};
+	}
+	if (CarVisuals.LightComponentNames.Num() == 0)
+	{
+		CarVisuals.LightComponentNames = {
+			TEXT("Body_2"),
+			TEXT("Body_8")
+		};
+	}
+	if (CarVisuals.WheelComponentNames.Num() == 0)
+	{
+		CarVisuals.WheelComponentNames = {
+			TEXT("Wheel_RB"),
+			TEXT("Tire_RB"),
+			TEXT("Wheel_RF"),
+			TEXT("Tire_RF"),
+			TEXT("Wheel_LB"),
+			TEXT("Tire_LB"),
+			TEXT("Wheel_LF"),
+			TEXT("Tire_LF"),
+			TEXT("Body_WheelPart_2_RB"),
+			TEXT("Body_WheelPart_1_RB"),
+			TEXT("StaticMesh52"),
+			TEXT("StaticMesh50"),
+			TEXT("Body_WheelPart_1_LB"),
+			TEXT("Body_WheelPart_2_LB"),
+			TEXT("StaticMesh49"),
+			TEXT("Body_WheelPart_1_LF"),
+			TEXT("Body_WheelPart_2_LF"),
+			TEXT("StaticMesh51"),
+			TEXT("Body_WheelPart_1_RF"),
+			TEXT("Body_WheelPart_2_RF")
+		};
 	}
 
 	if (Lines.Num() == 0)
@@ -728,6 +888,12 @@ void AGenesisFactoryAssemblyManager::TickVehicle(int32 LineIndex, int32 VehicleI
 		if (Lines[LineIndex].Stations.IsValidIndex(Vehicle.StationIndex) &&
 			Lines[LineIndex].Stations[Vehicle.StationIndex].bRunning)
 		{
+			if (!Vehicle.bStationWorkStarted)
+			{
+				TriggerStationVisuals(LineIndex, Vehicle.StationIndex, Vehicle.Car);
+				Vehicle.bStationWorkStarted = true;
+			}
+
 			Vehicle.RemainingProcessTime -= DeltaSeconds;
 			if (Vehicle.RemainingProcessTime <= 0.0f)
 			{
@@ -817,10 +983,12 @@ void AGenesisFactoryAssemblyManager::StartStationProcess(int32 LineIndex, int32 
 	FGenesisVehicleRuntime& Vehicle = RuntimeLines[LineIndex].Vehicles[VehicleIndex];
 	Vehicle.State = EGenesisVehicleFlowState::Processing;
 	Vehicle.StationIndex = StationIndex;
-	Vehicle.RemainingProcessTime = FMath::Max(
-		FMath::Clamp(Lines[LineIndex].Stations[StationIndex].CycleTime, 0.5f, 120.0f),
-		GetMinimumProcessTime(StationIndex));
-	TriggerStationVisuals(LineIndex, StationIndex, Vehicle.Car);
+	Vehicle.bStationWorkStarted = false;
+	const FGenesisStationTelemetry& Telemetry = Lines[LineIndex].Stations[StationIndex];
+	const float MqttCycleTime = FMath::Clamp(Telemetry.CycleTime, 0.5f, MqttCycleTimeMax);
+	Vehicle.RemainingProcessTime = (bUseMqttCycleTimeAsAuthoritative && Telemetry.bCycleTimeFromMqtt)
+		? MqttCycleTime
+		: FMath::Max(MqttCycleTime, GetMinimumProcessTime(StationIndex));
 
 	if (!Vehicle.bDefective && FMath::FRand() <= Lines[LineIndex].Stations[StationIndex].DefectRate)
 	{
@@ -916,7 +1084,7 @@ void AGenesisFactoryAssemblyManager::UnloadVehicle(int32 LineIndex, int32 Vehicl
 		InspectionVehicle.Start = DroppedStartLocation;
 		InspectionVehicle.End = GetInspectionEndLocation(LineIndex);
 		InspectionVehicle.Duration = Lines[LineIndex].Stations.IsValidIndex(5)
-			? FMath::Max(FMath::Clamp(Lines[LineIndex].Stations[5].CycleTime, 0.5f, 120.0f), GetMinimumProcessTime(5))
+			? FMath::Max(FMath::Clamp(Lines[LineIndex].Stations[5].CycleTime, 0.5f, MqttCycleTimeMax), GetMinimumProcessTime(5))
 			: InspectionTravelTime;
 		Runtime.InspectionVehicles.Add(InspectionVehicle);
 
@@ -1095,7 +1263,6 @@ void AGenesisFactoryAssemblyManager::TriggerStationVisuals(int32 LineIndex, int3
 	}
 	else if (StationIndex == 2)
 	{
-		PlayStationRobots(LineIndex, StationIndex);
 		EnsureStationEquipmentSpawned(LineIndex, StationIndex);
 		SetStationEquipmentWaiting(LineIndex, StationIndex, false);
 
@@ -1105,6 +1272,7 @@ void AGenesisFactoryAssemblyManager::TriggerStationVisuals(int32 LineIndex, int3
 		{
 			NativeLift->LiftHeight = FMath::Max(NativeLift->LiftHeight, BatteryLiftRuntimeHeight);
 			NativeLift->LiftEndLocation = NativeLift->LiftStartLocation + FVector(0.0f, 0.0f, NativeLift->LiftHeight);
+			NativeLift->OnLiftStarted.AddUniqueDynamic(this, &AGenesisFactoryAssemblyManager::HandleBatteryLiftStarted);
 		}
 		if (AGenesisAGVActor* NativeAgv = Cast<AGenesisAGVActor>(AgvActor))
 		{
@@ -1155,6 +1323,43 @@ void AGenesisFactoryAssemblyManager::TriggerStationVisuals(int32 LineIndex, int3
 	}
 }
 
+void AGenesisFactoryAssemblyManager::HandleBatteryLiftStarted(AGenesisBatteryLiftActor* LiftActor)
+{
+	if (!IsValid(LiftActor))
+	{
+		return;
+	}
+
+	for (int32 LineIndex = 0; LineIndex < Lines.Num(); ++LineIndex)
+	{
+		if (!RuntimeLines.IsValidIndex(LineIndex) || Lines[LineIndex].Actors.BatteryLift.Get() != LiftActor)
+		{
+			continue;
+		}
+
+		constexpr int32 BatteryStationIndex = 2;
+		if (!Lines[LineIndex].Stations.IsValidIndex(BatteryStationIndex) ||
+			!Lines[LineIndex].Stations[BatteryStationIndex].bRunning ||
+			!RuntimeLines[LineIndex].StationOccupants.IsValidIndex(BatteryStationIndex))
+		{
+			return;
+		}
+
+		const int32 VehicleIndex = RuntimeLines[LineIndex].StationOccupants[BatteryStationIndex];
+		if (!RuntimeLines[LineIndex].Vehicles.IsValidIndex(VehicleIndex))
+		{
+			return;
+		}
+
+		const FGenesisVehicleRuntime& Vehicle = RuntimeLines[LineIndex].Vehicles[VehicleIndex];
+		if (Vehicle.State == EGenesisVehicleFlowState::Processing && Vehicle.StationIndex == BatteryStationIndex)
+		{
+			PlayStationRobots(LineIndex, BatteryStationIndex);
+		}
+		return;
+	}
+}
+
 void AGenesisFactoryAssemblyManager::ApplyCompletedStationVisuals(int32 StationIndex, AActor* Car)
 {
 	if (StationIndex == 0)
@@ -1196,7 +1401,7 @@ void AGenesisFactoryAssemblyManager::SetMappedComponentsVisible(AActor* Car, con
 		}
 		for (USceneComponent* Component : Components)
 		{
-			if (IsValid(Component) && Component->GetFName() == Name)
+			if (VisualComponentMatchesName(Component, Name))
 			{
 				Component->SetVisibility(bVisible, true);
 				break;
@@ -1239,7 +1444,7 @@ void AGenesisFactoryAssemblyManager::RotateMappedWheels(AActor* Car, float Delta
 		}
 		for (USceneComponent* Component : Components)
 		{
-			if (IsValid(Component) && Component->GetFName() == Name)
+			if (VisualComponentMatchesName(Component, Name))
 			{
 				Component->AddLocalRotation(FRotator(DeltaDegrees, 0.0f, 0.0f));
 				break;
@@ -1572,13 +1777,23 @@ void AGenesisFactoryAssemblyManager::StopPreplacedStationRobotAnimations(int32 L
 
 	for (const int32 StationIndex : {0, 1, 2, 4})
 	{
-		for (const FString& Side : {FString(TEXT("Left")), FString(TEXT("Right"))})
+		StopStationRobots(LineIndex, StationIndex);
+	}
+}
+
+void AGenesisFactoryAssemblyManager::StopStationRobots(int32 LineIndex, int32 StationIndex)
+{
+	if (!Lines.IsValidIndex(LineIndex))
+	{
+		return;
+	}
+
+	for (const FString& Side : {FString(TEXT("Left")), FString(TEXT("Right"))})
+	{
+		ASkeletalMeshActor* Robot = FindNamedStationRobot(LineIndex, StationIndex, Side);
+		if (USkeletalMeshComponent* Mesh = IsValid(Robot) ? Robot->GetSkeletalMeshComponent() : nullptr)
 		{
-			ASkeletalMeshActor* Robot = FindNamedStationRobot(LineIndex, StationIndex, Side);
-			if (USkeletalMeshComponent* Mesh = IsValid(Robot) ? Robot->GetSkeletalMeshComponent() : nullptr)
-			{
-				Mesh->Stop();
-			}
+			Mesh->Stop();
 		}
 	}
 }
@@ -1957,6 +2172,7 @@ void AGenesisFactoryAssemblyManager::UpdateBoards(int32 LineIndex)
 				? Runtime.StationQueues[StationIndex].Num()
 				: Runtime.InspectionVehicles.Num();
 			const bool bBottleneck = Runtime.BottleneckStationIndex == StationIndex;
+			const bool bIdle = IsTelemetryIdle(Telemetry);
 			AActor* Board = Runtime.StationBoards[StationIndex].Get();
 			if (AGenesisFactoryStatusBoard* NativeBoard = Cast<AGenesisFactoryStatusBoard>(Board))
 			{
@@ -1967,11 +2183,14 @@ void AGenesisFactoryAssemblyManager::UpdateBoards(int32 LineIndex)
 					Telemetry.DefectRate,
 					Telemetry.CycleTime,
 					BufferCount,
-					bBottleneck);
+					bBottleneck,
+					bIdle);
 			}
 			else
 			{
-				const FString Bottleneck = bBottleneck ? TEXT("\nBOTTLENECK") : TEXT("");
+				const FString AlertLine = bIdle
+					? TEXT("\nIDLE")
+					: (bBottleneck ? TEXT("\nBOTTLENECK") : TEXT(""));
 				SetStatusBoardText(
 					Board,
 					FString::Printf(
@@ -1980,8 +2199,8 @@ void AGenesisFactoryAssemblyManager::UpdateBoards(int32 LineIndex)
 						Telemetry.Utilization * 100.0f,
 						Telemetry.DefectRate * 100.0f,
 						Telemetry.CycleTime,
-						*Bottleneck),
-					bBottleneck ? FLinearColor::Red : FLinearColor(0.05f, 1.0f, 0.15f));
+						*AlertLine),
+					(bBottleneck || bIdle) ? FLinearColor::Red : FLinearColor(0.05f, 1.0f, 0.15f));
 			}
 		}
 	}
@@ -1994,28 +2213,49 @@ void AGenesisFactoryAssemblyManager::UpdateBoards(int32 LineIndex)
 				? Runtime.StationQueues[Runtime.BottleneckStationIndex].Num()
 				: Runtime.InspectionVehicles.Num());
 		const FString BottleneckName = Runtime.BottleneckStationIndex == INDEX_NONE ? FString() : GetStationDisplayName(Runtime.BottleneckStationIndex);
+		int32 IdleStationIndex = INDEX_NONE;
+		for (int32 StationIndex = 0; StationIndex < Lines[LineIndex].Stations.Num(); ++StationIndex)
+		{
+			if (IsTelemetryIdle(Lines[LineIndex].Stations[StationIndex]))
+			{
+				IdleStationIndex = StationIndex;
+				break;
+			}
+		}
+		const bool bHasIdleStation = IdleStationIndex != INDEX_NONE;
+		const FString IdleStationName = bHasIdleStation ? GetStationDisplayName(IdleStationIndex) : FString();
+		const FString DisplayBottleneckName = bHasIdleStation
+			? IdleStationName
+			: BottleneckName;
+		const FString ReasonOverride = bHasIdleStation
+			? FString::Printf(TEXT("%s MACHINE IS IDLE"), *IdleStationName)
+			: FString();
 		if (AGenesisFactoryStatusBoard* NativeBoard = Cast<AGenesisFactoryStatusBoard>(Runtime.LineBoard.Get()))
 		{
 			NativeBoard->SetLineStatusDetailed(
 				Lines[LineIndex].LineId,
 				Runtime.TotalProduced,
-				BottleneckName,
-				BottleneckCount);
+				DisplayBottleneckName,
+				BottleneckCount,
+				ReasonOverride,
+				bHasIdleStation);
 		}
 		else
 		{
-			const bool bHasBottleneck = !BottleneckName.IsEmpty();
+			const bool bHasBottleneck = !DisplayBottleneckName.IsEmpty();
 			SetStatusBoardText(
 				Runtime.LineBoard.Get(),
 				FString::Printf(
 					TEXT("LINE %d\nPRODUCTION: %d\nBOTTLENECK: %s\nREASON: %s"),
 					Lines[LineIndex].LineId,
 					Runtime.TotalProduced,
-					bHasBottleneck ? *BottleneckName : TEXT("NONE"),
-					bHasBottleneck
+					bHasBottleneck ? *DisplayBottleneckName : TEXT("NONE"),
+					!ReasonOverride.IsEmpty()
+						? *ReasonOverride
+						: (bHasBottleneck
 						? *FString::Printf(TEXT("BUFFER FULL %d/2"), BottleneckCount)
-						: TEXT("NORMAL FLOW")),
-				bHasBottleneck
+						: TEXT("NORMAL FLOW"))),
+				(bHasBottleneck || bHasIdleStation)
 					? FLinearColor(1.0f, 0.45f, 0.02f)
 					: FLinearColor(0.05f, 1.0f, 0.15f));
 		}
@@ -2205,12 +2445,14 @@ void AGenesisFactoryAssemblyManager::HandleMqttMessage(FJsonObjectWrapper Messag
 {
 	if (!Message.JsonObject.IsValid())
 	{
+		UE_LOG(LogTemp, Warning, TEXT("GenesisFactory: MQTT delegate received an invalid message wrapper."));
 		return;
 	}
 
 	const TSharedPtr<FJsonObject>* Payload = nullptr;
 	if (Message.JsonObject->TryGetObjectField(TEXT("Message"), Payload) && Payload && Payload->IsValid())
 	{
+		UE_LOG(LogTemp, Display, TEXT("GenesisFactory: MQTT delegate received object payload."));
 		ApplyPayloadObject(*Payload);
 		return;
 	}
@@ -2218,8 +2460,12 @@ void AGenesisFactoryAssemblyManager::HandleMqttMessage(FJsonObjectWrapper Messag
 	FString PayloadString;
 	if (Message.JsonObject->TryGetStringField(TEXT("Message"), PayloadString))
 	{
+		UE_LOG(LogTemp, Display, TEXT("GenesisFactory: MQTT delegate received string payload."));
 		ApplyMqttPayloadJson(PayloadString);
+		return;
 	}
+
+	UE_LOG(LogTemp, Warning, TEXT("GenesisFactory: MQTT delegate received a message without a Message payload field."));
 }
 
 void AGenesisFactoryAssemblyManager::ApplyMqttPayloadJson(const FString& Payload)
@@ -2260,21 +2506,63 @@ void AGenesisFactoryAssemblyManager::ApplyPayloadObject(const TSharedPtr<FJsonOb
 	for (const TSharedPtr<FJsonObject>& LineObject : LineObjects)
 	{
 		const int32 LineId = LineIdToInt(LineObject);
-		const int32 LineIndex = Lines.IndexOfByPredicate([LineId](const FGenesisAssemblyLineConfig& Line)
+		const int32 FoundLineIndex = Lines.IndexOfByPredicate([LineId](const FGenesisAssemblyLineConfig& Line)
 		{
 			return Line.LineId == LineId;
 		});
-		if (!Lines.IsValidIndex(LineIndex))
+		int32 ResolvedLineIndex = FoundLineIndex;
+		if (!Lines.IsValidIndex(ResolvedLineIndex) && Lines.IsValidIndex(LineId - 1))
 		{
+			ResolvedLineIndex = LineId - 1;
+			Lines[ResolvedLineIndex].LineId = LineId;
+			if (RuntimeLines.IsValidIndex(ResolvedLineIndex))
+			{
+				UE_LOG(
+					LogTemp,
+					Display,
+					TEXT("GenesisFactory: MQTT line_id %d matched by array index fallback. Check the Manager Lines array if this was unexpected."),
+					LineId);
+			}
+		}
+		if (!Lines.IsValidIndex(ResolvedLineIndex))
+		{
+			FString RawLineIdForLog;
+			TryGetJsonFieldAsString(LineObject, TEXT("line_id"), RawLineIdForLog);
+			UE_LOG(
+				LogTemp,
+				Warning,
+				TEXT("GenesisFactory: MQTT payload ignored because parsed line_id %d from raw '%s' did not match any configured line."),
+				LineId,
+				*RawLineIdForLog);
 			continue;
+		}
+		const int32 LineIndex = ResolvedLineIndex;
+
+		bool bResetLineRuntimeStats = false;
+		LineObject->TryGetBoolField(TEXT("reset_flow"), bResetLineRuntimeStats);
+		const TSharedPtr<FJsonObject>* LineStateObject = nullptr;
+		if (LineObject->TryGetObjectField(TEXT("line"), LineStateObject) && LineStateObject && LineStateObject->IsValid())
+		{
+			bool bNestedResetFlow = false;
+			if ((*LineStateObject)->TryGetBoolField(TEXT("reset_flow"), bNestedResetFlow))
+			{
+				bResetLineRuntimeStats = bResetLineRuntimeStats || bNestedResetFlow;
+			}
+		}
+		if (bResetLineRuntimeStats && RuntimeLines.IsValidIndex(LineIndex))
+		{
+			RuntimeLines[LineIndex].TotalProduced = 0;
+			RuntimeLines[LineIndex].BottleneckStationIndex = INDEX_NONE;
 		}
 
 		const TArray<TSharedPtr<FJsonValue>>* StationsArray = nullptr;
 		if (!LineObject->TryGetArrayField(TEXT("stations"), StationsArray) || !StationsArray)
 		{
+			UE_LOG(LogTemp, Warning, TEXT("GenesisFactory: MQTT payload for Line %d has no stations array."), LineId);
 			continue;
 		}
 
+		int32 AppliedStationCount = 0;
 		for (const TSharedPtr<FJsonValue>& Value : *StationsArray)
 		{
 			const TSharedPtr<FJsonObject>* StationObject = nullptr;
@@ -2292,14 +2580,20 @@ void AGenesisFactoryAssemblyManager::ApplyPayloadObject(const TSharedPtr<FJsonOb
 			const int32 StationIndex = StationIdToIndex(StationId);
 			if (!Lines[LineIndex].Stations.IsValidIndex(StationIndex))
 			{
+				UE_LOG(LogTemp, Warning, TEXT("GenesisFactory: MQTT station id '%s' did not map to a configured station."), *StationId);
 				continue;
 			}
 
 			FGenesisStationTelemetry& Telemetry = Lines[LineIndex].Stations[StationIndex];
 			double Number = 0.0;
+			bool bReceivedCycleTime = false;
+			bool bCycleTimeMeansIdle = false;
 			if ((*StationObject)->TryGetNumberField(TEXT("cycle_time"), Number))
 			{
-				Telemetry.CycleTime = FMath::Clamp(static_cast<float>(Number), 0.5f, 120.0f);
+				Telemetry.CycleTime = FMath::Clamp(static_cast<float>(Number), 0.5f, MqttCycleTimeMax);
+				Telemetry.bCycleTimeFromMqtt = true;
+				bReceivedCycleTime = true;
+				bCycleTimeMeansIdle = Telemetry.CycleTime >= 998.5f;
 			}
 			if ((*StationObject)->TryGetNumberField(TEXT("utilization"), Number))
 			{
@@ -2311,10 +2605,86 @@ void AGenesisFactoryAssemblyManager::ApplyPayloadObject(const TSharedPtr<FJsonOb
 			}
 
 			FString Status;
+			bool bReceivedRunStatus = false;
+			auto ApplyIdleTransition = [this, LineIndex, StationIndex]()
+			{
+				StopStationRobots(LineIndex, StationIndex);
+				if (StationIndex == 2 || StationIndex == 3)
+				{
+					SetStationEquipmentWaiting(LineIndex, StationIndex, true);
+				}
+				if (RuntimeLines.IsValidIndex(LineIndex) && RuntimeLines[LineIndex].StationOccupants.IsValidIndex(StationIndex))
+				{
+					const int32 OccupantIndex = RuntimeLines[LineIndex].StationOccupants[StationIndex];
+					if (RuntimeLines[LineIndex].Vehicles.IsValidIndex(OccupantIndex))
+					{
+						RuntimeLines[LineIndex].Vehicles[OccupantIndex].bStationWorkStarted = false;
+					}
+				}
+			};
 			if ((*StationObject)->TryGetStringField(TEXT("run_status"), Status))
 			{
-				Telemetry.bRunning = Status.Equals(TEXT("RUN"), ESearchCase::IgnoreCase);
+				bReceivedRunStatus = true;
+				const bool bNewRunning = Status.Equals(TEXT("RUN"), ESearchCase::IgnoreCase);
+				const bool bWasRunning = Telemetry.bRunning;
+				Telemetry.bRunning = bNewRunning;
+				if (!bNewRunning)
+				{
+					ApplyIdleTransition();
+				}
+				else if (!bWasRunning && RuntimeLines.IsValidIndex(LineIndex) && RuntimeLines[LineIndex].StationOccupants.IsValidIndex(StationIndex))
+				{
+					const int32 OccupantIndex = RuntimeLines[LineIndex].StationOccupants[StationIndex];
+					if (RuntimeLines[LineIndex].Vehicles.IsValidIndex(OccupantIndex))
+					{
+						RuntimeLines[LineIndex].Vehicles[OccupantIndex].bStationWorkStarted = false;
+					}
+				}
 			}
+			if (bReceivedCycleTime)
+			{
+				if (bCycleTimeMeansIdle)
+				{
+					Telemetry.bRunning = false;
+					ApplyIdleTransition();
+				}
+				else if (!bReceivedRunStatus)
+				{
+					Telemetry.bRunning = true;
+				}
+			}
+
+			if (bUseMqttCycleTimeAsAuthoritative && bReceivedCycleTime && RuntimeLines.IsValidIndex(LineIndex) &&
+				RuntimeLines[LineIndex].StationOccupants.IsValidIndex(StationIndex))
+			{
+				const int32 OccupantIndex = RuntimeLines[LineIndex].StationOccupants[StationIndex];
+				if (RuntimeLines[LineIndex].Vehicles.IsValidIndex(OccupantIndex))
+				{
+					FGenesisVehicleRuntime& Vehicle = RuntimeLines[LineIndex].Vehicles[OccupantIndex];
+					if (Vehicle.State == EGenesisVehicleFlowState::Processing && Vehicle.StationIndex == StationIndex)
+					{
+						Vehicle.RemainingProcessTime = FMath::Min(Vehicle.RemainingProcessTime, Telemetry.CycleTime);
+					}
+				}
+			}
+
+			++AppliedStationCount;
 		}
+
+		if (RuntimeLines.IsValidIndex(LineIndex))
+		{
+			UpdateBoards(LineIndex);
+		}
+		UE_LOG(
+			LogTemp,
+			Display,
+			TEXT("GenesisFactory: Applied MQTT Line %d, stations=%d, doorCycle=%.2f, lightCycle=%.2f, batteryCycle=%.2f, wheelCycle=%.2f, doorSeatCycle=%.2f."),
+			LineId,
+			AppliedStationCount,
+			Lines[LineIndex].Stations.IsValidIndex(0) ? Lines[LineIndex].Stations[0].CycleTime : -1.0f,
+			Lines[LineIndex].Stations.IsValidIndex(1) ? Lines[LineIndex].Stations[1].CycleTime : -1.0f,
+			Lines[LineIndex].Stations.IsValidIndex(2) ? Lines[LineIndex].Stations[2].CycleTime : -1.0f,
+			Lines[LineIndex].Stations.IsValidIndex(3) ? Lines[LineIndex].Stations[3].CycleTime : -1.0f,
+			Lines[LineIndex].Stations.IsValidIndex(4) ? Lines[LineIndex].Stations[4].CycleTime : -1.0f);
 	}
 }

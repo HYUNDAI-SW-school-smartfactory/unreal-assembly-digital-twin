@@ -12,8 +12,7 @@ OUTPUT = os.path.abspath(
 
 def prop(obj, name):
     try:
-        value = obj.get_editor_property(name)
-        return str(value)
+        return obj.get_editor_property(name)
     except Exception:
         return None
 
@@ -39,18 +38,20 @@ if not bp or not cls:
 
 
 def component_record(comp):
+    static_mesh = prop(comp, "static_mesh")
+    widget_class = prop(comp, "widget_class")
     return {
         "name": comp.get_name(),
         "class": comp.get_class().get_path_name(),
         "relative_location": vector_to_list(prop(comp, "relative_location")),
         "relative_rotation": rotator_to_list(prop(comp, "relative_rotation")),
         "relative_scale3d": vector_to_list(prop(comp, "relative_scale3d")),
-        "static_mesh": prop(comp, "static_mesh"),
-        "widget_class": prop(comp, "widget_class"),
-        "draw_size": prop(comp, "draw_size"),
-        "widget_space": prop(comp, "space"),
-        "two_sided": prop(comp, "two_sided"),
-        "pivot": prop(comp, "pivot"),
+        "static_mesh": static_mesh.get_path_name() if static_mesh else None,
+        "widget_class": widget_class.get_path_name() if widget_class else None,
+        "draw_size": str(prop(comp, "draw_size")),
+        "widget_space": str(prop(comp, "space")),
+        "two_sided": str(prop(comp, "two_sided")),
+        "pivot": str(prop(comp, "pivot")),
     }
 
 

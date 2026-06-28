@@ -6,6 +6,9 @@
 
 class UStaticMeshComponent;
 class USceneComponent;
+class AGenesisBatteryLiftActor;
+
+DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FGenesisBatteryLiftStartedSignature, AGenesisBatteryLiftActor*, LiftActor);
 
 UCLASS(BlueprintType, Blueprintable)
 class GENESISDIGITALTWIN_API AGenesisBatteryLiftActor : public AActor
@@ -53,6 +56,9 @@ public:
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Battery Lift")
 	bool bIsInstalling = false;
+
+	UPROPERTY(BlueprintAssignable, Category = "Battery Lift")
+	FGenesisBatteryLiftStartedSignature OnLiftStarted;
 
 	UFUNCTION(BlueprintCallable, Category = "Battery Lift")
 	void StartBatteryInstall();

@@ -1,9 +1,13 @@
 import json
+import os
+
 import unreal
 
 
 ASSET_PATH = "/Game/Widgets/WBP_MQTT_Monitor"
-OUT_PATH = "C:/Users/한국전파진흥협회/unreal-assembly-digital-twin/artifacts/wbp_mqtt_monitor_widget.json"
+OUT_PATH = os.path.abspath(
+    os.path.join(os.path.dirname(__file__), "..", "artifacts", "wbp_mqtt_monitor_widget.json")
+)
 
 
 def describe_widget(widget):
@@ -11,10 +15,9 @@ def describe_widget(widget):
         "name": str(widget.get_name()),
         "class": str(widget.get_class().get_path_name()),
     }
-    for attr in ("text", "color_and_opacity", "font"):
+    for attr in ("text", "color_and_opacity", "font", "visibility"):
         try:
-            value = widget.get_editor_property(attr)
-            record[attr] = str(value)
+            record[attr] = str(widget.get_editor_property(attr))
         except Exception:
             pass
     return record
@@ -27,15 +30,8 @@ records = {
     "asset": ASSET_PATH,
     "generated_class": str(generated_class.get_path_name() if generated_class else None),
     "widgets": [],
-    "asset_class": str(asset.get_class().get_path_name() if asset else None),
-    "asset_attrs": [],
     "notes": [],
 }
-
-try:
-    records["asset_attrs"] = [name for name in dir(asset) if "widget" in name.lower() or "tree" in name.lower()]
-except Exception as exc:
-    records["notes"].append(f"dir(asset) failed: {exc}")
 
 try:
     cdo = unreal.get_default_object(generated_class)
@@ -46,19 +42,7 @@ try:
 except Exception as exc:
     records["notes"].append(f"widget_tree failed: {exc}")
 
-for prop_name in ("widget_tree", "WidgetTree", "preview", "preview_widget"):
-    try:
-        value = asset.get_editor_property(prop_name)
-        records[f"asset_property_{prop_name}"] = str(value)
-        try:
-            all_widgets = []
-            value.get_all_widgets(all_widgets)
-            records[f"asset_property_{prop_name}_widgets"] = [describe_widget(w) for w in all_widgets]
-        except Exception as inner_exc:
-            records["notes"].append(f"{prop_name}.get_all_widgets failed: {inner_exc}")
-    except Exception as exc:
-        records["notes"].append(f"asset property {prop_name} failed: {exc}")
-
+os.makedirs(os.path.dirname(OUT_PATH), exist_ok=True)
 with open(OUT_PATH, "w", encoding="utf-8") as f:
     json.dump(records, f, indent=2, ensure_ascii=False)
 

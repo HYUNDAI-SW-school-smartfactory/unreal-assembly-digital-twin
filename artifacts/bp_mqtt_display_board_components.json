@@ -10,83 +10,143 @@
       "relative_scale3d": null,
       "static_mesh": null,
       "widget_class": null,
-      "draw_size": null,
-      "widget_space": null,
-      "two_sided": null,
-      "pivot": null
+      "draw_size": "None",
+      "widget_space": "None",
+      "two_sided": "None",
+      "pivot": "None"
     },
     {
       "name": "DefaultSceneRoot_GEN_VARIABLE",
       "class": "/Script/Engine.SceneComponent",
-      "relative_location": null,
-      "relative_rotation": null,
-      "relative_scale3d": null,
+      "relative_location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_scale3d": [
+        1.0,
+        1.0,
+        1.0
+      ],
       "static_mesh": null,
       "widget_class": null,
-      "draw_size": null,
-      "widget_space": null,
-      "two_sided": null,
-      "pivot": null
+      "draw_size": "None",
+      "widget_space": "None",
+      "two_sided": "None",
+      "pivot": "None"
     },
     {
       "name": "MonitorWidget_GEN_VARIABLE",
       "class": "/Script/UMG.WidgetComponent",
-      "relative_location": null,
-      "relative_rotation": null,
-      "relative_scale3d": null,
+      "relative_location": [
+        -51.0,
+        -4.206734988274914e-15,
+        -174.0
+      ],
+      "relative_rotation": [
+        0.0,
+        -15.0,
+        180.0
+      ],
+      "relative_scale3d": [
+        0.15,
+        0.15,
+        0.1599999964237213
+      ],
       "static_mesh": null,
-      "widget_class": "<Object '/Game/Widgets/WBP_MQTT_Monitor.WBP_MQTT_Monitor_C' (0x000001C50682A000) Class 'WidgetBlueprintGeneratedClass'>",
-      "draw_size": "<Struct 'IntPoint' (0x000001C50682C658) {x: 1280, y: 720}>",
+      "widget_class": "/Game/Widgets/WBP_MQTT_Monitor.WBP_MQTT_Monitor_C",
+      "draw_size": "<Struct 'IntPoint' (0x0000022AD2178658) {x: 1280, y: 720}>",
       "widget_space": "<WidgetSpace.WORLD: 0>",
-      "two_sided": null,
-      "pivot": "<Struct 'Vector2D' (0x000001C50682C680) {x: 0.500000, y: 0.500000}>"
+      "two_sided": "None",
+      "pivot": "<Struct 'Vector2D' (0x0000022AD2178680) {x: 0.500000, y: 0.500000}>"
     },
     {
       "name": "MonitorWidget_GEN_VARIABLE",
       "class": "/Script/UMG.WidgetComponent",
-      "relative_location": null,
-      "relative_rotation": null,
-      "relative_scale3d": null,
+      "relative_location": [
+        -51.0,
+        -4.206734988274914e-15,
+        -174.0
+      ],
+      "relative_rotation": [
+        0.0,
+        -15.0,
+        180.0
+      ],
+      "relative_scale3d": [
+        0.15,
+        0.15,
+        0.1599999964237213
+      ],
       "static_mesh": null,
-      "widget_class": "<Object '/Game/Widgets/WBP_MQTT_Monitor.WBP_MQTT_Monitor_C' (0x000001C50682A000) Class 'WidgetBlueprintGeneratedClass'>",
-      "draw_size": "<Struct 'IntPoint' (0x000001C50682C658) {x: 1280, y: 720}>",
+      "widget_class": "/Game/Widgets/WBP_MQTT_Monitor.WBP_MQTT_Monitor_C",
+      "draw_size": "<Struct 'IntPoint' (0x0000022AD2178658) {x: 1280, y: 720}>",
       "widget_space": "<WidgetSpace.WORLD: 0>",
-      "two_sided": null,
-      "pivot": "<Struct 'Vector2D' (0x000001C50682C680) {x: 0.500000, y: 0.500000}>"
+      "two_sided": "None",
+      "pivot": "<Struct 'Vector2D' (0x0000022AD2178680) {x: 0.500000, y: 0.500000}>"
     },
     {
       "name": "MonitorMesh_GEN_VARIABLE",
       "class": "/Script/Engine.StaticMeshComponent",
-      "relative_location": null,
-      "relative_rotation": null,
-      "relative_scale3d": null,
-      "static_mesh": "<Object '/Game/Meshes/SM_DisplayBoard03.SM_DisplayBoard03' (0x000001C4EA31D000) Class 'StaticMesh'>",
+      "relative_location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_scale3d": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "static_mesh": "/Game/Meshes/SM_DisplayBoard03.SM_DisplayBoard03",
       "widget_class": null,
-      "draw_size": null,
-      "widget_space": null,
-      "two_sided": null,
-      "pivot": null
+      "draw_size": "None",
+      "widget_space": "None",
+      "two_sided": "None",
+      "pivot": "None"
     },
     {
       "name": "MonitorMesh_GEN_VARIABLE",
       "class": "/Script/Engine.StaticMeshComponent",
-      "relative_location": null,
-      "relative_rotation": null,
-      "relative_scale3d": null,
-      "static_mesh": "<Object '/Game/Meshes/SM_DisplayBoard03.SM_DisplayBoard03' (0x000001C4EA31D000) Class 'StaticMesh'>",
+      "relative_location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_scale3d": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "static_mesh": "/Game/Meshes/SM_DisplayBoard03.SM_DisplayBoard03",
       "widget_class": null,
-      "draw_size": null,
-      "widget_space": null,
-      "two_sided": null,
-      "pivot": null
+      "draw_size": "None",
+      "widget_space": "None",
+      "two_sided": "None",
+      "pivot": "None"
     }
   ],
   "subobjects": [
     {
-      "handle": "<Struct 'SubobjectDataHandle' (0x000001C51F5A5ED0) {}>",
-      "data": "<Struct 'SubobjectData' (0x000001C52AF9D2C0) {}>",
-      "object": "<Object '/Game/Blueprints/BP_MQTT_DisplayBoard.Default__BP_MQTT_DisplayBoard_C' (0x000001C531BA3200) Class 'BP_MQTT_DisplayBoard_C'>",
-      "template": "<Object '/Game/Blueprints/BP_MQTT_DisplayBoard.Default__BP_MQTT_DisplayBoard_C' (0x000001C531BA3200) Class 'BP_MQTT_DisplayBoard_C'>",
+      "handle": "<Struct 'SubobjectDataHandle' (0x0000022AC24C61C0) {}>",
+      "data": "<Struct 'SubobjectData' (0x0000022AC0FD6420) {}>",
+      "object": "<Object '/Game/Blueprints/BP_MQTT_DisplayBoard.Default__BP_MQTT_DisplayBoard_C' (0x0000022A851D0A00) Class 'BP_MQTT_DisplayBoard_C'>",
+      "template": "<Object '/Game/Blueprints/BP_MQTT_DisplayBoard.Default__BP_MQTT_DisplayBoard_C' (0x0000022A851D0A00) Class 'BP_MQTT_DisplayBoard_C'>",
       "template_record": {
         "name": "Default__BP_MQTT_DisplayBoard_C",
         "class": "/Game/Blueprints/BP_MQTT_DisplayBoard.BP_MQTT_DisplayBoard_C",
@@ -95,105 +155,165 @@
         "relative_scale3d": null,
         "static_mesh": null,
         "widget_class": null,
-        "draw_size": null,
-        "widget_space": null,
-        "two_sided": null,
-        "pivot": null
+        "draw_size": "None",
+        "widget_space": "None",
+        "two_sided": "None",
+        "pivot": "None"
       }
     },
     {
-      "handle": "<Struct 'SubobjectDataHandle' (0x000001C51F5A45C0) {}>",
-      "data": "<Struct 'SubobjectData' (0x000001C52AF9D4A0) {}>",
-      "object": "<Object '/Game/Blueprints/BP_MQTT_DisplayBoard.BP_MQTT_DisplayBoard_C:DefaultSceneRoot_GEN_VARIABLE' (0x000001C531A54200) Class 'SceneComponent'>",
-      "template": "<Object '/Game/Blueprints/BP_MQTT_DisplayBoard.BP_MQTT_DisplayBoard_C:DefaultSceneRoot_GEN_VARIABLE' (0x000001C531A54200) Class 'SceneComponent'>",
+      "handle": "<Struct 'SubobjectDataHandle' (0x0000022AC24C67D0) {}>",
+      "data": "<Struct 'SubobjectData' (0x0000022AC0FD4DA0) {}>",
+      "object": "<Object '/Game/Blueprints/BP_MQTT_DisplayBoard.BP_MQTT_DisplayBoard_C:DefaultSceneRoot_GEN_VARIABLE' (0x0000022AD21C3300) Class 'SceneComponent'>",
+      "template": "<Object '/Game/Blueprints/BP_MQTT_DisplayBoard.BP_MQTT_DisplayBoard_C:DefaultSceneRoot_GEN_VARIABLE' (0x0000022AD21C3300) Class 'SceneComponent'>",
       "template_record": {
         "name": "DefaultSceneRoot_GEN_VARIABLE",
         "class": "/Script/Engine.SceneComponent",
-        "relative_location": null,
-        "relative_rotation": null,
-        "relative_scale3d": null,
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale3d": [
+          1.0,
+          1.0,
+          1.0
+        ],
         "static_mesh": null,
         "widget_class": null,
-        "draw_size": null,
-        "widget_space": null,
-        "two_sided": null,
-        "pivot": null
+        "draw_size": "None",
+        "widget_space": "None",
+        "two_sided": "None",
+        "pivot": "None"
       }
     },
     {
-      "handle": "<Struct 'SubobjectDataHandle' (0x000001C51F5A5AF0) {}>",
-      "data": "<Struct 'SubobjectData' (0x000001C52AF9D6E0) {}>",
-      "object": "<Object '/Game/Blueprints/BP_MQTT_DisplayBoard.BP_MQTT_DisplayBoard_C:MonitorWidget_GEN_VARIABLE' (0x000001C50682C000) Class 'WidgetComponent'>",
-      "template": "<Object '/Game/Blueprints/BP_MQTT_DisplayBoard.BP_MQTT_DisplayBoard_C:MonitorWidget_GEN_VARIABLE' (0x000001C50682C000) Class 'WidgetComponent'>",
+      "handle": "<Struct 'SubobjectDataHandle' (0x0000022AC24C6250) {}>",
+      "data": "<Struct 'SubobjectData' (0x0000022AC0FD1A40) {}>",
+      "object": "<Object '/Game/Blueprints/BP_MQTT_DisplayBoard.BP_MQTT_DisplayBoard_C:MonitorWidget_GEN_VARIABLE' (0x0000022AD2178000) Class 'WidgetComponent'>",
+      "template": "<Object '/Game/Blueprints/BP_MQTT_DisplayBoard.BP_MQTT_DisplayBoard_C:MonitorWidget_GEN_VARIABLE' (0x0000022AD2178000) Class 'WidgetComponent'>",
       "template_record": {
         "name": "MonitorWidget_GEN_VARIABLE",
         "class": "/Script/UMG.WidgetComponent",
-        "relative_location": null,
-        "relative_rotation": null,
-        "relative_scale3d": null,
+        "relative_location": [
+          -51.0,
+          -4.206734988274914e-15,
+          -174.0
+        ],
+        "relative_rotation": [
+          0.0,
+          -15.0,
+          180.0
+        ],
+        "relative_scale3d": [
+          0.15,
+          0.15,
+          0.1599999964237213
+        ],
         "static_mesh": null,
-        "widget_class": "<Object '/Game/Widgets/WBP_MQTT_Monitor.WBP_MQTT_Monitor_C' (0x000001C50682A000) Class 'WidgetBlueprintGeneratedClass'>",
-        "draw_size": "<Struct 'IntPoint' (0x000001C50682C658) {x: 1280, y: 720}>",
+        "widget_class": "/Game/Widgets/WBP_MQTT_Monitor.WBP_MQTT_Monitor_C",
+        "draw_size": "<Struct 'IntPoint' (0x0000022AD2178658) {x: 1280, y: 720}>",
         "widget_space": "<WidgetSpace.WORLD: 0>",
-        "two_sided": null,
-        "pivot": "<Struct 'Vector2D' (0x000001C50682C680) {x: 0.500000, y: 0.500000}>"
+        "two_sided": "None",
+        "pivot": "<Struct 'Vector2D' (0x0000022AD2178680) {x: 0.500000, y: 0.500000}>"
       }
     },
     {
-      "handle": "<Struct 'SubobjectDataHandle' (0x000001C51F5A5DE0) {}>",
-      "data": "<Struct 'SubobjectData' (0x000001C52AF9D860) {}>",
-      "object": "<Object '/Game/Blueprints/BP_MQTT_DisplayBoard.BP_MQTT_DisplayBoard_C:MonitorWidget_GEN_VARIABLE' (0x000001C50682C000) Class 'WidgetComponent'>",
-      "template": "<Object '/Game/Blueprints/BP_MQTT_DisplayBoard.BP_MQTT_DisplayBoard_C:MonitorWidget_GEN_VARIABLE' (0x000001C50682C000) Class 'WidgetComponent'>",
+      "handle": "<Struct 'SubobjectDataHandle' (0x0000022AC24C63E0) {}>",
+      "data": "<Struct 'SubobjectData' (0x0000022AC0FD9900) {}>",
+      "object": "<Object '/Game/Blueprints/BP_MQTT_DisplayBoard.BP_MQTT_DisplayBoard_C:MonitorWidget_GEN_VARIABLE' (0x0000022AD2178000) Class 'WidgetComponent'>",
+      "template": "<Object '/Game/Blueprints/BP_MQTT_DisplayBoard.BP_MQTT_DisplayBoard_C:MonitorWidget_GEN_VARIABLE' (0x0000022AD2178000) Class 'WidgetComponent'>",
       "template_record": {
         "name": "MonitorWidget_GEN_VARIABLE",
         "class": "/Script/UMG.WidgetComponent",
-        "relative_location": null,
-        "relative_rotation": null,
-        "relative_scale3d": null,
+        "relative_location": [
+          -51.0,
+          -4.206734988274914e-15,
+          -174.0
+        ],
+        "relative_rotation": [
+          0.0,
+          -15.0,
+          180.0
+        ],
+        "relative_scale3d": [
+          0.15,
+          0.15,
+          0.1599999964237213
+        ],
         "static_mesh": null,
-        "widget_class": "<Object '/Game/Widgets/WBP_MQTT_Monitor.WBP_MQTT_Monitor_C' (0x000001C50682A000) Class 'WidgetBlueprintGeneratedClass'>",
-        "draw_size": "<Struct 'IntPoint' (0x000001C50682C658) {x: 1280, y: 720}>",
+        "widget_class": "/Game/Widgets/WBP_MQTT_Monitor.WBP_MQTT_Monitor_C",
+        "draw_size": "<Struct 'IntPoint' (0x0000022AD2178658) {x: 1280, y: 720}>",
         "widget_space": "<WidgetSpace.WORLD: 0>",
-        "two_sided": null,
-        "pivot": "<Struct 'Vector2D' (0x000001C50682C680) {x: 0.500000, y: 0.500000}>"
+        "two_sided": "None",
+        "pivot": "<Struct 'Vector2D' (0x0000022AD2178680) {x: 0.500000, y: 0.500000}>"
       }
     },
     {
-      "handle": "<Struct 'SubobjectDataHandle' (0x000001C51F5A58B0) {}>",
-      "data": "<Struct 'SubobjectData' (0x000001C52AF9DBC0) {}>",
-      "object": "<Object '/Game/Blueprints/BP_MQTT_DisplayBoard.BP_MQTT_DisplayBoard_C:MonitorMesh_GEN_VARIABLE' (0x000001C50682B800) Class 'StaticMeshComponent'>",
-      "template": "<Object '/Game/Blueprints/BP_MQTT_DisplayBoard.BP_MQTT_DisplayBoard_C:MonitorMesh_GEN_VARIABLE' (0x000001C50682B800) Class 'StaticMeshComponent'>",
+      "handle": "<Struct 'SubobjectDataHandle' (0x0000022AC24C66D0) {}>",
+      "data": "<Struct 'SubobjectData' (0x0000022AC0FD2760) {}>",
+      "object": "<Object '/Game/Blueprints/BP_MQTT_DisplayBoard.BP_MQTT_DisplayBoard_C:MonitorMesh_GEN_VARIABLE' (0x0000022AD2177800) Class 'StaticMeshComponent'>",
+      "template": "<Object '/Game/Blueprints/BP_MQTT_DisplayBoard.BP_MQTT_DisplayBoard_C:MonitorMesh_GEN_VARIABLE' (0x0000022AD2177800) Class 'StaticMeshComponent'>",
       "template_record": {
         "name": "MonitorMesh_GEN_VARIABLE",
         "class": "/Script/Engine.StaticMeshComponent",
-        "relative_location": null,
-        "relative_rotation": null,
-        "relative_scale3d": null,
-        "static_mesh": "<Object '/Game/Meshes/SM_DisplayBoard03.SM_DisplayBoard03' (0x000001C4EA31D000) Class 'StaticMesh'>",
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale3d": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Meshes/SM_DisplayBoard03.SM_DisplayBoard03",
         "widget_class": null,
-        "draw_size": null,
-        "widget_space": null,
-        "two_sided": null,
-        "pivot": null
+        "draw_size": "None",
+        "widget_space": "None",
+        "two_sided": "None",
+        "pivot": "None"
       }
     },
     {
-      "handle": "<Struct 'SubobjectDataHandle' (0x000001C51F5A5F40) {}>",
-      "data": "<Struct 'SubobjectData' (0x000001C52AF9DD40) {}>",
-      "object": "<Object '/Game/Blueprints/BP_MQTT_DisplayBoard.BP_MQTT_DisplayBoard_C:MonitorMesh_GEN_VARIABLE' (0x000001C50682B800) Class 'StaticMeshComponent'>",
-      "template": "<Object '/Game/Blueprints/BP_MQTT_DisplayBoard.BP_MQTT_DisplayBoard_C:MonitorMesh_GEN_VARIABLE' (0x000001C50682B800) Class 'StaticMeshComponent'>",
+      "handle": "<Struct 'SubobjectDataHandle' (0x0000022AC24C6050) {}>",
+      "data": "<Struct 'SubobjectData' (0x0000022AC0FD2FA0) {}>",
+      "object": "<Object '/Game/Blueprints/BP_MQTT_DisplayBoard.BP_MQTT_DisplayBoard_C:MonitorMesh_GEN_VARIABLE' (0x0000022AD2177800) Class 'StaticMeshComponent'>",
+      "template": "<Object '/Game/Blueprints/BP_MQTT_DisplayBoard.BP_MQTT_DisplayBoard_C:MonitorMesh_GEN_VARIABLE' (0x0000022AD2177800) Class 'StaticMeshComponent'>",
       "template_record": {
         "name": "MonitorMesh_GEN_VARIABLE",
         "class": "/Script/Engine.StaticMeshComponent",
-        "relative_location": null,
-        "relative_rotation": null,
-        "relative_scale3d": null,
-        "static_mesh": "<Object '/Game/Meshes/SM_DisplayBoard03.SM_DisplayBoard03' (0x000001C4EA31D000) Class 'StaticMesh'>",
+        "relative_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_scale3d": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "static_mesh": "/Game/Meshes/SM_DisplayBoard03.SM_DisplayBoard03",
         "widget_class": null,
-        "draw_size": null,
-        "widget_space": null,
-        "two_sided": null,
-        "pivot": null
+        "draw_size": "None",
+        "widget_space": "None",
+        "two_sided": "None",
+        "pivot": "None"
       }
     }
   ]

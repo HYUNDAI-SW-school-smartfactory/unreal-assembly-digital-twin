@@ -6,6 +6,7 @@
 #include "GenesisFactoryAssemblyManager.generated.h"
 
 class AGenesisFactoryStatusBoard;
+class AGenesisBatteryLiftActor;
 class AGenesisHangerLineActor;
 class ASkeletalMeshActor;
 class APaho_Manager_Sync;
@@ -57,6 +58,9 @@ struct FGenesisStationTelemetry
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Telemetry")
 	bool bRunning = true;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Telemetry")
+	bool bCycleTimeFromMqtt = false;
 };
 
 USTRUCT(BlueprintType)
@@ -136,6 +140,7 @@ struct FGenesisVehicleRuntime
 	FVector MoveStart = FVector::ZeroVector;
 	FVector MoveTarget = FVector::ZeroVector;
 	bool bDefective = false;
+	bool bStationWorkStarted = false;
 };
 
 USTRUCT()
@@ -336,6 +341,12 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Factory|MQTT")
 	FString Password;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Factory|MQTT")
+	bool bUseMqttCycleTimeAsAuthoritative = true;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Factory|MQTT", meta = (ClampMin = "1.0"))
+	float MqttCycleTimeMax = 999.0f;
+
 	UFUNCTION(BlueprintCallable, Category = "Factory")
 	void InitializeFactory();
 
@@ -353,6 +364,9 @@ public:
 
 	UFUNCTION()
 	void HandleMqttMessage(FJsonObjectWrapper Message);
+
+	UFUNCTION()
+	void HandleBatteryLiftStarted(AGenesisBatteryLiftActor* LiftActor);
 
 private:
 	UPROPERTY(VisibleAnywhere, Category = "Factory")
@@ -404,6 +418,7 @@ private:
 	void PlayStationRobots(int32 LineIndex, int32 StationIndex);
 	void CreateOrFindStationRobots(int32 LineIndex, int32 StationIndex);
 	void StopPreplacedStationRobotAnimations(int32 LineIndex);
+	void StopStationRobots(int32 LineIndex, int32 StationIndex);
 	ASkeletalMeshActor* FindNamedStationRobot(int32 LineIndex, int32 StationIndex, const FString& Side) const;
 	void CreateBoards(int32 LineIndex);
 	void FixKnownPreplacedBoardTransforms(FGenesisAssemblyLineRuntime& Runtime, int32 LineId);

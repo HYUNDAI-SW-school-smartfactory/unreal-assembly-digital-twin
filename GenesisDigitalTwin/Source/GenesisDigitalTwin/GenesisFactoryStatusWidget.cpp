@@ -5,11 +5,23 @@
 #include "Components/Overlay.h"
 #include "Components/OverlaySlot.h"
 #include "Components/TextBlock.h"
+#include "Widgets/SWidget.h"
 
 void UGenesisFactoryStatusWidget::NativeConstruct()
 {
 	Super::NativeConstruct();
+	BuildWidgetTreeIfNeeded();
+	SetStatusText(PendingValue, PendingColor);
+}
 
+TSharedRef<SWidget> UGenesisFactoryStatusWidget::RebuildWidget()
+{
+	BuildWidgetTreeIfNeeded();
+	return Super::RebuildWidget();
+}
+
+void UGenesisFactoryStatusWidget::BuildWidgetTreeIfNeeded()
+{
 	if (StatusText || !WidgetTree)
 	{
 		return;
@@ -26,21 +38,21 @@ void UGenesisFactoryStatusWidget::NativeConstruct()
 
 	StatusText = WidgetTree->ConstructWidget<UTextBlock>(UTextBlock::StaticClass(), TEXT("StatusText"));
 	FSlateFontInfo Font = StatusText->GetFont();
-	Font.Size = 24;
+	Font.Size = 68;
 	StatusText->SetFont(Font);
 	StatusText->SetJustification(ETextJustify::Left);
 	StatusText->SetColorAndOpacity(FLinearColor(0.05f, 1.0f, 0.15f));
 	StatusText->SetShadowColorAndOpacity(FLinearColor::Black);
-	StatusText->SetShadowOffset(FVector2D(2.0f, 2.0f));
+	StatusText->SetShadowOffset(FVector2D(4.0f, 4.0f));
 	StatusText->SetAutoWrapText(true);
-	StatusText->SetWrapTextAt(1140.0f);
+	StatusText->SetWrapTextAt(1210.0f);
 	StatusText->SetText(FText::FromString(PendingValue));
 	StatusText->SetColorAndOpacity(PendingColor);
 
 	UOverlaySlot* TextSlot = Root->AddChildToOverlay(StatusText);
 	TextSlot->SetHorizontalAlignment(HAlign_Left);
 	TextSlot->SetVerticalAlignment(VAlign_Top);
-	TextSlot->SetPadding(FMargin(56.0f, 42.0f, 40.0f, 40.0f));
+	TextSlot->SetPadding(FMargin(40.0f, 34.0f, 32.0f, 32.0f));
 }
 
 void UGenesisFactoryStatusWidget::SetStatusText(const FString& Value, const FLinearColor& Color)

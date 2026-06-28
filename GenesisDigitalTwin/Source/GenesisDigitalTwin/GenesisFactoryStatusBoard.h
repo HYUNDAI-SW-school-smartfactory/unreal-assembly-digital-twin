@@ -26,13 +26,20 @@ public:
 		float DefectRate,
 		float CycleTime,
 		int32 BufferCount,
-		bool bIsBottleneck);
+		bool bIsBottleneck,
+		bool bIsIdle);
 
 	UFUNCTION(BlueprintCallable, Category = "Factory Board")
 	void SetLineStatus(int32 LineId, int32 TotalProduced, const FString& BottleneckName);
 
 	UFUNCTION(BlueprintCallable, Category = "Factory Board")
-	void SetLineStatusDetailed(int32 LineId, int32 TotalProduced, const FString& BottleneckName, int32 BottleneckBufferCount);
+	void SetLineStatusDetailed(
+		int32 LineId,
+		int32 TotalProduced,
+		const FString& BottleneckName,
+		int32 BottleneckBufferCount,
+		const FString& ReasonOverride,
+		bool bForceAlert);
 
 	UFUNCTION(BlueprintCallable, Category = "Factory Board")
 	void ConfigureAsStationBoard();

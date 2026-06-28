@@ -2,13 +2,7 @@
   "asset": "/Game/Widgets/WBP_MQTT_Monitor",
   "generated_class": "/Game/Widgets/WBP_MQTT_Monitor.WBP_MQTT_Monitor_C",
   "widgets": [],
-  "asset_class": "/Script/UMGEditor.WidgetBlueprint",
-  "asset_attrs": [],
   "notes": [
-    "widget_tree failed: UserWidget: Failed to find property 'widget_tree' for attribute 'widget_tree' on 'WBP_MQTT_Monitor_C'",
-    "asset property widget_tree failed: WidgetBlueprint: Failed to find property 'widget_tree' for attribute 'widget_tree' on 'WidgetBlueprint'",
-    "asset property WidgetTree failed: WidgetBlueprint: Property 'WidgetTree' for attribute 'WidgetTree' on 'WidgetBlueprint' is protected and cannot be read",
-    "asset property preview failed: WidgetBlueprint: Failed to find property 'preview' for attribute 'preview' on 'WidgetBlueprint'",
-    "asset property preview_widget failed: WidgetBlueprint: Failed to find property 'preview_widget' for attribute 'preview_widget' on 'WidgetBlueprint'"
+    "widget_tree failed: UserWidget: Failed to find property 'widget_tree' for attribute 'widget_tree' on 'WBP_MQTT_Monitor_C'"
   ]
 }

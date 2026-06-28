@@ -118,6 +118,7 @@ void AGenesisBatteryLiftActor::PlayLift()
 	LiftElapsed = 0.0f;
 	bLiftPlaying = true;
 	bIsInstalling = true;
+	OnLiftStarted.Broadcast(this);
 	SetActorTickEnabled(true);
 	CustomTimeDilation = 1.0f;
 }
